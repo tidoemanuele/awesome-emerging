@@ -52,7 +52,7 @@
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url('/awesome-emerging/fonts/inter-variable.woff2') format('woff2');
+  src: url('../fonts/inter-variable.woff2') format('woff2');
 }
 
 @font-face {
@@ -60,7 +60,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/awesome-emerging/fonts/satoshi-700.woff2') format('woff2');
+  src: url('../fonts/satoshi-700.woff2') format('woff2');
 }
 
 @font-face {
@@ -68,7 +68,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/awesome-emerging/fonts/satoshi-400.woff2') format('woff2');
+  src: url('../fonts/satoshi-400.woff2') format('woff2');
 }
 
 /* ── Base ── */
