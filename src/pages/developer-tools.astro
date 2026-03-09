@@ -1,0 +1,179 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const projects = [
+  {
+    name: "Aider",
+    url: "https://github.com/paul-gauthier/aider",
+    description: "AI pair programmer in your terminal — edit code across files with GPT/Claude.",
+    discovered: "2025-12-29",
+    signal: "Early / untracked",
+    signalLevel: "early" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "Aviator Runbooks",
+    url: "https://www.aviator.co/runbooks",
+    description: "Automated engineering runbooks with CI/CD integration for incident response.",
+    discovered: "2025-12-27",
+    signal: "Early / untracked",
+    signalLevel: "early" as const,
+  },
+  {
+    name: "blender-mcp",
+    url: "https://blender-mcp-psi.vercel.app/",
+    description: "MCP server for Blender — let AI control Blender 3D scenes via natural language.",
+    discovered: "2025-12-27",
+    signal: "151 HN points",
+    signalLevel: "rising" as const,
+    tags: ["mcp"],
+  },
+  {
+    name: "Continue",
+    url: "https://github.com/continue-dev/continue",
+    description: "Open-source AI code assistant — IDE plugin that connects to any LLM.",
+    discovered: "2025-12-29",
+    signal: "Early / untracked",
+    signalLevel: "early" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "denobox",
+    url: "https://github.com/simonw/denobox",
+    description: "JavaScript sandbox via Deno subprocess — safely execute untrusted AI-generated code.",
+    discovered: "2026-01-26",
+    signal: "Early / untracked",
+    signalLevel: "early" as const,
+    tags: ["security", "open-source"],
+  },
+  {
+    name: "ggc",
+    url: "https://github.com/bmf-san/ggc",
+    description: "Go GitHub CLI helper for common git/GitHub workflows.",
+    discovered: "2025-12-27",
+    signal: "65 HN points · ⭐ 259 stars",
+    signalLevel: "early" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "iCloud Photos Downloader",
+    url: "https://github.com/icloud-photos-downloader",
+    description: "CLI tool to download your entire iCloud Photo Library to local storage.",
+    discovered: "2026-01-12",
+    signal: "513 HN points",
+    signalLevel: "hot" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "Infisical",
+    url: "https://github.com/Infisical/infisical",
+    description: "Open-source secret management platform — sync secrets across environments and teams.",
+    discovered: "2025-12-27",
+    signal: "131 HN points",
+    signalLevel: "rising" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "just",
+    url: "https://github.com/casey/just",
+    description: "Modern command runner — a cleaner Makefile alternative.",
+    discovered: "2025-12-27",
+    signal: "652 HN points",
+    signalLevel: "hot" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "Logseq",
+    url: "https://github.com/logseq/logseq",
+    description: "Local-first knowledge management and outliner with a bidirectional graph view.",
+    discovered: "2025-12-29",
+    signal: "Early / untracked",
+    signalLevel: "early" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "mise",
+    url: "https://github.com/jdx/mise",
+    description: "Polyglot runtime version manager — replaces nvm, rbenv, pyenv, and more.",
+    discovered: "2025-12-27",
+    signal: "141 HN points",
+    signalLevel: "rising" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "moon",
+    url: "https://moonrepo.dev",
+    description: "Monorepo build system and task runner for polyglot codebases.",
+    discovered: "2025-12-27",
+    signal: "200 HN points",
+    signalLevel: "rising" as const,
+  },
+  {
+    name: "Mousefood",
+    url: "https://github.com/junkofuruto/mousefood",
+    description: "Library for embedding interactive terminal UI components in Python applications.",
+    discovered: "2026-01-29",
+    signal: "Early / untracked",
+    signalLevel: "early" as const,
+    tags: ["open-source", "cli"],
+  },
+  {
+    name: "mrge",
+    url: "https://mrge.io",
+    description: "AI-powered code review tool with PR analysis and diff intelligence.",
+    discovered: "2025-12-27",
+    signal: "221 HN points",
+    signalLevel: "rising" as const,
+  },
+  {
+    name: "OpenHands",
+    url: "https://github.com/allenai/open-hands",
+    description: "Open-source autonomous software engineering agent (community alternative to Devin).",
+    discovered: "2025-12-29",
+    signal: "Early / untracked",
+    signalLevel: "early" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "pg-mcp",
+    url: "https://github.com/stuzero/pg-mcp",
+    description: "PostgreSQL MCP server — query and manage Postgres databases via Model Context Protocol.",
+    discovered: "2025-12-27",
+    signal: "167 HN points",
+    signalLevel: "rising" as const,
+    tags: ["mcp", "open-source"],
+  },
+  {
+    name: "sentry-mcp-rs",
+    url: "https://github.com/utapyngo/sentry-mcp-rs",
+    description: "Rust-based MCP server for Sentry — 10x less RAM than the Node.js equivalent.",
+    discovered: "2026-01-26",
+    signal: "Early / untracked",
+    signalLevel: "early" as const,
+    tags: ["mcp", "open-source", "rust"],
+  },
+  {
+    name: "uv",
+    url: "https://github.com/astral-sh/uv",
+    description: "Blazing-fast Python package and project manager in Rust — replaces pip, venv, and pyenv.",
+    discovered: "2025-12-27",
+    signal: "967 HN points",
+    signalLevel: "hot" as const,
+    tags: ["open-source"],
+  },
+];
+---
+
+<Base title="Developer Tools" description="Tooling for the developer experience — package managers, runtime managers, AI-assisted code review, IDE integrations, and build systems.">
+  <div class="flex items-center justify-between mb-8">
+    <div>
+      <h1 class="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-display)] text-gradient">Developer Tools</h1>
+      <p class="mt-2 text-text-secondary">Tooling for the developer experience — package managers, runtime managers, AI-assisted code review, IDE integrations, build systems, and development workflow utilities.</p>
+    </div>
+    <span class="text-sm font-semibold text-accent-violet">{projects.length} projects</span>
+  </div>
+  <div class="space-y-4">
+    {projects.map(p => <ProjectCard {...p} />)}
+  </div>
+</Base>

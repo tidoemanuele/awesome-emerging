@@ -1,0 +1,95 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'A curated list of emerging open source projects that actually matter' } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="grain">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} — Awesome Emerging</title>
+  <meta name="description" content={description} />
+  <meta property="og:title" content={`${title} — Awesome Emerging`} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+  <link rel="preload" href={`${base}fonts/inter-variable.woff2`} as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href={`${base}fonts/satoshi-700.woff2`} as="font" type="font/woff2" crossorigin />
+</head>
+<body class="bg-surface-base text-text-primary font-sans antialiased min-h-screen flex flex-col">
+  <!-- Nav -->
+  <header class="fixed top-0 inset-x-0 z-[var(--z-nav)]">
+    <nav class="glass-nav">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <a href={`${base}`} class="flex items-center gap-2">
+            <span class="text-xl font-bold font-[family-name:var(--font-display)] text-gradient">
+              Awesome Emerging
+            </span>
+          </a>
+          <div class="hidden md:flex items-center gap-1">
+            <a href={`${base}ai-agents/`} class="px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-white/5">AI Agents</a>
+            <a href={`${base}cli-tools/`} class="px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-white/5">CLI Tools</a>
+            <a href={`${base}developer-tools/`} class="px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-white/5">Dev Tools</a>
+            <a href={`${base}open-source-infra/`} class="px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-white/5">Infrastructure</a>
+            <a href={`${base}about/`} class="px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-white/5">About</a>
+            <a href="https://github.com/tidoemanuele/awesome-emerging" target="_blank" rel="noopener" class="ml-2 px-4 py-2 text-sm font-semibold rounded-[var(--radius-button)] bg-gradient-to-r from-accent-violet to-accent-cyan text-white hover:opacity-90 transition-all">
+              GitHub
+            </a>
+          </div>
+          <!-- Mobile -->
+          <button type="button" id="mobile-toggle" class="md:hidden p-2 text-text-secondary hover:text-text-primary" aria-label="Menu">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile Sheet -->
+    <div id="mobile-sheet" class="fixed inset-0 top-16 z-[var(--z-overlay)] bg-surface-base/95 backdrop-blur-xl transform translate-x-full transition-transform duration-300 md:hidden">
+      <div class="px-6 py-8 space-y-4">
+        <a href={`${base}ai-agents/`} class="block text-lg font-medium text-text-secondary hover:text-text-primary">AI Agents</a>
+        <a href={`${base}cli-tools/`} class="block text-lg font-medium text-text-secondary hover:text-text-primary">CLI Tools</a>
+        <a href={`${base}developer-tools/`} class="block text-lg font-medium text-text-secondary hover:text-text-primary">Dev Tools</a>
+        <a href={`${base}open-source-infra/`} class="block text-lg font-medium text-text-secondary hover:text-text-primary">Infrastructure</a>
+        <a href={`${base}about/`} class="block text-lg font-medium text-text-secondary hover:text-text-primary">About</a>
+        <div class="h-px bg-border-subtle"></div>
+        <a href="https://github.com/tidoemanuele/awesome-emerging" target="_blank" rel="noopener" class="block text-center py-3 rounded-[var(--radius-button)] bg-gradient-to-r from-accent-violet to-accent-cyan text-white font-semibold">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="flex-1 pt-24 pb-16">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <slot />
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-border-subtle py-8">
+    <div class="mx-auto max-w-6xl px-4 text-center text-sm text-text-muted">
+      <p>Curated with care. Signal over noise.</p>
+      <p class="mt-1">MIT License &middot; <a href="https://github.com/tidoemanuele/awesome-emerging" class="text-accent-violet hover:text-accent-cyan transition-colors">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('mobile-toggle');
+    const sheet = document.getElementById('mobile-sheet');
+    toggle?.addEventListener('click', () => {
+      sheet?.classList.toggle('translate-x-full');
+      sheet?.classList.toggle('translate-x-0');
+    });
+  </script>
+</body>
+</html>

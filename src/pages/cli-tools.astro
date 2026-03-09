@@ -1,0 +1,91 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const projects = [
+  {
+    name: "Agent-FUSE",
+    url: "https://github.com/Jakob-em/agent-fuse",
+    description: "FUSE-based virtual filesystem for AI agents — mount agent outputs as a navigable directory.",
+    discovered: "2026-01-12",
+    signal: "513 HN points",
+    signalLevel: "hot" as const,
+    tags: ["agent", "open-source"],
+  },
+  {
+    name: "claude-code-supervisor",
+    url: "https://github.com/guyskk/claude-code-supervisor",
+    description: "Auto-review supervisor for Claude Code — catches mistakes before commit.",
+    discovered: "2026-01-14",
+    signal: "50 HN points",
+    signalLevel: "early" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "Lightpanda",
+    url: "https://lightpanda.io",
+    description: "Zig-based headless browser optimized for AI agent web scraping — fast DOM implementation.",
+    discovered: "2026-01-12",
+    signal: "513 HN points",
+    signalLevel: "hot" as const,
+  },
+  {
+    name: "mcpc",
+    url: "https://github.com/apify/mcp-cli",
+    description: "Universal CLI client for Model Context Protocol servers.",
+    discovered: "2026-01-14",
+    signal: "50 HN points",
+    signalLevel: "early" as const,
+    tags: ["mcp", "open-source", "cli"],
+  },
+  {
+    name: "Nudge",
+    url: "https://github.com/attunehq/nudge",
+    description: "Guardrails enforcement layer for coding AI — stops unsafe agent actions before execution.",
+    discovered: "2026-01-14",
+    signal: "50 HN points",
+    signalLevel: "early" as const,
+    tags: ["agent", "open-source"],
+  },
+  {
+    name: "Oubli",
+    url: "https://github.com/dremok/oubli",
+    description: "Persistent fractal memory system for AI agents.",
+    discovered: "2026-01-14",
+    signal: "50 HN points",
+    signalLevel: "early" as const,
+    tags: ["memory", "open-source"],
+  },
+  {
+    name: "Seapie",
+    url: "https://github.com/hirsimaki-markus",
+    description: "Python debugger with REPL breakpoints — inject an interactive Python shell at any point during execution.",
+    discovered: "2026-01-12",
+    signal: "513 HN points",
+    signalLevel: "hot" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "yolo-cage",
+    url: "https://github.com/borenstein/yolo-cage",
+    description: "Sandboxed agent execution environment with containment controls.",
+    discovered: "2026-01-14",
+    signal: "52 HN points",
+    signalLevel: "early" as const,
+    tags: ["agent", "security", "open-source"],
+  },
+];
+---
+
+<Base title="CLI Tools" description="Command-line utilities and terminal-based tools for developer workflows and AI agent execution.">
+  <div class="flex items-center justify-between mb-8">
+    <div>
+      <h1 class="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-display)] text-gradient">CLI Tools</h1>
+      <p class="mt-2 text-text-secondary">Command-line utilities and terminal-based tools — headless browsers for agent scraping, sandboxed execution environments, debugging aids, and developer CLI utilities.</p>
+    </div>
+    <span class="text-sm font-semibold text-accent-violet">{projects.length} projects</span>
+  </div>
+  <div class="space-y-4">
+    {projects.map(p => <ProjectCard {...p} />)}
+  </div>
+</Base>

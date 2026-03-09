@@ -4,12 +4,15 @@
   "version": "1.0.0",
   "description": "A curated list of emerging open source projects that actually matter",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
-  "license": "MIT",
-  "devDependencies": {
-    "vitepress": "^1.6.3"
-  }
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.0",
+    "@tailwindcss/vite": "^4.2.1",
+    "astro": "^5.17.1",
+    "tailwindcss": "^4.2.1"
+  },
+  "license": "MIT"
 }

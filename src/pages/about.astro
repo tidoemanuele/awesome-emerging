@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="About" description="How Awesome Emerging tracks and curates emerging open source projects that actually matter.">
+  <h1 class="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-display)] text-gradient mb-8">About</h1>
+
+  <div class="space-y-8 text-text-secondary leading-relaxed">
+    <section class="glass rounded-[var(--radius-card)] p-6">
+      <h2 class="text-xl font-bold font-[family-name:var(--font-display)] text-text-primary mb-3">Mission</h2>
+      <p>Track and curate <strong class="text-text-primary">emerging open source projects that actually matter</strong> — the ones gaining real traction in developer communities, not just the ones with the best marketing.</p>
+    </section>
+
+    <section class="glass rounded-[var(--radius-card)] p-6">
+      <h2 class="text-xl font-bold font-[family-name:var(--font-display)] text-text-primary mb-3">Why This Exists</h2>
+      <p>There are thousands of awesome lists on GitHub. Most are static catalogs: someone adds a project, it sits there forever, and there's no signal about whether it matters or not.</p>
+      <ul class="mt-4 space-y-2">
+        <li class="flex items-start gap-2"><span class="text-accent-violet mt-0.5">&#9679;</span><span><strong class="text-text-primary">Momentum-tracked</strong> — every entry includes the community signal at time of discovery</span></li>
+        <li class="flex items-start gap-2"><span class="text-accent-violet mt-0.5">&#9679;</span><span><strong class="text-text-primary">Time-stamped</strong> — see when a project started gaining attention</span></li>
+        <li class="flex items-start gap-2"><span class="text-accent-violet mt-0.5">&#9679;</span><span><strong class="text-text-primary">Signal-filtered</strong> — projects earn their spot through demonstrated community interest</span></li>
+        <li class="flex items-start gap-2"><span class="text-accent-violet mt-0.5">&#9679;</span><span><strong class="text-text-primary">Actively curated</strong> — sourced from daily research across HackerNews and GitHub trending</span></li>
+      </ul>
+    </section>
+
+    <section class="glass rounded-[var(--radius-card)] p-6">
+      <h2 class="text-xl font-bold font-[family-name:var(--font-display)] text-text-primary mb-3">Methodology</h2>
+      <p class="mb-3">Projects are discovered through daily research monitoring:</p>
+      <ol class="space-y-2 list-decimal list-inside">
+        <li><strong class="text-text-primary">HackerNews</strong> — trending posts, Show HN launches, high-signal discussions</li>
+        <li><strong class="text-text-primary">GitHub Trending</strong> — star velocity across languages and timeframes</li>
+        <li><strong class="text-text-primary">Developer communities</strong> — Reddit, Discord, Twitter/X, specialized forums</li>
+      </ol>
+    </section>
+
+    <section class="glass rounded-[var(--radius-card)] p-6">
+      <h2 class="text-xl font-bold font-[family-name:var(--font-display)] text-text-primary mb-3">Contributing</h2>
+      <p>Want to submit a project? <a href="https://github.com/tidoemanuele/awesome-emerging" class="text-accent-violet hover:text-accent-cyan transition-colors underline underline-offset-2">Open an issue or PR on GitHub</a>.</p>
+      <p class="mt-2">Include: project URL, why it's emerging, any metrics (HN points, stars), and which category fits best.</p>
+    </section>
+  </div>
+</Base>

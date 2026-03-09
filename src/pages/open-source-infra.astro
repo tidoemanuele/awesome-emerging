@@ -1,0 +1,105 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const projects = [
+  {
+    name: "Antirender",
+    url: "https://antirender.com/",
+    description: "Alternative rendering engine for web apps — radically different layout approach.",
+    discovered: "2026-01-31",
+    signal: "1,278 HN points",
+    signalLevel: "hot" as const,
+  },
+  {
+    name: "Fluid",
+    url: "https://www.fluid.sh/",
+    description: "Collaborative development environment with real-time multiplayer coding.",
+    discovered: "2026-02-05",
+    signal: "212 HN points",
+    signalLevel: "rising" as const,
+  },
+  {
+    name: "MCP Extensions Registry",
+    url: "https://github.com/modelcontextprotocol/ext-apps",
+    description: "Official MCP extensions and app integrations registry by Anthropic.",
+    discovered: "2026-01-31",
+    signal: "⭐ 1,093 stars",
+    signalLevel: "rising" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "Moltbook",
+    url: "https://moltbook.com/",
+    description: "Collaborative coding notebook with AI integration — viral on HN (1,477 points).",
+    discovered: "2026-01-31",
+    signal: "1,477 HN points",
+    signalLevel: "hot" as const,
+    tags: ["agent"],
+  },
+  {
+    name: "nanoclaw",
+    url: "https://github.com/gavrielc/nanoclaw",
+    description: "Lightweight local AI assistant CLI with minimal dependencies.",
+    discovered: "2026-02-02",
+    signal: "117 HN points",
+    signalLevel: "rising" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "NetBird",
+    url: "https://netbird.io/",
+    description: "Open-source WireGuard-based mesh VPN for zero-trust peer-to-peer networking.",
+    discovered: "2026-02-02",
+    signal: "636 HN points",
+    signalLevel: "hot" as const,
+  },
+  {
+    name: "openclaw",
+    url: "https://github.com/openclaw/openclaw",
+    description: "Open-source macOS AI assistant — community alternative to Apple Intelligence.",
+    discovered: "2026-01-31",
+    signal: "Early / untracked",
+    signalLevel: "early" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "PageIndex",
+    url: "https://github.com/VectifyAI/PageIndex",
+    description: "AI-powered web page indexing and search — 12,483 GitHub stars.",
+    discovered: "2026-02-03",
+    signal: "⭐ 12,483 stars",
+    signalLevel: "hot" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "PeerWeb",
+    url: "https://peerweb.lol/",
+    description: "Peer-to-peer web hosting experiment — serve websites directly from your browser.",
+    discovered: "2026-01-31",
+    signal: "263 HN points",
+    signalLevel: "rising" as const,
+  },
+  {
+    name: "Skip",
+    url: "https://skip.dev/blog/skip-is-free/",
+    description: "Reactive cross-platform framework for iOS/Android from Swift — now free and open-source.",
+    discovered: "2026-01-22",
+    signal: "Early / untracked",
+    signalLevel: "early" as const,
+  },
+];
+---
+
+<Base title="Open Source Infrastructure" description="Open-source infrastructure projects, networking tools, alternative platforms, and foundational software with significant community traction.">
+  <div class="flex items-center justify-between mb-8">
+    <div>
+      <h1 class="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-display)] text-gradient">Open Source Infrastructure</h1>
+      <p class="mt-2 text-text-secondary">Open-source infrastructure projects, networking tools, alternative platforms, and foundational software with significant community traction.</p>
+    </div>
+    <span class="text-sm font-semibold text-accent-violet">{projects.length} projects</span>
+  </div>
+  <div class="space-y-4">
+    {projects.map(p => <ProjectCard {...p} />)}
+  </div>
+</Base>

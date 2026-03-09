@@ -1,0 +1,116 @@
+---
+import Base from '../layouts/Base.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Base title="Home" description="A curated list of emerging open source projects that actually matter — signal-filtered, momentum-tracked, community-curated.">
+  <!-- Hero -->
+  <section class="aurora-bg -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-20 rounded-b-3xl mb-12">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-[family-name:var(--font-display)] leading-tight">
+        <span class="text-gradient">Awesome Emerging</span>
+      </h1>
+      <p class="mt-4 text-lg sm:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">
+        Open source projects that actually matter. Signal-filtered, momentum-tracked, community-curated.
+      </p>
+      <p class="mt-2 text-sm text-text-muted">Not another static list.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href={`${base}ai-agents/`} class="px-6 py-2.5 text-sm font-semibold rounded-[var(--radius-button)] bg-gradient-to-r from-accent-violet to-accent-cyan text-white hover:opacity-90 transition-all hover:scale-[1.02] active:scale-[0.98]">
+          Browse Projects
+        </a>
+        <a href={`${base}about/`} class="px-6 py-2.5 text-sm font-semibold rounded-[var(--radius-button)] glass text-text-primary hover:bg-white/10 transition-all">
+          About This Project
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section>
+    <h2 class="text-2xl font-bold font-[family-name:var(--font-display)] text-text-primary mb-6">Categories</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <CategoryCard
+        title="AI Agents & Frameworks"
+        description="Multi-agent systems, MCP servers, LLM infrastructure, orchestration platforms"
+        count={49}
+        href={`${base}ai-agents/`}
+        icon="🤖"
+      />
+      <CategoryCard
+        title="CLI Tools"
+        description="Headless browsers, sandboxed execution, debugging aids, terminal utilities"
+        count={8}
+        href={`${base}cli-tools/`}
+        icon="💻"
+      />
+      <CategoryCard
+        title="Developer Tools"
+        description="Package managers, AI code assistants, build systems, runtime managers"
+        count={18}
+        href={`${base}developer-tools/`}
+        icon="🛠️"
+      />
+      <CategoryCard
+        title="Open Source Infrastructure"
+        description="Networking, alternative platforms, foundational software with real traction"
+        count={10}
+        href={`${base}open-source-infra/`}
+        icon="🌐"
+      />
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="mt-16">
+    <h2 class="text-2xl font-bold font-[family-name:var(--font-display)] text-text-primary mb-6">What Makes This Different</h2>
+    <div class="glass rounded-[var(--radius-card)] p-6">
+      <p class="text-text-secondary leading-relaxed">
+        Most awesome lists are <strong class="text-text-primary">static catalogs</strong> — they list projects that exist. This one tracks projects that are <strong class="text-gradient">gaining real momentum</strong>.
+      </p>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="text-center">
+          <div class="text-2xl mb-2">📅</div>
+          <h3 class="text-sm font-semibold text-text-primary">Discovery Date</h3>
+          <p class="text-xs text-text-muted mt-1">When we first spotted it trending</p>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl mb-2">📊</div>
+          <h3 class="text-sm font-semibold text-text-primary">Momentum Signal</h3>
+          <p class="text-xs text-text-muted mt-1">HN points, GitHub stars at discovery</p>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl mb-2">🎯</div>
+          <h3 class="text-sm font-semibold text-text-primary">Signal Rating</h3>
+          <p class="text-xs text-text-muted mt-1">🔥 Hot / ⚡ Rising / 🌱 Early</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signal Legend -->
+  <section class="mt-12 mb-8">
+    <div class="glass rounded-[var(--radius-card)] p-6">
+      <h3 class="text-lg font-bold font-[family-name:var(--font-display)] text-text-primary mb-4">Signal Legend</h3>
+      <div class="space-y-3">
+        <div class="flex items-center gap-3">
+          <span class="px-2.5 py-1 text-xs font-semibold rounded-full border border-signal-hot/30 bg-signal-hot/10 text-signal-hot">🔥 Hot</span>
+          <span class="text-sm text-text-secondary">&gt;500 HN points or &gt;10k GitHub stars</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="px-2.5 py-1 text-xs font-semibold rounded-full border border-signal-rising/30 bg-signal-rising/10 text-signal-rising">⚡ Rising</span>
+          <span class="text-sm text-text-secondary">&gt;100 HN points or &gt;1k GitHub stars</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="px-2.5 py-1 text-xs font-semibold rounded-full border border-border-default bg-surface-raised text-text-muted">🌱 Early</span>
+          <span class="text-sm text-text-secondary">Promising but nascent</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <p class="text-center text-xs text-text-muted">
+    Curated from daily open source research since December 2025. <strong class="text-text-secondary">85 projects</strong> and growing.
+  </p>
+</Base>
