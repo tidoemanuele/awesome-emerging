@@ -1,0 +1,740 @@
+# Awesome Emerging — LLM-Ready Catalog
+
+> A curated list of emerging open source projects that actually matter.
+> Signal-filtered, momentum-tracked, community-curated.
+
+**Last updated**: 2026-03-09
+**Website**: https://tidoemanuele.github.io/awesome-emerging/
+**GitHub**: https://github.com/tidoemanuele/awesome-emerging
+
+---
+
+## Signal Legend
+
+| Rating | Meaning | Threshold |
+|--------|---------|----------|
+| 🔥 Hot | Massive community attention | >500 HN points or >10k GitHub stars |
+| ⚡ Rising | Clear upward trajectory | >100 HN points or >1k GitHub stars |
+| 🌱 Early | Promising but nascent | Growing interest |
+
+---
+
+## AI Agents & Frameworks
+
+Frameworks, tools, and infrastructure for building, deploying, and orchestrating AI agents.
+
+**51 projects**
+
+### 🌱 [1Code](https://github.com/21st-dev/1code)
+
+AI-powered code generation tool by 21st.dev.
+
+- **Discovered**: 2026-01-16
+- **Signal**: 🌱 39 HN points
+- **Tags**: `open-source`
+
+### 🔥 [Agent Lightning](https://github.com/microsoft/agent-lightning)
+
+Microsoft's high-velocity agent framework — 12,951 GitHub stars.
+
+- **Discovered**: 2026-02-02
+- **Signal**: 🔥 ⭐ 12,951 stars
+- **Tags**: `agent` `open-source`
+
+### ⚡ [AgentMail](https://news.ycombinator.com/item?id=46812608)
+
+Email API for AI agents — YC S25 launch with 106 HN points.
+
+- **Discovered**: 2026-01-30
+- **Signal**: ⚡ 106 HN points
+- **Tags**: `agent`
+
+### 🌱 [AgentServe](https://github.com/PropsAI/agentserve)
+
+Deploy AI agents as REST APIs with auto-scaling infrastructure.
+
+- **Discovered**: 2025-12-27
+- **Signal**: 🌱 9 HN points
+- **Tags**: `agent` `open-source`
+
+### 🌱 [Akshen](https://akshen.com/)
+
+Community-driven repository of verified, tested AI prompts.
+
+- **Discovered**: 2026-01-26
+- **Signal**: 🌱 Early / untracked
+
+### 🌱 [APA AI Protocol](https://www.apaaiprotocol.org)
+
+Standard protocol for agent-to-agent communication and interoperability.
+
+- **Discovered**: 2025-12-27
+- **Signal**: 🌱 Early / untracked
+
+### 🌱 [AutoGen](https://github.com/microsoft/autogen)
+
+Microsoft's multi-agent conversation framework for complex AI workflows.
+
+- **Discovered**: 2025-12-29
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🌱 [ChartGPU](https://github.com/ChartGPU/ChartGPU)
+
+GPU-accelerated charting library for real-time high-performance data visualization.
+
+- **Discovered**: 2026-01-22
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🌱 [claude-code-orchestrator](https://github.com/mohsen1/claude-code-orchestrator)
+
+Tmux + credit rotation wrapper for running multiple Claude Code sessions.
+
+- **Discovered**: 2026-01-25
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🌱 [claude-flow](https://github.com/ruvnet/claude-flow)
+
+External orchestration layer for Claude Code — model-agnostic multi-agent coordination.
+
+- **Discovered**: 2026-01-25
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🔥 [claude-mem](https://github.com/thedotmack/claude-mem)
+
+Persistent memory layer for Claude — 18,077 stars, viral adoption.
+
+- **Discovered**: 2026-02-02
+- **Signal**: 🔥 ⭐ 18,077 stars
+- **Tags**: `open-source`
+
+### ⚡ [claude-sneakpeek](https://github.com/mikekelly/claude-sneakpeek)
+
+Inspect Claude's internal reasoning and tool calls before they execute.
+
+- **Discovered**: 2026-01-25
+- **Signal**: ⚡ 287 HN points
+- **Tags**: `open-source`
+
+### 🌱 [claude-subconscious](https://github.com/letta-ai/claude-subconscious)
+
+Persistent subconscious memory layer for Claude agents using Letta.
+
+- **Discovered**: 2026-01-27
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### ⚡ [Clawdbot](https://github.com/clawdbot/clawdbot)
+
+Open-source personal AI assistant built on Claude API with local memory.
+
+- **Discovered**: 2026-01-26
+- **Signal**: ⚡ 233 HN points
+- **Tags**: `open-source`
+
+### 🌱 [Context7 MCP](https://mcp.context7.com/mcp)
+
+MCP server providing up-to-date library documentation for AI coding agents.
+
+- **Discovered**: 2026-01-31
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `mcp`
+
+### 🌱 [CrewAI](https://github.com/joaomdmoura/crewAI)
+
+Role-based multi-agent framework where AI agents collaborate like a specialized crew.
+
+- **Discovered**: 2025-12-29
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🌱 [CUA Computer](https://github.com/trycua/computer)
+
+Computer-use agent framework — let AI agents control desktop GUIs.
+
+- **Discovered**: 2025-12-27
+- **Signal**: 🌱 11 HN points
+- **Tags**: `open-source`
+
+### 🌱 [fastrender](https://github.com/wilsonzlin/fastrender)
+
+High-performance rendering library generated with AI assistance (1M+ lines of code).
+
+- **Discovered**: 2026-01-16
+- **Signal**: 🌱 68 HN points
+- **Tags**: `open-source`
+
+### 🌱 [get-shit-done](https://github.com/glittercowboy/get-shit-done)
+
+Simple task management overlay for Claude Code workflows.
+
+- **Discovered**: 2026-01-25
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### ⚡ [HumanLayer](https://www.humanlayer.dev)
+
+Human-in-the-loop controls for AI agents — require human approval before sensitive actions.
+
+- **Discovered**: 2025-12-27
+- **Signal**: ⚡ 354 HN points
+
+### ⚡ [Kimi CLI](https://github.com/moonshotai/kimi-cli)
+
+Command-line interface for Moonshot AI's Kimi LLM models.
+
+- **Discovered**: 2026-01-31
+- **Signal**: ⚡ 304 HN points
+- **Tags**: `agent` `open-source`
+
+### 🌱 [LangChain](https://github.com/langchain-ai/langchain)
+
+Popular framework for building LLM-powered applications and agent chains.
+
+- **Discovered**: 2025-12-29
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### ⚡ [LiveKit Agents](https://github.com/livekit/agents)
+
+Real-time AI agent framework — build voice/video agents with LLMs.
+
+- **Discovered**: 2025-12-27
+- **Signal**: ⚡ 266 HN points
+- **Tags**: `agent` `open-source`
+
+### 🌱 [LLMTest Needle-in-Haystack](https://github.com/gkamradt/LLMTest_NeedleInAHaystack)
+
+Benchmark for LLM long-context retrieval — find a fact in a large document.
+
+- **Discovered**: 2026-02-02
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🌱 [Maestro](https://github.com/pedramamini/Maestro)
+
+AI orchestration framework for complex multi-step agent tasks.
+
+- **Discovered**: 2026-02-02
+- **Signal**: 🌱 ⭐ 956 stars
+- **Tags**: `open-source`
+
+### ⚡ [Mastra](https://github.com/mastra-ai/mastra)
+
+TypeScript AI agent framework — workflows, memory, tool integrations, and evals.
+
+- **Discovered**: 2026-01-21
+- **Signal**: ⚡ 208 HN points
+- **Tags**: `open-source`
+
+### 🌱 [mcp-agent-mail](https://github.com/Dicklesworthstone/mcp_agent_mail)
+
+MCP server for email — let AI agents send and read emails programmatically.
+
+- **Discovered**: 2026-01-25
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `mcp` `agent` `open-source`
+
+### ⚡ [memU](https://github.com/NevaMind-AI/memU)
+
+Unified multi-tier memory architecture for persistent AI agent context.
+
+- **Discovered**: 2026-01-31
+- **Signal**: ⚡ ⭐ 6,614 stars
+- **Tags**: `open-source`
+
+### 🔥 [Model Context Protocol](https://modelcontextprotocol.info/blog/mcp-next-version-update/)
+
+Open standard connecting AI models to tools and data sources — protocol spec update.
+
+- **Discovered**: 2025-12-27
+- **Signal**: 🔥 967 HN points
+- **Tags**: `mcp`
+
+### ⚡ [Moltworker](https://blog.cloudflare.com/moltworker-self-hosted-ai-agent/)
+
+Cloudflare self-hosted AI agent running on Cloudflare Workers.
+
+- **Discovered**: 2026-01-30
+- **Signal**: ⚡ 137 HN points
+
+### 🌱 [Moss Computing](https://mosscomputing.com)
+
+AI infrastructure platform for running agent workloads at scale.
+
+- **Discovered**: 2025-12-27
+- **Signal**: 🌱 Early / untracked
+
+### 🌱 [murl](https://github.com/turlockmike/murl)
+
+MCP URL toolkit — fetch and parse web content for AI agent context.
+
+- **Discovered**: 2026-01-23
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🌱 [nono.sh](https://github.com/nono-sh/nono)
+
+Community response to Moltbook crisis — alternative collaborative coding notebook.
+
+- **Discovered**: 2026-02-03
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🌱 [Oban for Python](https://oban.pro/python)
+
+Robust background job processing with queue management, now for Python.
+
+- **Discovered**: 2026-01-29
+- **Signal**: 🌱 Early / untracked
+
+### 🌱 [Ollama](https://ollama.ai)
+
+Run large language models locally with a simple CLI — Llama, Mistral, and more.
+
+- **Discovered**: 2026-01-16
+- **Signal**: 🌱 Early / untracked
+
+### 🌱 [OpenCode](https://opencode.ai)
+
+Open-source AI coding agent with a polished terminal interface.
+
+- **Discovered**: 2026-01-13
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `agent` `open-source`
+
+### 🌱 [Pica OS](https://www.picaos.com)
+
+Agentic infrastructure platform — connect AI agents to 100+ APIs without integration code.
+
+- **Discovered**: 2025-12-27
+- **Signal**: 🌱 63 HN points
+
+### 🔥 [Pilot](https://github.com/clementrog)
+
+Shared memory coordination for parallel AI coding agents with evidence-based commits.
+
+- **Discovered**: 2026-01-12
+- **Signal**: 🔥 513 HN points
+- **Tags**: `memory` `open-source`
+
+### 🌱 [Plandex](https://github.com/plandex-ai/plandex)
+
+AI coding agent for large codebases — long-running multi-file tasks in the terminal.
+
+- **Discovered**: 2025-12-27
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### ⚡ [recall.js](https://www.npmjs.com/package/@joseairosa/recall)
+
+Persistent memory store for Node.js AI agents.
+
+- **Discovered**: 2025-12-27
+- **Signal**: ⚡ 171 HN points
+
+### 🌱 [review-prompts](https://github.com/masoncl/review-prompts)
+
+Curated prompt library for AI-assisted code review workflows.
+
+- **Discovered**: 2026-01-27
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### ⚡ [Rowboat](https://github.com/rowboatlabs/rowboat)
+
+Multi-agent builder with OpenAI tools — visual workflow editor for agent pipelines.
+
+- **Discovered**: 2025-12-27
+- **Signal**: ⚡ 161 HN points
+- **Tags**: `open-source`
+
+### 🌱 [RunAgent](https://github.com/runagent-dev/runagent)
+
+Framework for deploying AI agents as production services.
+
+- **Discovered**: 2025-12-27
+- **Signal**: 🌱 6 HN points
+- **Tags**: `agent` `open-source`
+
+### 🌱 [Sandbox Runtime](https://github.com/anthropic-experimental/sandbox-runtime)
+
+Anthropic's open-source sandbox runtime for safe agent code execution.
+
+- **Discovered**: 2026-01-13
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `security` `open-source`
+
+### 🌱 [Sherlock](https://github.com/jmuncor/sherlock)
+
+MitM proxy to inspect what your LLM tools are sending to the API.
+
+- **Discovered**: 2026-01-29
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🌱 [specflow-cc](https://github.com/ivkan/specflow-cc)
+
+SpecFlow integration for Claude Code — BDD test automation with AI.
+
+- **Discovered**: 2026-01-27
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🌱 [Swarm](https://github.com/openai/swarm)
+
+OpenAI's experimental lightweight multi-agent orchestration framework.
+
+- **Discovered**: 2026-01-25
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🔥 [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks)
+
+Collection of leaked system prompts from major AI assistants.
+
+- **Discovered**: 2026-01-31
+- **Signal**: 🔥 ⭐ 28,826 stars
+- **Tags**: `open-source`
+
+### 🌱 [TimeCapsuleLLM](https://github.com/haykgrigo3/TimeCapsuleLLM)
+
+Train LLMs with historical constraints to study knowledge cutoff effects.
+
+- **Discovered**: 2026-01-13
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🌱 [Valknut](https://github.com/sibyllinesoft/valknut)
+
+AI-assisted development environment with intelligent code analysis.
+
+- **Discovered**: 2026-01-25
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🌱 [Velox](https://github.com/velox-apps/velox)
+
+Rapid application development framework with AI-assisted code generation.
+
+- **Discovered**: 2026-01-27
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+---
+
+## CLI Tools
+
+Command-line utilities, headless browsers, sandboxed execution, and terminal tools.
+
+**8 projects**
+
+### 🔥 [Agent-FUSE](https://github.com/Jakob-em/agent-fuse)
+
+FUSE-based virtual filesystem for AI agents — mount agent outputs as a navigable directory.
+
+- **Discovered**: 2026-01-12
+- **Signal**: 🔥 513 HN points
+- **Tags**: `agent` `open-source`
+
+### 🌱 [claude-code-supervisor](https://github.com/guyskk/claude-code-supervisor)
+
+Auto-review supervisor for Claude Code — catches mistakes before commit.
+
+- **Discovered**: 2026-01-14
+- **Signal**: 🌱 50 HN points
+- **Tags**: `open-source`
+
+### 🔥 [Lightpanda](https://lightpanda.io)
+
+Zig-based headless browser optimized for AI agent web scraping — fast DOM implementation.
+
+- **Discovered**: 2026-01-12
+- **Signal**: 🔥 513 HN points
+
+### 🌱 [mcpc](https://github.com/apify/mcp-cli)
+
+Universal CLI client for Model Context Protocol servers.
+
+- **Discovered**: 2026-01-14
+- **Signal**: 🌱 50 HN points
+- **Tags**: `mcp` `open-source` `cli`
+
+### 🌱 [Nudge](https://github.com/attunehq/nudge)
+
+Guardrails enforcement layer for coding AI — stops unsafe agent actions before execution.
+
+- **Discovered**: 2026-01-14
+- **Signal**: 🌱 50 HN points
+- **Tags**: `agent` `open-source`
+
+### 🌱 [Oubli](https://github.com/dremok/oubli)
+
+Persistent fractal memory system for AI agents.
+
+- **Discovered**: 2026-01-14
+- **Signal**: 🌱 50 HN points
+- **Tags**: `memory` `open-source`
+
+### 🔥 [Seapie](https://github.com/hirsimaki-markus)
+
+Python debugger with REPL breakpoints — inject an interactive Python shell at any point during execution.
+
+- **Discovered**: 2026-01-12
+- **Signal**: 🔥 513 HN points
+- **Tags**: `open-source`
+
+### 🌱 [yolo-cage](https://github.com/borenstein/yolo-cage)
+
+Sandboxed agent execution environment with containment controls.
+
+- **Discovered**: 2026-01-14
+- **Signal**: 🌱 52 HN points
+- **Tags**: `agent` `security` `open-source`
+
+---
+
+## Developer Tools
+
+Package managers, AI code assistants, build systems, runtime managers, and dev workflow tools.
+
+**18 projects**
+
+### 🌱 [Aider](https://github.com/paul-gauthier/aider)
+
+AI pair programmer in your terminal — edit code across files with GPT/Claude.
+
+- **Discovered**: 2025-12-29
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🌱 [Aviator Runbooks](https://www.aviator.co/runbooks)
+
+Automated engineering runbooks with CI/CD integration for incident response.
+
+- **Discovered**: 2025-12-27
+- **Signal**: 🌱 Early / untracked
+
+### ⚡ [blender-mcp](https://blender-mcp-psi.vercel.app/)
+
+MCP server for Blender — let AI control Blender 3D scenes via natural language.
+
+- **Discovered**: 2025-12-27
+- **Signal**: ⚡ 151 HN points
+- **Tags**: `mcp`
+
+### 🌱 [Continue](https://github.com/continue-dev/continue)
+
+Open-source AI code assistant — IDE plugin that connects to any LLM.
+
+- **Discovered**: 2025-12-29
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🌱 [denobox](https://github.com/simonw/denobox)
+
+JavaScript sandbox via Deno subprocess — safely execute untrusted AI-generated code.
+
+- **Discovered**: 2026-01-26
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `security` `open-source`
+
+### 🌱 [ggc](https://github.com/bmf-san/ggc)
+
+Go GitHub CLI helper for common git/GitHub workflows.
+
+- **Discovered**: 2025-12-27
+- **Signal**: 🌱 65 HN points · ⭐ 259 stars
+- **Tags**: `open-source`
+
+### 🔥 [iCloud Photos Downloader](https://github.com/icloud-photos-downloader)
+
+CLI tool to download your entire iCloud Photo Library to local storage.
+
+- **Discovered**: 2026-01-12
+- **Signal**: 🔥 513 HN points
+- **Tags**: `open-source`
+
+### ⚡ [Infisical](https://github.com/Infisical/infisical)
+
+Open-source secret management platform — sync secrets across environments and teams.
+
+- **Discovered**: 2025-12-27
+- **Signal**: ⚡ 131 HN points
+- **Tags**: `open-source`
+
+### 🔥 [just](https://github.com/casey/just)
+
+Modern command runner — a cleaner Makefile alternative.
+
+- **Discovered**: 2025-12-27
+- **Signal**: 🔥 652 HN points
+- **Tags**: `open-source`
+
+### 🌱 [Logseq](https://github.com/logseq/logseq)
+
+Local-first knowledge management and outliner with a bidirectional graph view.
+
+- **Discovered**: 2025-12-29
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### ⚡ [mise](https://github.com/jdx/mise)
+
+Polyglot runtime version manager — replaces nvm, rbenv, pyenv, and more.
+
+- **Discovered**: 2025-12-27
+- **Signal**: ⚡ 141 HN points
+- **Tags**: `open-source`
+
+### ⚡ [moon](https://moonrepo.dev)
+
+Monorepo build system and task runner for polyglot codebases.
+
+- **Discovered**: 2025-12-27
+- **Signal**: ⚡ 200 HN points
+
+### 🌱 [Mousefood](https://github.com/junkofuruto/mousefood)
+
+Library for embedding interactive terminal UI components in Python applications.
+
+- **Discovered**: 2026-01-29
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source` `cli`
+
+### ⚡ [mrge](https://mrge.io)
+
+AI-powered code review tool with PR analysis and diff intelligence.
+
+- **Discovered**: 2025-12-27
+- **Signal**: ⚡ 221 HN points
+
+### 🌱 [OpenHands](https://github.com/allenai/open-hands)
+
+Open-source autonomous software engineering agent (community alternative to Devin).
+
+- **Discovered**: 2025-12-29
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### ⚡ [pg-mcp](https://github.com/stuzero/pg-mcp)
+
+PostgreSQL MCP server — query and manage Postgres databases via Model Context Protocol.
+
+- **Discovered**: 2025-12-27
+- **Signal**: ⚡ 167 HN points
+- **Tags**: `mcp` `open-source`
+
+### 🌱 [sentry-mcp-rs](https://github.com/utapyngo/sentry-mcp-rs)
+
+Rust-based MCP server for Sentry — 10x less RAM than the Node.js equivalent.
+
+- **Discovered**: 2026-01-26
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `mcp` `open-source` `rust`
+
+### 🔥 [uv](https://github.com/astral-sh/uv)
+
+Blazing-fast Python package and project manager in Rust — replaces pip, venv, and pyenv.
+
+- **Discovered**: 2025-12-27
+- **Signal**: 🔥 967 HN points
+- **Tags**: `open-source`
+
+---
+
+## Open Source Infrastructure
+
+Networking, alternative platforms, and foundational open source software.
+
+**10 projects**
+
+### 🔥 [Antirender](https://antirender.com/)
+
+Alternative rendering engine for web apps — radically different layout approach.
+
+- **Discovered**: 2026-01-31
+- **Signal**: 🔥 1,278 HN points
+
+### ⚡ [Fluid](https://www.fluid.sh/)
+
+Collaborative development environment with real-time multiplayer coding.
+
+- **Discovered**: 2026-02-05
+- **Signal**: ⚡ 212 HN points
+
+### ⚡ [MCP Extensions Registry](https://github.com/modelcontextprotocol/ext-apps)
+
+Official MCP extensions and app integrations registry by Anthropic.
+
+- **Discovered**: 2026-01-31
+- **Signal**: ⚡ ⭐ 1,093 stars
+- **Tags**: `open-source`
+
+### 🔥 [Moltbook](https://moltbook.com/)
+
+Collaborative coding notebook with AI integration — viral on HN (1,477 points).
+
+- **Discovered**: 2026-01-31
+- **Signal**: 🔥 1,477 HN points
+- **Tags**: `agent`
+
+### ⚡ [nanoclaw](https://github.com/gavrielc/nanoclaw)
+
+Lightweight local AI assistant CLI with minimal dependencies.
+
+- **Discovered**: 2026-02-02
+- **Signal**: ⚡ 117 HN points
+- **Tags**: `open-source`
+
+### 🔥 [NetBird](https://netbird.io/)
+
+Open-source WireGuard-based mesh VPN for zero-trust peer-to-peer networking.
+
+- **Discovered**: 2026-02-02
+- **Signal**: 🔥 636 HN points
+
+### 🌱 [openclaw](https://github.com/openclaw/openclaw)
+
+Open-source macOS AI assistant — community alternative to Apple Intelligence.
+
+- **Discovered**: 2026-01-31
+- **Signal**: 🌱 Early / untracked
+- **Tags**: `open-source`
+
+### 🔥 [PageIndex](https://github.com/VectifyAI/PageIndex)
+
+AI-powered web page indexing and search — 12,483 GitHub stars.
+
+- **Discovered**: 2026-02-03
+- **Signal**: 🔥 ⭐ 12,483 stars
+- **Tags**: `open-source`
+
+### ⚡ [PeerWeb](https://peerweb.lol/)
+
+Peer-to-peer web hosting experiment — serve websites directly from your browser.
+
+- **Discovered**: 2026-01-31
+- **Signal**: ⚡ 263 HN points
+
+### 🌱 [Skip](https://skip.dev/blog/skip-is-free/)
+
+Reactive cross-platform framework for iOS/Android from Swift — now free and open-source.
+
+- **Discovered**: 2026-01-22
+- **Signal**: 🌱 Early / untracked
+
+---
+
+## Summary
+
+**Total projects**: 87
+**Categories**: 4
+**Updated**: 2026-03-09
+
+---
+
+*This file is auto-generated from the Awesome Emerging catalog. Fetch it at: `https://tidoemanuele.github.io/awesome-emerging/llms.txt`*
