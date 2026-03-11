@@ -4,6 +4,15 @@ import ProjectCard from '../components/ProjectCard.astro';
 
 const projects = [
   {
+    name: "audiowmark",
+    url: "https://github.com/swesterfeld/audiowmark",
+    description: "Audio watermarking CLI — embed invisible watermarks in audio that survive format conversion, compression, and speed changes. Key tool for AI-generated content provenance.",
+    discovered: "2026-03-11",
+    signal: "Lobsters discussion",
+    signalLevel: "early" as const,
+    tags: ["open-source", "cli"],
+  },
+  {
     name: "Agent-FUSE",
     url: "https://github.com/Jakob-em/agent-fuse",
     description: "FUSE-based virtual filesystem for AI agents — mount agent outputs as a navigable directory.",
@@ -20,6 +29,14 @@ const projects = [
     signal: "50 HN points",
     signalLevel: "early" as const,
     tags: ["open-source"],
+  },
+  {
+    name: "Ghostty",
+    url: "https://ghostty.org",
+    description: "GPU-accelerated terminal emulator by Mitchell Hashimoto — 1.3.0 release strengthens the terminal-as-creative-surface for AI agent workflows.",
+    discovered: "2026-03-10",
+    signal: "32 Lobsters comments",
+    signalLevel: "rising" as const,
   },
   {
     name: "Lightpanda",
