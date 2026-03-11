@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import FilterBar from '../components/FilterBar.astro';
 
 const projects = [
   {
@@ -91,7 +92,7 @@ const projects = [
     signalLevel: "early" as const,
     tags: ["agent", "security", "open-source"],
   },
-];
+].sort((a, b) => b.discovered.localeCompare(a.discovered));
 ---
 
 <Base title="CLI Tools" description="Command-line utilities and terminal-based tools for developer workflows and AI agent execution.">
@@ -102,6 +103,7 @@ const projects = [
     </div>
     <span class="text-sm font-semibold text-accent-violet">{projects.length} projects</span>
   </div>
+  <FilterBar />
   <div class="space-y-4">
     {projects.map(p => <ProjectCard {...p} />)}
   </div>

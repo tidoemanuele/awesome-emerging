@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import FilterBar from '../components/FilterBar.astro';
 
 const projects = [
   {
@@ -97,7 +98,7 @@ const projects = [
     signal: "Early / untracked",
     signalLevel: "early" as const,
   },
-];
+].sort((a, b) => b.discovered.localeCompare(a.discovered));
 ---
 
 <Base title="Open Source Infrastructure" description="Open-source infrastructure projects, networking tools, alternative platforms, and foundational software with significant community traction.">
@@ -108,6 +109,7 @@ const projects = [
     </div>
     <span class="text-sm font-semibold text-accent-violet">{projects.length} projects</span>
   </div>
+  <FilterBar />
   <div class="space-y-4">
     {projects.map(p => <ProjectCard {...p} />)}
   </div>

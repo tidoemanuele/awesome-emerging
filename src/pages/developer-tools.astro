@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import FilterBar from '../components/FilterBar.astro';
 
 const projects = [
   {
@@ -22,7 +23,7 @@ const projects = [
   },
   {
     name: "blender-mcp",
-    url: "https://blender-mcp-psi.vercel.app/",
+    url: "https://github.com/ahujasid/blender-mcp",
     description: "MCP server for Blender — let AI control Blender 3D scenes via natural language.",
     discovered: "2025-12-27",
     signal: "151 HN points",
@@ -31,7 +32,7 @@ const projects = [
   },
   {
     name: "Continue",
-    url: "https://github.com/continue-dev/continue",
+    url: "https://github.com/continuedev/continue",
     description: "Open-source AI code assistant — IDE plugin that connects to any LLM.",
     discovered: "2025-12-29",
     signal: "Early / untracked",
@@ -136,15 +137,6 @@ const projects = [
     signalLevel: "rising" as const,
   },
   {
-    name: "Mousefood",
-    url: "https://github.com/junkofuruto/mousefood",
-    description: "Library for embedding interactive terminal UI components in Python applications.",
-    discovered: "2026-01-29",
-    signal: "Early / untracked",
-    signalLevel: "early" as const,
-    tags: ["open-source", "cli"],
-  },
-  {
     name: "mrge",
     url: "https://mrge.io",
     description: "AI-powered code review tool with PR analysis and diff intelligence.",
@@ -163,7 +155,7 @@ const projects = [
   },
   {
     name: "OpenHands",
-    url: "https://github.com/allenai/open-hands",
+    url: "https://github.com/All-Hands-AI/OpenHands",
     description: "Open-source autonomous software engineering agent (community alternative to Devin).",
     discovered: "2025-12-29",
     signal: "Early / untracked",
@@ -197,7 +189,7 @@ const projects = [
     signalLevel: "hot" as const,
     tags: ["open-source"],
   },
-];
+].sort((a, b) => b.discovered.localeCompare(a.discovered));
 ---
 
 <Base title="Developer Tools" description="Tooling for the developer experience — package managers, runtime managers, AI-assisted code review, IDE integrations, and build systems.">
@@ -208,6 +200,7 @@ const projects = [
     </div>
     <span class="text-sm font-semibold text-accent-violet">{projects.length} projects</span>
   </div>
+  <FilterBar />
   <div class="space-y-4">
     {projects.map(p => <ProjectCard {...p} />)}
   </div>

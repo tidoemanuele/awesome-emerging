@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import FilterBar from '../components/FilterBar.astro';
 
 const projects = [
   {
@@ -47,14 +48,6 @@ const projects = [
     signal: "9 HN points",
     signalLevel: "early" as const,
     tags: ["agent", "open-source"],
-  },
-  {
-    name: "Akshen",
-    url: "https://akshen.com/",
-    description: "Community-driven repository of verified, tested AI prompts.",
-    discovered: "2026-01-26",
-    signal: "Early / untracked",
-    signalLevel: "early" as const,
   },
   {
     name: "APA AI Protocol",
@@ -146,17 +139,8 @@ const projects = [
     tags: ["open-source"],
   },
   {
-    name: "contract-agents",
-    url: "https://github.com/contract-agents/contract-agents",
-    description: "Formal behavioral contracts for AI agents — Design by Contract pattern applied to agent systems. Sustained 3-day interest validates the agent safety thesis. ~1,250 stars.",
-    discovered: "2026-03-11",
-    signal: "⭐ ~1,250 stars (+350-420/day)",
-    signalLevel: "rising" as const,
-    tags: ["agent", "security", "open-source"],
-  },
-  {
     name: "Context7 MCP",
-    url: "https://mcp.context7.com/mcp",
+    url: "https://github.com/upstash/context7",
     description: "MCP server providing up-to-date library documentation for AI coding agents.",
     discovered: "2026-01-31",
     signal: "Early / untracked",
@@ -207,14 +191,6 @@ const projects = [
     signal: "⭐ 3,189 stars (+377/day)",
     signalLevel: "rising" as const,
     tags: ["agent", "open-source"],
-  },
-  {
-    name: "human.json",
-    url: "https://codeberg.org/human-json/human.json",
-    description: "Lightweight authorship assertion protocol — a human.json file (like robots.txt) for declaring content authorship with a vouch mechanism.",
-    discovered: "2026-03-10",
-    signal: "49 Lobsters comments",
-    signalLevel: "early" as const,
   },
   {
     name: "HumanLayer",
@@ -338,23 +314,6 @@ const projects = [
     signal: "Early / untracked",
     signalLevel: "early" as const,
     tags: ["open-source"],
-  },
-  {
-    name: "nono.sh",
-    url: "https://github.com/nono-sh/nono",
-    description: "Community response to Moltbook crisis — alternative collaborative coding notebook.",
-    discovered: "2026-02-03",
-    signal: "Early / untracked",
-    signalLevel: "early" as const,
-    tags: ["open-source"],
-  },
-  {
-    name: "Oban for Python",
-    url: "https://oban.pro/python",
-    description: "Robust background job processing with queue management, now for Python.",
-    discovered: "2026-01-29",
-    signal: "Early / untracked",
-    signalLevel: "early" as const,
   },
   {
     name: "Ollama",
@@ -524,7 +483,7 @@ const projects = [
     signalLevel: "early" as const,
     tags: ["open-source"],
   },
-];
+].sort((a, b) => b.discovered.localeCompare(a.discovered));
 ---
 
 <Base title="AI Agents & Frameworks" description="Frameworks, tools, and infrastructure for building, deploying, and orchestrating AI agents.">
@@ -535,6 +494,7 @@ const projects = [
     </div>
     <span class="text-sm font-semibold text-accent-violet">{projects.length} projects</span>
   </div>
+  <FilterBar />
   <div class="space-y-4">
     {projects.map(p => <ProjectCard {...p} />)}
   </div>

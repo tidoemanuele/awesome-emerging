@@ -1,0 +1,114 @@
+---
+---
+
+<div class="flex flex-wrap items-center gap-2 mb-6">
+  <span class="text-xs text-text-muted mr-1">Show:</span>
+  <button data-filter="all" class="filter-btn active px-3 py-1.5 text-xs font-semibold rounded-full border transition-all">All</button>
+  <button data-filter="today" class="filter-btn px-3 py-1.5 text-xs font-semibold rounded-full border transition-all">Today</button>
+  <button data-filter="yesterday" class="filter-btn px-3 py-1.5 text-xs font-semibold rounded-full border transition-all">Yesterday</button>
+  <button data-filter="7d" class="filter-btn px-3 py-1.5 text-xs font-semibold rounded-full border transition-all">Last 7 days</button>
+  <button data-filter="30d" class="filter-btn px-3 py-1.5 text-xs font-semibold rounded-full border transition-all">Last 30 days</button>
+  <span id="filter-count" class="ml-auto text-xs text-text-muted"></span>
+</div>
+
+<style>
+  .filter-btn {
+    border-color: oklch(0.25 0.01 260 / 0.4);
+    background: oklch(0.16 0.005 260 / 0.6);
+    color: oklch(0.70 0.01 260);
+    cursor: pointer;
+  }
+  .filter-btn:hover {
+    border-color: oklch(0.62 0.26 290 / 0.4);
+    color: oklch(0.97 0.005 260);
+  }
+  .filter-btn.active {
+    border-color: oklch(0.62 0.26 290 / 0.5);
+    background: oklch(0.62 0.26 290 / 0.15);
+    color: oklch(0.62 0.26 290);
+  }
+</style>
+
+<script>
+  function initFilter() {
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.project-card');
+    const countEl = document.getElementById('filter-count');
+
+    function getDateRange(filter: string): Date | null {
+      const now = new Date();
+      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+      switch (filter) {
+        case 'today':
+          return today;
+        case 'yesterday': {
+          const y = new Date(today);
+          y.setDate(y.getDate() - 1);
+          return y;
+        }
+        case '7d': {
+          const d = new Date(today);
+          d.setDate(d.getDate() - 6);
+          return d;
+        }
+        case '30d': {
+          const d = new Date(today);
+          d.setDate(d.getDate() - 29);
+          return d;
+        }
+        default:
+          return null;
+      }
+    }
+
+    function applyFilter(filter: string) {
+      const minDate = getDateRange(filter);
+      let maxDate: Date | null = null;
+
+      // For "yesterday", only show that specific day
+      if (filter === 'yesterday') {
+        const today = new Date();
+        maxDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+      }
+
+      let visible = 0;
+      cards.forEach(card => {
+        const discovered = card.getAttribute('data-discovered');
+        if (!discovered) return;
+
+        const cardDate = new Date(discovered + 'T00:00:00');
+        let show = true;
+
+        if (minDate) {
+          show = cardDate >= minDate;
+          if (maxDate) {
+            show = show && cardDate < maxDate;
+          }
+        }
+
+        (card as HTMLElement).style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+
+      if (countEl) {
+        countEl.textContent = filter === 'all'
+          ? ''
+          : `${visible} of ${cards.length} shown`;
+      }
+
+      buttons.forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-filter') === filter);
+      });
+    }
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter') || 'all';
+        applyFilter(filter);
+      });
+    });
+  }
+
+  initFilter();
+</script>
