@@ -92,6 +92,33 @@ const projects = [
     signalLevel: "early" as const,
     tags: ["agent", "security", "open-source"],
   },
+  {
+    name: "SiteSpy",
+    url: "",
+    description: "Webpage watcher that exposes changes as RSS feeds — monitor competitors, libraries, documentation changes. CLI-first design with RSS output for pipeline integration.",
+    discovered: "2026-03-12",
+    signal: "222 HN points",
+    signalLevel: "rising" as const,
+    tags: ["cli", "open-source"],
+  },
+  {
+    name: "fish-speech",
+    url: "https://github.com/fishaudio/fish-speech",
+    description: "State-of-the-art open-source text-to-speech — Python-based with CLI for batch processing. Core audio generation node in creative pipelines. 26,021 stars, sustained +313/day.",
+    discovered: "2026-03-12",
+    signal: "⭐ 26,021 stars (+313/day)",
+    signalLevel: "hot" as const,
+    tags: ["open-source", "cli"],
+  },
+  {
+    name: "Autoresearch@home",
+    url: "",
+    description: "Distributed research framework using the BOINC/@home paradigm — volunteer computing for AI research tasks. CLI-native with local research agents contributing to shared findings.",
+    discovered: "2026-03-12",
+    signal: "62 HN points",
+    signalLevel: "early" as const,
+    tags: ["open-source", "cli"],
+  },
 ].sort((a, b) => b.discovered.localeCompare(a.discovered));
 ---
 

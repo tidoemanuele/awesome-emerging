@@ -98,6 +98,23 @@ const projects = [
     signal: "Early / untracked",
     signalLevel: "early" as const,
   },
+  {
+    name: "s@",
+    url: "",
+    description: "Decentralized social networking over static sites — social presence without servers. Content distributed via static files, zero infrastructure cost.",
+    discovered: "2026-03-12",
+    signal: "223 HN points",
+    signalLevel: "rising" as const,
+  },
+  {
+    name: "ai-hedge-fund",
+    url: "https://github.com/virattt/ai-hedge-fund",
+    description: "Financial AI reference project — open-source hedge fund simulation using LLM-powered analysis. 48,339 stars with sustained +636/day growth.",
+    discovered: "2026-03-12",
+    signal: "⭐ 48,339 stars (+636/day)",
+    signalLevel: "hot" as const,
+    tags: ["open-source"],
+  },
 ].sort((a, b) => b.discovered.localeCompare(a.discovered));
 ---
 

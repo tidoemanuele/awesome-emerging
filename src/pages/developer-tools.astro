@@ -198,6 +198,33 @@ const projects = [
     signalLevel: "hot" as const,
     tags: ["open-source"],
   },
+  {
+    name: "promptfoo",
+    url: "https://github.com/promptfoo/promptfoo",
+    description: "LLM testing and evaluation framework — test prompts, agents, and RAGs. Red teaming, pentesting, vulnerability scanning. 12,749 stars, +718/day. The quality assurance layer for the agent explosion.",
+    discovered: "2026-03-12",
+    signal: "⭐ 12,749 stars (+718/day)",
+    signalLevel: "hot" as const,
+    tags: ["open-source"],
+  },
+  {
+    name: "nah",
+    url: "",
+    description: "Context-aware permission guard for Claude Code — intercepts agent permission requests with intelligent evaluation. Community-built safety infrastructure for AI coding assistants.",
+    discovered: "2026-03-12",
+    signal: "92 HN points",
+    signalLevel: "early" as const,
+    tags: ["security", "open-source"],
+  },
+  {
+    name: "BitNet",
+    url: "https://github.com/microsoft/BitNet",
+    description: "Microsoft's 1-bit model architecture enabling 100B-parameter inference on consumer CPUs — uses addition only, no matrix multiplication. Advances the on-device AI narrative.",
+    discovered: "2026-03-12",
+    signal: "332 HN points",
+    signalLevel: "rising" as const,
+    tags: ["open-source"],
+  },
 ].sort((a, b) => b.discovered.localeCompare(a.discovered));
 ---
 
