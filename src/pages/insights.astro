@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+
+const insights = [
+  {
+    date: "2026-03-11",
+    entries: [
+      "The agent ecosystem is scaling faster than its safety infrastructure. The first production AI-on-AI cascade proves safety is not theoretical.",
+      "Amazon's 47-minute AI feedback loop: one AI rejected a legitimate change, triggered rollback automation that was also AI-evaluated, creating a reinforcing rejection loop. Circuit breakers are now an engineering requirement, not a best practice.",
+      "GitHub trending has evolved from a discovery mechanism into an AI agent component marketplace — repos rise and fall based on integration potential, not standalone utility.",
+      "agency-agents ~10-25% Day 2 decay rate is the healthiest in 2026 tracking. Pre-built agent marketplace is a real category, not algorithmic noise.",
+      "The question is no longer 'should I use AI tools?' but 'how do I manage the legal, economic, and reliability costs of AI tools I'm already dependent on?'",
+      "CLI creative tools have crossed a critical threshold: pipeline composability now exceeds the sum of individual tool capabilities. The value is in recipes, not tools.",
+      "Solo developer strategy is bifurcating: platform-ecosystem builders (scaling via OpenClaw) vs deep-tool craftspeople (compounding via Emacs). The AI plateau challenges both paths.",
+      "AI coding tool plateau is real: initial 30-50% productivity gains erode to 10-15% after 3-6 months. The easy wins are finite.",
+      "OpenClaw at 300K without spike behavior — steady +847/day. Organic growth at milestone scale is anomalous. Most repos spike 50-100% at milestones.",
+    ],
+  },
+  {
+    date: "2026-03-10",
+    entries: [
+      "~22,500 tracked GitHub stars/day — all-time record. Five repos exceeding 1,000 stars/day simultaneously has never happened before.",
+      "Star growth is increasingly decoupled from active usage. GitHub's trending algorithm amplifies attention, not adoption.",
+      "AI copyleft erosion hit 462 comments — the highest for any AI-legal story in 2026. Deep community anxiety about open source sustainability in the AI era.",
+      "The agent ecosystem is fragmenting along geographic lines: Chinese repos favor swarm/multi-agent, Western repos favor marketplace, European discussions prioritize trust and authorship.",
+      "Four of five strongest new signals represent platform-level thinking. Deep-tool mastery is the counterpoint, but platforms outnumber tools 4:1.",
+      "LLMs generate specifications → deterministic tools render output. This dual-paradigm pipeline addresses 'plausible but incorrect' and homogenization concerns.",
+      "agency-agents +4,415/day (5.4x acceleration) — largest single-day acceleration in 2026 tracking. Developers want deployment-ready agents, not frameworks.",
+      "The shift from 'which tool is best?' to 'can this system sustain itself?' is a maturation signal.",
+      "52 AI-branded apps in the Play Store top 200 creates undifferentiated noise. Opportunity lives at the extremes: trusted brands at top, privacy-first at bottom.",
+    ],
+  },
+];
+---
+
+<Base title="Insights" description="Punchy takeaways from daily open source research — lessons learned, patterns spotted, signals that matter.">
+  <div class="mb-8">
+    <h1 class="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-display)] text-gradient">Insights</h1>
+    <p class="mt-2 text-text-secondary">Sharp takeaways from daily research. No fluff — just the signal.</p>
+  </div>
+
+  <div class="space-y-10">
+    {insights.map(day => (
+      <section>
+        <h2 class="text-sm font-semibold text-accent-violet mb-4 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-accent-violet"></span>
+          {day.date}
+        </h2>
+        <div class="space-y-3">
+          {day.entries.map(entry => (
+            <div class="glass rounded-[var(--radius-card)] p-4 border-l-2 border-accent-violet/40">
+              <p class="text-sm text-text-secondary leading-relaxed">{entry}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Base>
