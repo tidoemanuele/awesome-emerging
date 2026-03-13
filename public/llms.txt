@@ -3,7 +3,7 @@
 > A curated list of emerging open source projects that actually matter.
 > Signal-filtered, momentum-tracked, community-curated.
 
-**Last updated**: 2026-03-12
+**Last updated**: 2026-03-13
 **Website**: https://tidoemanuele.github.io/awesome-emerging/
 **GitHub**: https://github.com/tidoemanuele/awesome-emerging
 
@@ -23,7 +23,7 @@
 
 Frameworks, tools, and infrastructure for building, deploying, and orchestrating AI agents.
 
-**60 projects**
+**65 projects**
 
 ### 🌱 [1Code](https://github.com/21st-dev/1code)
 
@@ -35,10 +35,10 @@ AI-powered code generation tool by 21st.dev.
 
 ### 🔥 [agency-agents](https://github.com/msitarzewski/agency-agents)
 
-Pre-built agent marketplace — shell-based agent configurations for instant deployment. 31,260 stars, Day 4 HYPERACCELERATION at +6,167/day (140% of Day 2 peak — first repo to re-accelerate past peak on Day 4 in tracking history).
+Pre-built agent marketplace — shell-based agent configurations for instant deployment. 37,059 stars, Day 5 controlled deceleration at +4,168/day (still 3x expected — new elevated baseline above 4K/day).
 
 - **Discovered**: 2026-03-10
-- **Signal**: 🔥 ⭐ 31,260 stars (+6,167/day)
+- **Signal**: 🔥 ⭐ 37,059 stars (+4,168/day)
 - **Tags**: `agent` `open-source`
 
 ### 🔥 [Agent Lightning](https://github.com/microsoft/agent-lightning)
@@ -193,10 +193,10 @@ Simple task management overlay for Claude Code workflows.
 
 ### ⚡ [hermes-agent](https://github.com/NousResearch/hermes-agent)
 
-NousResearch's adaptive learning agent — 'the agent that grows with you.' Respected open-source AI lab entering agent framework space. 5,608 stars, debut at +1,234/day.
+NousResearch's adaptive learning agent — 'the agent that grows with you.' Respected AI lab entering agent frameworks. Day 2 confirmed at +1,264/day. 6,454 stars.
 
 - **Discovered**: 2026-03-10
-- **Signal**: ⚡ ⭐ 5,608 stars (+1,234/day)
+- **Signal**: ⚡ ⭐ 6,454 stars (+1,264/day)
 - **Tags**: `agent` `open-source`
 
 ### 🌱 [human.json]()
@@ -271,10 +271,10 @@ MCP server for email — let AI agents send and read emails programmatically.
 
 ### 🔥 [MiroFish](https://github.com/666ghj/MiroFish)
 
-Chinese-origin swarm intelligence engine — 'predict anything' using particle swarm and ant colony algorithms. 17,431 stars, Day 4 RE-ACCELERATION at +2,907/day (exceeds debut velocity — simultaneous anomaly with agency-agents).
+Chinese-origin swarm intelligence engine — 'predict anything' using particle swarm and ant colony algorithms. 20,235 stars, Day 5 at +1,857/day — crossed 20K milestone with 81% Day 1 retention (strongest in tracking dataset).
 
 - **Discovered**: 2026-03-10
-- **Signal**: 🔥 ⭐ 17,431 stars (+2,907/day)
+- **Signal**: 🔥 ⭐ 20,235 stars (+1,857/day)
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [memU](https://github.com/NevaMind-AI/memU)
@@ -347,10 +347,10 @@ Open-source AI coding agent with a polished terminal interface.
 
 ### ⚡ [page-agent](https://github.com/alibaba/page-agent)
 
-Alibaba's JavaScript in-page GUI agent — control web interfaces with natural language. Chinese tech giant validates the agent category. 5,198 stars, debut at +1,215/day.
+Alibaba's JavaScript in-page GUI agent — control web interfaces with natural language. Day 2 confirmed at +1,205/day. 6,761 stars.
 
 - **Discovered**: 2026-03-10
-- **Signal**: ⚡ ⭐ 5,198 stars (+1,215/day)
+- **Signal**: ⚡ ⭐ 6,761 stars (+1,205/day)
 - **Tags**: `agent` `open-source`
 
 ### 🌱 [Pica OS](https://www.picaos.com)
@@ -481,11 +481,51 @@ Rapid application development framework with AI-assisted code generation.
 
 ### 🔥 [superpowers]()
 
-Agentic skills framework and software development methodology — 78,651 stars with steady +1,483/day sustained growth. Approaching top-200 GitHub repos. Shell-based.
+Agentic skills framework and software development methodology — 80,844 stars with steady +1,706/day sustained growth. Approaching top-100 GitHub repos. Shell-based.
 
 - **Discovered**: 2026-03-12
-- **Signal**: 🔥 ⭐ 78,651 stars (+1,483/day)
+- **Signal**: 🔥 ⭐ 80,844 stars (+1,706/day)
 - **Tags**: `agent` `open-source`
+
+### ⚡ [Axe](https://github.com/jrswab/axe)
+
+Minimal 12MB single-binary AI agent framework — the anti-complexity counter-movement to agent framework bloat. No dependencies, no framework lock-in.
+
+- **Discovered**: 2026-03-13
+- **Signal**: ⚡ 190 HN points
+- **Tags**: `agent` `open-source`
+
+### ⚡ [openrag](https://github.com/langflow-ai/openrag)
+
+Comprehensive RAG platform combining Langflow, Docling, and Opensearch. 1,850 stars, +322/day debut.
+
+- **Discovered**: 2026-03-13
+- **Signal**: ⚡ ⭐ 1,850 stars (+322/day)
+- **Tags**: `agent` `open-source`
+
+### ⚡ [InsForge](https://github.com/insforge/insforge)
+
+Backend built for agentic development — give agents everything they need to ship fullstack apps. Agent-native infrastructure. 3,334 stars, +263/day.
+
+- **Discovered**: 2026-03-13
+- **Signal**: ⚡ ⭐ 3,334 stars (+263/day)
+- **Tags**: `agent` `open-source`
+
+### ⚡ [hindsight](https://github.com/vectorize-io/hindsight)
+
+Agent memory that learns — adaptive memory improving over time rather than static storage. From vectorize-io. 3,310 stars, +217/day.
+
+- **Discovered**: 2026-03-13
+- **Signal**: ⚡ ⭐ 3,310 stars (+217/day)
+- **Tags**: `agent` `memory` `open-source`
+
+### 🔥 [claude-plugins-official](https://github.com/anthropics/claude-plugins-official)
+
+Official Anthropic-managed directory of high-quality Claude Code plugins. Curated ecosystem vs open marketplace. 10,504 stars, steady +150/day.
+
+- **Discovered**: 2026-03-13
+- **Signal**: 🔥 ⭐ 10,504 stars (+150/day)
+- **Tags**: `open-source`
 
 ### 🔥 [AstrBot]()
 
@@ -591,10 +631,10 @@ Webpage watcher that exposes changes as RSS feeds — monitor competitors, libra
 
 ### 🔥 [fish-speech](https://github.com/fishaudio/fish-speech)
 
-State-of-the-art open-source text-to-speech — Python-based with CLI for batch processing. Core audio generation node in creative pipelines. 26,021 stars, sustained +313/day.
+State-of-the-art open-source text-to-speech — Python-based with CLI for batch processing. Core audio generation node in creative pipelines. 26,614 stars, sustained +637/day. 2,237 forks.
 
 - **Discovered**: 2026-03-12
-- **Signal**: 🔥 ⭐ 26,021 stars (+313/day)
+- **Signal**: 🔥 ⭐ 26,614 stars (+637/day)
 - **Tags**: `open-source` `cli`
 
 ### 🌱 [Autoresearch@home]()
@@ -611,7 +651,7 @@ Distributed research framework using the BOINC/@home paradigm — volunteer comp
 
 Package managers, AI code assistants, build systems, runtime managers, and dev workflow tools.
 
-**25 projects**
+**28 projects**
 
 ### 🌱 [Aider](https://github.com/Aider-AI/aider)
 
@@ -801,12 +841,35 @@ Context-aware permission guard for Claude Code — intercepts agent permission r
 - **Signal**: 🌱 92 HN points
 - **Tags**: `security` `open-source`
 
-### ⚡ [BitNet](https://github.com/microsoft/BitNet)
+### 🔥 [BitNet](https://github.com/microsoft/BitNet)
 
-Microsoft's 1-bit model architecture enabling 100B-parameter inference on consumer CPUs — uses addition only, no matrix multiplication. Advances the on-device AI narrative.
+Microsoft's 1-bit model architecture enabling 100B-parameter inference on consumer CPUs. Exploded on GitHub at +2,149/day (33,038 total) — confirms HN→GitHub adoption pipeline. 2,775 forks indicate production interest.
 
 - **Discovered**: 2026-03-12
-- **Signal**: ⚡ 332 HN points
+- **Signal**: 🔥 ⭐ 33,038 stars (+2,149/day)
+- **Tags**: `open-source`
+
+### 🔥 [Malus](https://malus.sh)
+
+Clean Room as a Service — verified environments for legal AI reimplementation with cryptographic attestation. Addresses copyleft erosion crisis. First entry in 'AI compliance tooling' category.
+
+- **Discovered**: 2026-03-13
+- **Signal**: 🔥 1,247 HN points
+- **Tags**: `security`
+
+### 🌱 [IonRouter](https://ionrouter.com)
+
+YC W26 inference routing — intelligent routing between model providers based on task complexity, cost, and latency. Third independent signal for model routing as production infrastructure.
+
+- **Discovered**: 2026-03-13
+- **Signal**: 🌱 62 HN points
+
+### 🔥 [google/A2UI](https://github.com/google/A2UI)
+
+Google's Agent-to-UI framework — bridge between AI agents and user interfaces. 12,841 stars with sustained +225/day growth.
+
+- **Discovered**: 2026-03-13
+- **Signal**: 🔥 ⭐ 12,841 stars (+225/day)
 - **Tags**: `open-source`
 
 ---
@@ -919,9 +982,9 @@ Financial AI reference project — open-source hedge fund simulation using LLM-p
 
 ## Summary
 
-**Total projects**: 111
+**Total projects**: 119
 **Categories**: 4
-**Updated**: 2026-03-12
+**Updated**: 2026-03-13
 
 ---
 
