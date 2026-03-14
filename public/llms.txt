@@ -3,7 +3,7 @@
 > A curated list of emerging open source projects that actually matter.
 > Signal-filtered, momentum-tracked, community-curated.
 
-**Last updated**: 2026-03-13
+**Last updated**: 2026-03-14
 **Website**: https://tidoemanuele.github.io/awesome-emerging/
 **GitHub**: https://github.com/tidoemanuele/awesome-emerging
 
@@ -23,7 +23,7 @@
 
 Frameworks, tools, and infrastructure for building, deploying, and orchestrating AI agents.
 
-**65 projects**
+**68 projects**
 
 ### 🌱 [1Code](https://github.com/21st-dev/1code)
 
@@ -35,10 +35,10 @@ AI-powered code generation tool by 21st.dev.
 
 ### 🔥 [agency-agents](https://github.com/msitarzewski/agency-agents)
 
-Pre-built agent marketplace — shell-based agent configurations for instant deployment. 37,059 stars, Day 5 controlled deceleration at +4,168/day (still 3x expected — new elevated baseline above 4K/day).
+Pre-built agent marketplace — shell-based agent configurations for instant deployment. 42,607 stars, Day 6 re-accelerated to +4,329/day — the trending decay model keeps breaking for this repo.
 
 - **Discovered**: 2026-03-10
-- **Signal**: 🔥 ⭐ 37,059 stars (+4,168/day)
+- **Signal**: 🔥 ⭐ 42,607 stars (+4,329/day)
 - **Tags**: `agent` `open-source`
 
 ### 🔥 [Agent Lightning](https://github.com/microsoft/agent-lightning)
@@ -271,10 +271,10 @@ MCP server for email — let AI agents send and read emails programmatically.
 
 ### 🔥 [MiroFish](https://github.com/666ghj/MiroFish)
 
-Chinese-origin swarm intelligence engine — 'predict anything' using particle swarm and ant colony algorithms. 20,235 stars, Day 5 at +1,857/day — crossed 20K milestone with 81% Day 1 retention (strongest in tracking dataset).
+Chinese-origin swarm intelligence engine — 'predict anything' using particle swarm and ant colony algorithms. 21,500 stars, Day 6 sustaining above +1,500/day. Crossed 20K milestone with strongest Day 1 retention in tracking dataset.
 
 - **Discovered**: 2026-03-10
-- **Signal**: 🔥 ⭐ 20,235 stars (+1,857/day)
+- **Signal**: 🔥 ⭐ 21,500 stars
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [memU](https://github.com/NevaMind-AI/memU)
@@ -481,10 +481,10 @@ Rapid application development framework with AI-assisted code generation.
 
 ### 🔥 [superpowers]()
 
-Agentic skills framework and software development methodology — 80,844 stars with steady +1,706/day sustained growth. Approaching top-100 GitHub repos. Shell-based.
+Agentic skills framework and software development methodology — 82,720 stars with steady +1,451/day sustained growth. Shell-based.
 
 - **Discovered**: 2026-03-12
-- **Signal**: 🔥 ⭐ 80,844 stars (+1,706/day)
+- **Signal**: 🔥 ⭐ 82,720 stars (+1,451/day)
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [Axe](https://github.com/jrswab/axe)
@@ -497,42 +497,66 @@ Minimal 12MB single-binary AI agent framework — the anti-complexity counter-mo
 
 ### ⚡ [openrag](https://github.com/langflow-ai/openrag)
 
-Comprehensive RAG platform combining Langflow, Docling, and Opensearch. 1,850 stars, +322/day debut.
+Comprehensive RAG platform combining Langflow, Docling, and Opensearch. 2,549 stars, +568/day Day 2 acceleration.
 
 - **Discovered**: 2026-03-13
-- **Signal**: ⚡ ⭐ 1,850 stars (+322/day)
+- **Signal**: ⚡ ⭐ 2,549 stars (+568/day)
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [InsForge](https://github.com/insforge/insforge)
 
-Backend built for agentic development — give agents everything they need to ship fullstack apps. Agent-native infrastructure. 3,334 stars, +263/day.
+Backend built for agentic development — give agents everything they need to ship fullstack apps. Agent-native infrastructure. 3,951 stars, +477/day Day 2 acceleration.
 
 - **Discovered**: 2026-03-13
-- **Signal**: ⚡ ⭐ 3,334 stars (+263/day)
+- **Signal**: ⚡ ⭐ 3,951 stars (+477/day)
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [hindsight](https://github.com/vectorize-io/hindsight)
 
-Agent memory that learns — adaptive memory improving over time rather than static storage. From vectorize-io. 3,310 stars, +217/day.
+Agent memory that learns — adaptive memory improving over time rather than static storage. From vectorize-io. 3,500 stars, sustained growth.
 
 - **Discovered**: 2026-03-13
-- **Signal**: ⚡ ⭐ 3,310 stars (+217/day)
+- **Signal**: ⚡ ⭐ 3,500 stars
 - **Tags**: `agent` `memory` `open-source`
 
 ### 🔥 [claude-plugins-official](https://github.com/anthropics/claude-plugins-official)
 
-Official Anthropic-managed directory of high-quality Claude Code plugins. Curated ecosystem vs open marketplace. 10,504 stars, steady +150/day.
+Official Anthropic-managed directory of high-quality Claude Code plugins. Curated ecosystem vs open marketplace. 11,069 stars, steady +411/day.
 
 - **Discovered**: 2026-03-13
-- **Signal**: 🔥 ⭐ 10,504 stars (+150/day)
+- **Signal**: 🔥 ⭐ 11,069 stars (+411/day)
 - **Tags**: `open-source`
 
 ### 🔥 [AstrBot]()
 
-IM chatbot infrastructure platform — multi-platform bot framework for messaging services. 21,938 stars with sustained +342/day growth.
+IM chatbot infrastructure platform — multi-platform bot framework for messaging services. 22,700 stars with sustained +342/day growth.
 
 - **Discovered**: 2026-03-12
-- **Signal**: 🔥 ⭐ 21,938 stars (+342/day)
+- **Signal**: 🔥 ⭐ 22,700 stars (+342/day)
+- **Tags**: `agent` `open-source`
+
+### 🔥 [OpenViking](https://github.com/volcengine/OpenViking)
+
+ByteDance's open-source context database for AI agents — replaces fragmented vector stores with a file-system paradigm unifying memory, resources, and skills under a viking:// protocol. Self-evolving memory with built-in iteration loops. 9,863 stars, +1,557/day debut.
+
+- **Discovered**: 2026-03-14
+- **Signal**: 🔥 ⭐ 9,863 stars (+1,557/day)
+- **Tags**: `agent` `memory` `open-source`
+
+### 🔥 [CLI-Anything](https://github.com/HKUDS/CLI-Anything)
+
+HKU's 'Making ALL Software Agent-Native' — auto-generates CLI wrappers for any software (Blender, LibreOffice, FFmpeg) via a 7-phase pipeline, with built-in --json for machine consumption. 12,800 stars.
+
+- **Discovered**: 2026-03-14
+- **Signal**: 🔥 ⭐ 12,800 stars
+- **Tags**: `agent` `cli` `open-source`
+
+### 🔥 [autoresearch](https://github.com/karpathy/autoresearch)
+
+Karpathy's autonomous ML research framework — 630-line script that runs experiments overnight on a single GPU. 333 experiments unsupervised in one night. Shopify CEO reported 19% validation improvement. 29,100 stars in one week.
+
+- **Discovered**: 2026-03-14
+- **Signal**: 🔥 ⭐ 29,100 stars
 - **Tags**: `agent` `open-source`
 
 ---
@@ -574,12 +598,12 @@ GPU-accelerated terminal emulator by Mitchell Hashimoto — 1.3.0 release streng
 - **Discovered**: 2026-03-10
 - **Signal**: ⚡ 32 Lobsters comments
 
-### 🔥 [Lightpanda](https://lightpanda.io)
+### 🔥 [Lightpanda](https://github.com/lightpanda-io/browser)
 
-Zig-based headless browser optimized for AI agent web scraping — fast DOM implementation.
+Zig-based headless browser purpose-built for AI agents — 11x faster and 9x less memory than Chrome headless. Sub-100ms startup makes agents instantly responsive. Surging to 16,617 stars at +2,100/day.
 
 - **Discovered**: 2026-01-12
-- **Signal**: 🔥 513 HN points
+- **Signal**: 🔥 ⭐ 16,617 stars (+2,100/day)
 
 ### 🌱 [mcpc](https://github.com/apify/mcp-cli)
 
@@ -631,10 +655,10 @@ Webpage watcher that exposes changes as RSS feeds — monitor competitors, libra
 
 ### 🔥 [fish-speech](https://github.com/fishaudio/fish-speech)
 
-State-of-the-art open-source text-to-speech — Python-based with CLI for batch processing. Core audio generation node in creative pipelines. 26,614 stars, sustained +637/day. 2,237 forks.
+State-of-the-art open-source text-to-speech — Python-based with CLI for batch processing. Core audio generation node in creative pipelines. 27,085 stars, sustained +377/day.
 
 - **Discovered**: 2026-03-12
-- **Signal**: 🔥 ⭐ 26,614 stars (+637/day)
+- **Signal**: 🔥 ⭐ 27,085 stars (+377/day)
 - **Tags**: `open-source` `cli`
 
 ### 🌱 [Autoresearch@home]()
@@ -651,7 +675,7 @@ Distributed research framework using the BOINC/@home paradigm — volunteer comp
 
 Package managers, AI code assistants, build systems, runtime managers, and dev workflow tools.
 
-**28 projects**
+**30 projects**
 
 ### 🌱 [Aider](https://github.com/Aider-AI/aider)
 
@@ -827,10 +851,10 @@ Blazing-fast Python package and project manager in Rust — replaces pip, venv, 
 
 ### 🔥 [promptfoo](https://github.com/promptfoo/promptfoo)
 
-LLM testing and evaluation framework — test prompts, agents, and RAGs. Red teaming, pentesting, vulnerability scanning. 12,749 stars, +718/day. The quality assurance layer for the agent explosion.
+LLM testing and evaluation framework — test prompts, agents, and RAGs. Red teaming, pentesting, vulnerability scanning. 13,600 stars, sustained +718/day. The quality assurance layer for the agent explosion.
 
 - **Discovered**: 2026-03-12
-- **Signal**: 🔥 ⭐ 12,749 stars (+718/day)
+- **Signal**: 🔥 ⭐ 13,600 stars (+718/day)
 - **Tags**: `open-source`
 
 ### 🌱 [nah]()
@@ -843,10 +867,10 @@ Context-aware permission guard for Claude Code — intercepts agent permission r
 
 ### 🔥 [BitNet](https://github.com/microsoft/BitNet)
 
-Microsoft's 1-bit model architecture enabling 100B-parameter inference on consumer CPUs. Exploded on GitHub at +2,149/day (33,038 total) — confirms HN→GitHub adoption pipeline. 2,775 forks indicate production interest.
+Microsoft's 1-bit model architecture enabling 100B-parameter inference on consumer CPUs. 33,500 stars with sustained growth — confirms HN→GitHub adoption pipeline. 2,800 forks indicate production interest.
 
 - **Discovered**: 2026-03-12
-- **Signal**: 🔥 ⭐ 33,038 stars (+2,149/day)
+- **Signal**: 🔥 ⭐ 33,500 stars
 - **Tags**: `open-source`
 
 ### 🔥 [Malus](https://malus.sh)
@@ -870,6 +894,22 @@ Google's Agent-to-UI framework — bridge between AI agents and user interfaces.
 
 - **Discovered**: 2026-03-13
 - **Signal**: 🔥 ⭐ 12,841 stars (+225/day)
+- **Tags**: `open-source`
+
+### 🔥 [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice)
+
+Comprehensive reference implementation for Claude Code — skills, subagents, hooks, and commands patterns. 'Practice made Claude perfect.' 15,200 stars.
+
+- **Discovered**: 2026-03-14
+- **Signal**: 🔥 ⭐ 15,200 stars
+- **Tags**: `open-source`
+
+### 🔥 [heretic](https://github.com/p-e-w/heretic)
+
+Fully automatic censorship removal for LLMs — combines abliteration with TPE-based optimization to produce uncensored models while preserving intelligence. 1,000+ community models published. 13,301 stars.
+
+- **Discovered**: 2026-03-14
+- **Signal**: 🔥 ⭐ 13,301 stars (+661/day)
 - **Tags**: `open-source`
 
 ---
@@ -982,9 +1022,9 @@ Financial AI reference project — open-source hedge fund simulation using LLM-p
 
 ## Summary
 
-**Total projects**: 119
+**Total projects**: 124
 **Categories**: 4
-**Updated**: 2026-03-13
+**Updated**: 2026-03-14
 
 ---
 
