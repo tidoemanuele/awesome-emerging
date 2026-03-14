@@ -11,12 +11,12 @@ Every entry includes a **discovery date**, **momentum signal** (HN points, GitHu
 
 ## Categories
 
-- [AI Agents & Frameworks](https://tidoemanuele.github.io/awesome-emerging/ai-agents) — 68 projects
+- [AI Agents & Frameworks](https://tidoemanuele.github.io/awesome-emerging/ai-agents) — 70 projects
 - [CLI Tools](https://tidoemanuele.github.io/awesome-emerging/cli-tools) — 13 projects
 - [Developer Tools](https://tidoemanuele.github.io/awesome-emerging/developer-tools) — 30 projects
 - [Open Source Infrastructure](https://tidoemanuele.github.io/awesome-emerging/open-source-infra) — 13 projects
 
-**124 curated projects** and growing.
+**126 curated projects** and growing.
 
 ## Signal Legend
 

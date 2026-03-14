@@ -606,6 +606,24 @@ const projects = [
     signalLevel: "hot" as const,
     tags: ["agent", "open-source"],
   },
+  {
+    name: "Context Gateway",
+    url: "https://github.com/Compresr-ai/Context-Gateway",
+    description: "Agentic proxy that compresses agent context before it hits the LLM — sits between your AI agent and the API, compacting history in the background so agents never wait. Addresses the core context engineering bottleneck.",
+    discovered: "2026-03-14",
+    signal: "86 HN Show points",
+    signalLevel: "early" as const,
+    tags: ["agent", "open-source"],
+  },
+  {
+    name: "GitAgent",
+    url: "https://github.com/open-gitagent/gitagent",
+    description: "Open standard for git-native AI agents — your repo IS the agent. Framework-agnostic, works with Claude/OpenAI/CrewAI. Version agents with git branches, test behavior in CI, share via public registry.",
+    discovered: "2026-03-14",
+    signal: "Show HN launch",
+    signalLevel: "early" as const,
+    tags: ["agent", "open-source"],
+  },
 ].sort((a, b) => b.discovered.localeCompare(a.discovered));
 ---
 

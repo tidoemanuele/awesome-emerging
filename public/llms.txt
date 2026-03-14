@@ -23,7 +23,7 @@
 
 Frameworks, tools, and infrastructure for building, deploying, and orchestrating AI agents.
 
-**68 projects**
+**70 projects**
 
 ### 🌱 [1Code](https://github.com/21st-dev/1code)
 
@@ -559,6 +559,22 @@ Karpathy's autonomous ML research framework — 630-line script that runs experi
 - **Signal**: 🔥 ⭐ 29,100 stars
 - **Tags**: `agent` `open-source`
 
+### 🌱 [Context Gateway](https://github.com/Compresr-ai/Context-Gateway)
+
+Agentic proxy that compresses agent context before it hits the LLM — sits between your AI agent and the API, compacting history in the background so agents never wait. Addresses the core context engineering bottleneck.
+
+- **Discovered**: 2026-03-14
+- **Signal**: 🌱 86 HN Show points
+- **Tags**: `agent` `open-source`
+
+### 🌱 [GitAgent](https://github.com/open-gitagent/gitagent)
+
+Open standard for git-native AI agents — your repo IS the agent. Framework-agnostic, works with Claude/OpenAI/CrewAI. Version agents with git branches, test behavior in CI, share via public registry.
+
+- **Discovered**: 2026-03-14
+- **Signal**: 🌱 Show HN launch
+- **Tags**: `agent` `open-source`
+
 ---
 
 ## CLI Tools
@@ -1022,7 +1038,7 @@ Financial AI reference project — open-source hedge fund simulation using LLM-p
 
 ## Summary
 
-**Total projects**: 124
+**Total projects**: 126
 **Categories**: 4
 **Updated**: 2026-03-14
 
