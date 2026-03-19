@@ -3,7 +3,7 @@
 > A curated list of emerging open source projects that actually matter.
 > Signal-filtered, momentum-tracked, community-curated.
 
-**Last updated**: 2026-03-14
+**Last updated**: 2026-03-19
 **Website**: https://tidoemanuele.github.io/awesome-emerging/
 **GitHub**: https://github.com/tidoemanuele/awesome-emerging
 
@@ -23,7 +23,7 @@
 
 Frameworks, tools, and infrastructure for building, deploying, and orchestrating AI agents.
 
-**70 projects**
+**85 projects**
 
 ### 🌱 [1Code](https://github.com/21st-dev/1code)
 
@@ -35,10 +35,10 @@ AI-powered code generation tool by 21st.dev.
 
 ### 🔥 [agency-agents](https://github.com/msitarzewski/agency-agents)
 
-Pre-built agent marketplace — shell-based agent configurations for instant deployment. 42,607 stars, Day 6 re-accelerated to +4,329/day — the trending decay model keeps breaking for this repo.
+Pre-built agent marketplace — shell-based agent configurations for instant deployment. Surged to 54,556 stars (+25,297/week), the single highest weekly star gain in 2026 tracking. Still trending on Mar 19.
 
 - **Discovered**: 2026-03-10
-- **Signal**: 🔥 ⭐ 42,607 stars (+4,329/day)
+- **Signal**: 🔥 ⭐ 54,556 stars (+25,297/week)
 - **Tags**: `agent` `open-source`
 
 ### 🔥 [Agent Lightning](https://github.com/microsoft/agent-lightning)
@@ -121,10 +121,10 @@ External orchestration layer for Claude Code — model-agnostic multi-agent coor
 
 ### 🔥 [claude-mem](https://github.com/thedotmack/claude-mem)
 
-Persistent memory layer for Claude — 18,077 stars, viral adoption.
+Persistent memory layer for Claude — automatic session capture. 37,126 stars with sustained +1,045/day growth, one of the most-starred Claude Code plugins.
 
 - **Discovered**: 2026-02-02
-- **Signal**: 🔥 ⭐ 18,077 stars
+- **Signal**: 🔥 ⭐ 37,126 stars (+1,045/day)
 - **Tags**: `open-source`
 
 ### ⚡ [claude-sneakpeek](https://github.com/mikekelly/claude-sneakpeek)
@@ -193,10 +193,10 @@ Simple task management overlay for Claude Code workflows.
 
 ### ⚡ [hermes-agent](https://github.com/NousResearch/hermes-agent)
 
-NousResearch's adaptive learning agent — 'the agent that grows with you.' Respected AI lab entering agent frameworks. Day 2 confirmed at +1,264/day. 6,454 stars.
+NousResearch's adaptive learning agent — 'the agent that grows with you.' 8,951 stars (+4,046/week), confirming sustained adoption beyond initial hype.
 
 - **Discovered**: 2026-03-10
-- **Signal**: ⚡ ⭐ 6,454 stars (+1,264/day)
+- **Signal**: ⚡ ⭐ 8,951 stars (+4,046/week)
 - **Tags**: `agent` `open-source`
 
 ### 🌱 [human.json]()
@@ -271,10 +271,10 @@ MCP server for email — let AI agents send and read emails programmatically.
 
 ### 🔥 [MiroFish](https://github.com/666ghj/MiroFish)
 
-Chinese-origin swarm intelligence engine — 'predict anything' using particle swarm and ant colony algorithms. 21,500 stars, Day 6 sustaining above +1,500/day. Crossed 20K milestone with strongest Day 1 retention in tracking dataset.
+Chinese-origin swarm intelligence engine — 'predict anything' using particle swarm and ant colony algorithms. Day 2 acceleration (+17.2%) is rare — most viral projects follow a spike→decay pattern. Crossed 30K stars.
 
 - **Discovered**: 2026-03-10
-- **Signal**: 🔥 ⭐ 21,500 stars
+- **Signal**: 🔥 ⭐ 34,799 stars (+17,714/week)
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [memU](https://github.com/NevaMind-AI/memU)
@@ -347,10 +347,10 @@ Open-source AI coding agent with a polished terminal interface.
 
 ### ⚡ [page-agent](https://github.com/alibaba/page-agent)
 
-Alibaba's JavaScript in-page GUI agent — control web interfaces with natural language. Day 2 confirmed at +1,205/day. 6,761 stars.
+Alibaba's JavaScript in-page GUI agent — control web interfaces with natural language. 11,532 stars (+6,794/week), sustained growth.
 
 - **Discovered**: 2026-03-10
-- **Signal**: ⚡ ⭐ 6,761 stars (+1,205/day)
+- **Signal**: ⚡ ⭐ 11,532 stars (+6,794/week)
 - **Tags**: `agent` `open-source`
 
 ### 🌱 [Pica OS](https://www.picaos.com)
@@ -479,12 +479,12 @@ Rapid application development framework with AI-assisted code generation.
 - **Signal**: 🌱 Early / untracked
 - **Tags**: `open-source`
 
-### 🔥 [superpowers]()
+### 🔥 [superpowers](https://github.com/obra/superpowers)
 
-Agentic skills framework and software development methodology — 82,720 stars with steady +1,451/day sustained growth. Shell-based.
+Agentic skills framework and software development methodology — 99K stars at +3,476/day on Day 5 of trending. Only ~60 GitHub repos have ever crossed 100K. Shell-based.
 
 - **Discovered**: 2026-03-12
-- **Signal**: 🔥 ⭐ 82,720 stars (+1,451/day)
+- **Signal**: 🔥 ⭐ 99,055 stars (+3,476/day)
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [Axe](https://github.com/jrswab/axe)
@@ -497,10 +497,10 @@ Minimal 12MB single-binary AI agent framework — the anti-complexity counter-mo
 
 ### ⚡ [openrag](https://github.com/langflow-ai/openrag)
 
-Comprehensive RAG platform combining Langflow, Docling, and Opensearch. 2,549 stars, +568/day Day 2 acceleration.
+Comprehensive RAG platform combining Langflow, Docling, and Opensearch. 3,317 stars (+2,537/week), sustained growth.
 
 - **Discovered**: 2026-03-13
-- **Signal**: ⚡ ⭐ 2,549 stars (+568/day)
+- **Signal**: ⚡ ⭐ 3,317 stars (+2,537/week)
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [InsForge](https://github.com/insforge/insforge)
@@ -513,10 +513,10 @@ Backend built for agentic development — give agents everything they need to sh
 
 ### ⚡ [hindsight](https://github.com/vectorize-io/hindsight)
 
-Agent memory that learns — adaptive memory improving over time rather than static storage. From vectorize-io. 3,500 stars, sustained growth.
+Agent memory that learns — adaptive memory improving over time rather than static storage. From vectorize-io. 5,009 stars (+2,183/week), sustained growth.
 
 - **Discovered**: 2026-03-13
-- **Signal**: ⚡ ⭐ 3,500 stars
+- **Signal**: ⚡ ⭐ 5,009 stars (+2,183/week)
 - **Tags**: `agent` `memory` `open-source`
 
 ### 🔥 [claude-plugins-official](https://github.com/anthropics/claude-plugins-official)
@@ -537,10 +537,10 @@ IM chatbot infrastructure platform — multi-platform bot framework for messagin
 
 ### 🔥 [OpenViking](https://github.com/volcengine/OpenViking)
 
-ByteDance's open-source context database for AI agents — replaces fragmented vector stores with a file-system paradigm unifying memory, resources, and skills under a viking:// protocol. Self-evolving memory with built-in iteration loops. 9,863 stars, +1,557/day debut.
+ByteDance's open-source context database for AI agents — replaces fragmented vector stores with a file-system paradigm unifying memory, resources, and skills under a viking:// protocol. Self-evolving memory with built-in iteration loops. 14,485 stars, sustaining at +2,012/day.
 
 - **Discovered**: 2026-03-14
-- **Signal**: 🔥 ⭐ 9,863 stars (+1,557/day)
+- **Signal**: 🔥 ⭐ 15,948 stars (+9,840/week)
 - **Tags**: `agent` `memory` `open-source`
 
 ### 🔥 [CLI-Anything](https://github.com/HKUDS/CLI-Anything)
@@ -575,13 +575,133 @@ Open standard for git-native AI agents — your repo IS the agent. Framework-agn
 - **Signal**: 🌱 Show HN launch
 - **Tags**: `agent` `open-source`
 
+### 🔥 [cognee](https://github.com/topoteretes/cognee)
+
+Agent memory engine — build and manage knowledge graphs for AI agents. 14,047 stars with sustained +270/day growth. Fills the persistent memory layer in the agent stack.
+
+- **Discovered**: 2026-03-16
+- **Signal**: 🔥 ⭐ 14,047 stars (+270/day)
+- **Tags**: `agent` `memory` `open-source`
+
+### 🌱 [dimos](https://github.com/dimensionalOS/dimos)
+
+Agentic OS for physical space — 'vibecode humanoids.' First robotics/physical-space agent framework on GitHub trending. 966 stars.
+
+- **Discovered**: 2026-03-15
+- **Signal**: 🌱 ⭐ 966 stars (+72/day)
+- **Tags**: `agent` `open-source`
+
+### ⚡ [OneCLI](https://github.com/AshishKumar4/onecli)
+
+Vault for AI agents in Rust — secure credential management for agent workflows. Addresses the #1 agent security gap with compiled-language security.
+
+- **Discovered**: 2026-03-15
+- **Signal**: ⚡ 160 HN points
+- **Tags**: `agent` `security` `open-source`
+
+### ⚡ [Rudel](https://github.com/rudel-dev/rudel)
+
+Claude Code session analytics — first dedicated observability tool for Claude Code sessions. Track costs, usage patterns, and session performance.
+
+- **Discovered**: 2026-03-15
+- **Signal**: ⚡ 143 HN points
+- **Tags**: `open-source`
+
+### 🔥 [Leanstral]()
+
+Open-source agent for formal proof engineering using Lean 4 — highest-engagement formal methods story ever on HN. AI-native theorem proving enters the mainstream.
+
+- **Discovered**: 2026-03-17
+- **Signal**: 🔥 412 HN points
+- **Tags**: `formal-verification` `lean4` `proof-engineering` `agents`
+
+### 🔥 [deepagents](https://github.com/langchain-ai/deepagents)
+
+Official LangChain agent harness with planning, web browsing, and coding built on LangGraph — 15,264 stars (+4,380/week). In direct competition with superpowers (shell-native) and Claude Code Skills (IDE-native).
+
+- **Discovered**: 2026-03-17
+- **Signal**: 🔥 ⭐ 15,264 stars (+4,380/week)
+- **Tags**: `langchain` `langgraph` `agent-harness` `planning` `open-source`
+
+### 🌱 [Agent Lifecycle Toolkit (ALTK)]()
+
+Reusable middleware for production AI agent deployment — addresses the gap between agent prototyping and production-grade lifecycle management. ArXiv paper.
+
+- **Discovered**: 2026-03-17
+- **Signal**: 🌱 ArXiv paper
+- **Tags**: `agent-lifecycle` `production` `middleware` `devops`
+
+### 🌱 [Antfly](https://github.com/antflydb/antfly)
+
+Distributed multimodal search, memory, and graph database in Go — agent-native data infrastructure combining vector search with knowledge graphs.
+
+- **Discovered**: 2026-03-17
+- **Signal**: 🌱 103 HN points (Show HN relaunch)
+- **Tags**: `agent` `search` `memory` `open-source`
+
+### ⚡ [Voygr]()
+
+YC W26 — maps and geospatial API designed specifically for AI agent consumption. First agent-native geospatial infrastructure.
+
+- **Discovered**: 2026-03-17
+- **Signal**: ⚡ 72 HN points
+- **Tags**: `geospatial` `maps` `agent-infrastructure` `yc-w26`
+
+### 🔥 [context-hub](https://github.com/andrewyng/context-hub)
+
+Andrew Ng's curated, versioned API documentation for coding agents — agents search, fetch, and annotate docs with a self-improvement feedback loop. 10,348 stars.
+
+- **Discovered**: 2026-03-18
+- **Signal**: 🔥 ⭐ 10,348 stars (+5,629/week)
+- **Tags**: `agent` `open-source`
+
+### ⚡ [NemoClaw](https://github.com/nvidia/NemoClaw)
+
+Nvidia's orchestration framework for secure sandboxed agent deployment — policy-driven containment with hot-reloadable security policies and Nemotron inference integration. 9,600 stars.
+
+- **Discovered**: 2026-03-18
+- **Signal**: ⚡ ⭐ 9,600 stars · 289 HN points
+- **Tags**: `agent` `security` `open-source`
+
+### ⚡ [open-swe](https://github.com/langchain-ai/open-swe)
+
+LangChain's open-source framework for building internal coding agents — triggers from Slack/Linear/GitHub, runs in isolated cloud sandboxes, auto-creates PRs. 6,991 stars, accelerating to +955/day on Day 2.
+
+- **Discovered**: 2026-03-19
+- **Signal**: ⚡ ⭐ 6,991 stars (+955/day)
+- **Tags**: `agent` `open-source`
+
+### ⚡ [Signet](https://signet.watch)
+
+Autonomous wildfire tracking from satellite and weather data — AI agents applied to environmental monitoring. First non-software agent application in tracking.
+
+- **Discovered**: 2026-03-18
+- **Signal**: ⚡ 123 HN points
+- **Tags**: `agent`
+
+### ⚡ [KittenTTS](https://github.com/KittenML/KittenTTS)
+
+Three new open-source text-to-speech models — smallest under 25MB. Lightweight TTS for agent voice interfaces and accessibility. 282 HN pts, 87 comments.
+
+- **Discovered**: 2026-03-19
+- **Signal**: ⚡ 282 HN points
+- **Tags**: `tts` `open-source`
+
+### ⚡ [agent-sat](https://github.com/iliazintchenko/agent-sat)
+
+Autoresearch for SAT solvers — AI-driven research agent that autonomously improves SAT solver performance. Karpathy's overnight-experiment paradigm applied beyond ML.
+
+- **Discovered**: 2026-03-19
+- **Signal**: ⚡ 162 HN points
+- **Tags**: `agent` `research` `open-source`
+
 ---
 
 ## CLI Tools
 
 Command-line utilities, headless browsers, sandboxed execution, and terminal tools.
 
-**13 projects**
+**20 projects**
 
 ### 🌱 [audiowmark](https://github.com/swesterfeld/audiowmark)
 
@@ -616,10 +736,10 @@ GPU-accelerated terminal emulator by Mitchell Hashimoto — 1.3.0 release streng
 
 ### 🔥 [Lightpanda](https://github.com/lightpanda-io/browser)
 
-Zig-based headless browser purpose-built for AI agents — 11x faster and 9x less memory than Chrome headless. Sub-100ms startup makes agents instantly responsive. Surging to 16,617 stars at +2,100/day.
+Zig-based headless browser purpose-built for AI agents — 11x faster and 9x less memory than Chrome headless. Sub-100ms startup. 21,935 stars (+9,442/week), sustained growth.
 
 - **Discovered**: 2026-01-12
-- **Signal**: 🔥 ⭐ 16,617 stars (+2,100/day)
+- **Signal**: 🔥 ⭐ 21,935 stars (+9,442/week)
 
 ### 🌱 [mcpc](https://github.com/apify/mcp-cli)
 
@@ -671,10 +791,10 @@ Webpage watcher that exposes changes as RSS feeds — monitor competitors, libra
 
 ### 🔥 [fish-speech](https://github.com/fishaudio/fish-speech)
 
-State-of-the-art open-source text-to-speech — Python-based with CLI for batch processing. Core audio generation node in creative pipelines. 27,085 stars, sustained +377/day.
+State-of-the-art open-source text-to-speech — Python-based with CLI for batch processing. Core audio generation node in creative pipelines. 28,202 stars (+2,606/week).
 
 - **Discovered**: 2026-03-12
-- **Signal**: 🔥 ⭐ 27,085 stars (+377/day)
+- **Signal**: 🔥 ⭐ 28,202 stars (+2,606/week)
 - **Tags**: `open-source` `cli`
 
 ### 🌱 [Autoresearch@home]()
@@ -685,13 +805,69 @@ Distributed research framework using the BOINC/@home paradigm — volunteer comp
 - **Signal**: 🌱 62 HN points
 - **Tags**: `open-source` `cli`
 
+### 🌱 [K-Synth](https://github.com/k-synth/k-synth)
+
+APL/K-powered audio synthesizer — array programming for real-time sound synthesis. First array-language + audio CLI tool in tracking history. Runs in browser, zero-install.
+
+- **Discovered**: 2026-03-16
+- **Signal**: 🌱 90 HN points
+- **Tags**: `cli` `open-source`
+
+### ⚡ [Han](https://github.com/nicepkg/han)
+
+Korean programming language written in Rust — first non-English PL trending in 2026. Compiles to native binaries via Rust toolchain. 205 HN points on Day 2.
+
+- **Discovered**: 2026-03-15
+- **Signal**: ⚡ 205 HN points
+- **Tags**: `open-source`
+
+### ⚡ [Lazycut]()
+
+Terminal video trimmer using FFmpeg — TUI for non-linear video editing without leaving the terminal.
+
+- **Discovered**: 2026-03-17
+- **Signal**: ⚡ 182 HN points
+- **Tags**: `video` `ffmpeg` `tui` `trimmer` `cli`
+
+### 🌱 [Sprinklz]()
+
+RSS reader with algorithmic controls — curation layer for RSS feeds with tune-able feed weighting.
+
+- **Discovered**: 2026-03-17
+- **Signal**: 🌱 12 HN points
+- **Tags**: `rss` `curation` `algorithmic-feed` `cli`
+
+### ⚡ [Cook](https://rjcorwin.github.io/cook/)
+
+Simple CLI for orchestrating Claude Code — lightweight task runner for multi-step Claude Code workflows. Surged to 283 pts, 87 comments on HN. The Claude Code platform toolchain solidifies.
+
+- **Discovered**: 2026-03-19
+- **Signal**: ⚡ 283 HN points
+- **Tags**: `claude-code` `cli` `open-source`
+
+### ⚡ [Pgit](https://oseifert.ch)
+
+Git-like CLI backed by PostgreSQL — version control semantics applied to database content. Show HN with strong engagement.
+
+- **Discovered**: 2026-03-18
+- **Signal**: ⚡ 119 HN points
+- **Tags**: `cli` `open-source`
+
+### 🌱 [Horizon](https://github.com/nicepkg/horizon)
+
+GPU-accelerated infinite-canvas terminal in Rust — spatial 2D canvas replaces linear scrollback. Pin, zoom, and navigate multiple agent outputs spatially. 76 HN pts.
+
+- **Discovered**: 2026-03-19
+- **Signal**: 🌱 76 HN points
+- **Tags**: `terminal` `rust` `cli` `open-source`
+
 ---
 
 ## Developer Tools
 
 Package managers, AI code assistants, build systems, runtime managers, and dev workflow tools.
 
-**30 projects**
+**45 projects**
 
 ### 🌱 [Aider](https://github.com/Aider-AI/aider)
 
@@ -765,10 +941,10 @@ CLI tool to download your entire iCloud Photo Library to local storage.
 
 ### 🔥 [impeccable](https://github.com/pbakaus/impeccable)
 
-AI design language by Paul Bakaus (ex-Google, jQuery UI creator) — structured design tokens that make AI-generated UIs look polished. ~4,000 stars, Day 2 sustained at +700-900/day.
+AI design language by Paul Bakaus (ex-Google, jQuery UI creator) — structured design tokens that make AI-generated UIs look polished. 10,661 stars (+6,457/week), crossed 10K.
 
 - **Discovered**: 2026-03-10
-- **Signal**: 🔥 ⭐ ~4,000 stars (+700-900/day)
+- **Signal**: 🔥 ⭐ 10,661 stars (+6,457/week)
 - **Tags**: `open-source`
 
 ### ⚡ [Infisical](https://github.com/Infisical/infisical)
@@ -867,10 +1043,10 @@ Blazing-fast Python package and project manager in Rust — replaces pip, venv, 
 
 ### 🔥 [promptfoo](https://github.com/promptfoo/promptfoo)
 
-LLM testing and evaluation framework — test prompts, agents, and RAGs. Red teaming, pentesting, vulnerability scanning. 13,600 stars, sustained +718/day. The quality assurance layer for the agent explosion.
+LLM testing and evaluation framework — test prompts, agents, and RAGs. Red teaming, pentesting, vulnerability scanning. 17,511 stars (+5,060/week). The quality assurance layer for the agent explosion.
 
 - **Discovered**: 2026-03-12
-- **Signal**: 🔥 ⭐ 13,600 stars (+718/day)
+- **Signal**: 🔥 ⭐ 17,511 stars (+5,060/week)
 - **Tags**: `open-source`
 
 ### 🌱 [nah]()
@@ -883,10 +1059,10 @@ Context-aware permission guard for Claude Code — intercepts agent permission r
 
 ### 🔥 [BitNet](https://github.com/microsoft/BitNet)
 
-Microsoft's 1-bit model architecture enabling 100B-parameter inference on consumer CPUs. 33,500 stars with sustained growth — confirms HN→GitHub adoption pipeline. 2,800 forks indicate production interest.
+Microsoft's 1-bit model architecture enabling 100B-parameter inference on consumer CPUs. 35,708 stars (+6,457/week) with sustained growth. 2,800+ forks indicate production interest.
 
 - **Discovered**: 2026-03-12
-- **Signal**: 🔥 ⭐ 33,500 stars
+- **Signal**: 🔥 ⭐ 35,708 stars (+6,457/week)
 - **Tags**: `open-source`
 
 ### 🔥 [Malus](https://malus.sh)
@@ -922,11 +1098,131 @@ Comprehensive reference implementation for Claude Code — skills, subagents, ho
 
 ### 🔥 [heretic](https://github.com/p-e-w/heretic)
 
-Fully automatic censorship removal for LLMs — combines abliteration with TPE-based optimization to produce uncensored models while preserving intelligence. 1,000+ community models published. 13,301 stars.
+Fully automatic censorship removal for LLMs — combines abliteration with TPE-based optimization to produce uncensored models while preserving intelligence. 1,000+ community models published. 15,402 stars, sustaining at +788/day.
 
 - **Discovered**: 2026-03-14
-- **Signal**: 🔥 ⭐ 13,301 stars (+661/day)
+- **Signal**: 🔥 ⭐ 15,402 stars (+788/day)
 - **Tags**: `open-source`
+
+### 🔥 [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)
+
+Lightweight Claude Code-like agent harness implementation — educational narrative showing 'Bash is all you need.' 33,551 stars (+1,458/day), sustained velocity confirms ongoing onboarding wave.
+
+- **Discovered**: 2026-03-16
+- **Signal**: 🔥 ⭐ 33,551 stars (+1,458/day)
+- **Tags**: `open-source`
+
+### 🔥 [GitNexus](https://github.com/nicepkg/gitnexus)
+
+Client-side zero-server code intelligence engine — knowledge graph for code understanding running entirely in-browser. Eliminates server costs and privacy concerns. Connects to the 'local-first' and 'zero-dependency' trends.
+
+- **Discovered**: 2026-03-16
+- **Signal**: 🔥 ⭐ 16,680 stars (+1,117/day)
+- **Tags**: `open-source`
+
+### ⚡ [vite-plus](https://github.com/nicepkg/vite-plus)
+
+Evan You's unified Rust web toolchain — the only non-AI-specific project on GitHub trending. Velocity doubled on Day 2 signaling Rust toolchain excitement.
+
+- **Discovered**: 2026-03-16
+- **Signal**: ⚡ ⭐ 2,338 stars (+621/day)
+- **Tags**: `open-source`
+
+### ⚡ [Glassworm](https://github.com/nicbarker/glassworm)
+
+Invisible Unicode injection attacks targeting GitHub, npm, and VS Code — exploits AI code review blindspots where LLMs may not detect hidden characters. 248 HN pts, 154 comments.
+
+- **Discovered**: 2026-03-16
+- **Signal**: ⚡ 248 HN points
+- **Tags**: `security`
+
+### ⚡ [Claude Code Godot Skills]()
+
+Skills that build complete Godot games via Claude Code — game dev becomes the first non-web domain for AI coding tools. Resurged to 327 HN pts, 197 comments on Show HN relaunch.
+
+- **Discovered**: 2026-03-17
+- **Signal**: ⚡ 327 HN points
+- **Tags**: `godot` `game-dev` `claude-code` `skills`
+
+### 🌱 [Lf-lean]()
+
+Frontier of verified software engineering — Lean 4-based formally verified software toolchain.
+
+- **Discovered**: 2026-03-17
+- **Signal**: 🌱 36 HN points
+- **Tags**: `formal-verification` `lean4` `verified-engineering`
+
+### ⚡ [claudian]()
+
+Obsidian plugin embedding Claude Code directly in the vault — merges knowledge management with AI development into a single surface. +111/day, 4,289 total stars.
+
+- **Discovered**: 2026-03-17
+- **Signal**: ⚡ ⭐ 4,289 stars (+111/day)
+- **Tags**: `obsidian` `claude-code` `knowledge-management` `plugin`
+
+### 🌱 [Hackerbrief]()
+
+HN summarizer and daily briefing tool — distills Hacker News into a concise daily intelligence feed.
+
+- **Discovered**: 2026-03-17
+- **Signal**: 🌱 66 HN points
+- **Tags**: `hacker-news` `summarizer` `intelligence` `daily-briefing`
+
+### ⚡ [Ichinichi](https://github.com/nicepkg/ichinichi)
+
+One note per day — E2E encrypted, local-first minimalist notes app. Intentionally constrained: no folders, no tags, no sync. 129 HN pts, 59 comments.
+
+- **Discovered**: 2026-03-17
+- **Signal**: ⚡ 129 HN points
+- **Tags**: `notes` `e2e-encrypted` `local-first` `minimalist`
+
+### ⚡ [claude-hud](https://github.com/jarrodwatts/claude-hud)
+
+Claude Code plugin displaying context usage, active tools, agents, and progress tracking — real-time observability for AI coding sessions. 8,456 stars (+1,851/day), accelerating further on Day 3.
+
+- **Discovered**: 2026-03-17
+- **Signal**: ⚡ ⭐ 8,456 stars (+1,851/day)
+- **Tags**: `claude-code` `observability` `plugin` `open-source`
+
+### ⚡ [Oxyde](https://github.com/mr-fatalyst/oxyde)
+
+Pydantic-native async ORM with a Rust core — type-safe Python database layer with Rust performance. 152 HN pts, 78 comments on Show HN.
+
+- **Discovered**: 2026-03-17
+- **Signal**: ⚡ 152 HN points
+- **Tags**: `rust` `python` `orm` `pydantic` `open-source`
+
+### 🔥 [Unsloth](https://github.com/unslothai/unsloth)
+
+Unified web UI + core library for training and running open models locally — 2x faster training with 70% less VRAM. Supports Qwen, DeepSeek, Gemma, Llama, gpt-oss. 56,664 stars (+1,259/day).
+
+- **Discovered**: 2026-03-18
+- **Signal**: 🔥 ⭐ 56,664 stars · 379 HN points
+- **Tags**: `open-source`
+
+### 🌱 [Tmux-IDE](https://thijsverreck.com)
+
+OSS agent-first terminal IDE — tmux-based development environment designed for AI coding agent workflows.
+
+- **Discovered**: 2026-03-18
+- **Signal**: 🌱 77 HN points
+- **Tags**: `open-source`
+
+### ⚡ [opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)
+
+PDF parser for AI-ready data — automates PDF accessibility and extraction for LLM pipelines. Trending #1 on GitHub at 5,497 stars (+1,394/day).
+
+- **Discovered**: 2026-03-19
+- **Signal**: ⚡ ⭐ 5,497 stars (+1,394/day)
+- **Tags**: `open-source` `ai-data`
+
+### ⚡ [RX](https://github.com/creationix/rx)
+
+Random-access JSON alternative — new data format addressing JSON's limitations for large datasets. 133 HN pts, 92 comments with deep technical discussion.
+
+- **Discovered**: 2026-03-19
+- **Signal**: ⚡ 133 HN points
+- **Tags**: `open-source` `data-format`
 
 ---
 
@@ -934,7 +1230,7 @@ Fully automatic censorship removal for LLMs — combines abliteration with TPE-b
 
 Networking, alternative platforms, and foundational open source software.
 
-**13 projects**
+**23 projects**
 
 ### 🔥 [Antirender](https://antirender.com/)
 
@@ -983,10 +1279,10 @@ Open-source WireGuard-based mesh VPN for zero-trust peer-to-peer networking.
 
 ### 🔥 [openclaw](https://github.com/openclaw/openclaw)
 
-Open-source macOS AI assistant — community alternative to Apple Intelligence. Crossed 300,000 stars on Mar 11 with steady +847/day organic growth. First open-source game framework at this threshold.
+Open-source macOS AI assistant — community alternative to Apple Intelligence. Crossed 300,000 stars on Mar 11. Ecosystem effect driving secondary growth (DenchClaw CRM, third-party tools).
 
 - **Discovered**: 2026-01-31
-- **Signal**: 🔥 ⭐ 300,000+ stars (+847/day)
+- **Signal**: 🔥 ⭐ 300,000+ stars
 - **Tags**: `open-source`
 
 ### 🔥 [PageIndex](https://github.com/VectifyAI/PageIndex)
@@ -1034,13 +1330,93 @@ Financial AI reference project — open-source hedge fund simulation using LLM-p
 - **Signal**: 🔥 ⭐ 48,339 stars (+636/day)
 - **Tags**: `open-source`
 
+### ⚡ [Ichinichi](https://github.com/nicepkg/ichinichi)
+
+One note per day — E2E encrypted, local-first minimalist notes app. Intentionally constrained design: no folders, no tags, no sync. Day 3 sustaining at 129 pts — validates minimalist productivity tool category.
+
+- **Discovered**: 2026-03-15
+- **Signal**: ⚡ 129 HN points
+- **Tags**: `open-source`
+
+### ⚡ [project-nomad](https://github.com/nicepkg/project-nomad)
+
+Offline survival computer — self-contained computing environment designed for zero-connectivity scenarios. 1,981 stars on GitHub trending.
+
+- **Discovered**: 2026-03-16
+- **Signal**: ⚡ ⭐ 1,981 stars (+775/day)
+- **Tags**: `offline` `survival` `knowledge-base` `self-hosted` `open-source`
+
+### 🔥 [OpenViking](https://github.com/volcengine/OpenViking)
+
+ByteDance's context database for AI agents — file-system paradigm unifying memory, resources, and skills under a viking:// protocol. Self-evolving memory with built-in iteration loops. 15,948 stars (+9,840/week).
+
+- **Discovered**: 2026-03-17
+- **Signal**: 🔥 ⭐ 15,948 stars (+9,840/week)
+- **Tags**: `context-database` `agents` `bytedance` `memory` `open-source`
+
+### 🔥 [lightpanda](https://github.com/lightpanda-io/browser)
+
+Zig headless browser purpose-built for AI automation — 11x faster and 9x less memory than Chrome headless. 21,935 stars (+9,442/week).
+
+- **Discovered**: 2026-03-17
+- **Signal**: 🔥 ⭐ 21,935 stars (+9,442/week)
+- **Tags**: `zig` `headless-browser` `ai-automation` `web-scraping` `open-source`
+
+### ⚡ [vite-plus](https://github.com/nicepkg/vite-plus)
+
+Evan You's unified Rust web toolchain — first non-AI-specific project on GitHub trending in days, breaking the 100% agent-related streak. 2,338 stars, +621/day.
+
+- **Discovered**: 2026-03-17
+- **Signal**: ⚡ ⭐ 2,338 stars (+621/day)
+- **Tags**: `rust` `vite` `web-toolchain` `evan-you` `open-source`
+
+### ⚡ [OpenViktor](https://matijacniacki.com/blog/openviktor)
+
+Reverse-engineered open source music production software — originally proprietary Viktor synth, now fully open-sourced. 151 HN pts.
+
+- **Discovered**: 2026-03-17
+- **Signal**: ⚡ 151 HN points
+- **Tags**: `music` `reverse-engineering` `open-source`
+
+### ⚡ [heretic](https://github.com/p-e-w/heretic)
+
+Fully automatic censorship removal for language models — combines abliteration with TPE-based optimization to produce uncensored models while preserving intelligence. 15,402 stars, +788/day.
+
+- **Discovered**: 2026-03-17
+- **Signal**: ⚡ ⭐ 15,402 stars (+788/day)
+- **Tags**: `uncensored` `language-models` `censorship` `open-source`
+
+### ⚡ [Machine Payments Protocol](https://stripe.com/blog/machine-payments-protocol)
+
+Stripe + Tempo open standard for agent-to-agent payments — enables AI agents to transact autonomously via stablecoins, fiat, or shared payment tokens. First payment protocol designed for machine commerce.
+
+- **Discovered**: 2026-03-18
+- **Signal**: ⚡ 171 HN points
+- **Tags**: `agent` `payments` `open-standard`
+
+### 🔥 [Nightingale](https://nightingale.cafe)
+
+Open-source karaoke app that works with any song on your computer — vocal isolation + lyrics sync. 543 HN points shows massive consumer OSS demand.
+
+- **Discovered**: 2026-03-18
+- **Signal**: 🔥 543 HN points
+- **Tags**: `open-source`
+
+### ⚡ [Wander](https://susam.net)
+
+Tiny decentralized tool to explore the small web — just 2 files. Cross-community traction: 254 HN pts + 42 Lobsters pts. Part of the indie web resurgence.
+
+- **Discovered**: 2026-03-18
+- **Signal**: ⚡ 254 HN points
+- **Tags**: `decentralized` `small-web` `open-source`
+
 ---
 
 ## Summary
 
-**Total projects**: 126
+**Total projects**: 173
 **Categories**: 4
-**Updated**: 2026-03-14
+**Updated**: 2026-03-19
 
 ---
 
