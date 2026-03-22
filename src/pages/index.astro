@@ -135,7 +135,7 @@ function formatDate(dateStr: string): string {
       <h2 class="text-sm font-semibold text-accent-violet">Insights &middot; {latestInsightDate}</h2>
       <a href={`${base}insights/`} class="ml-auto text-[11px] text-text-muted hover:text-accent-violet transition-colors">View all &rarr;</a>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-1.5">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-1.5">
       {latestInsightEntries.map(entry => (
         <div class="glass rounded-lg px-2.5 py-2 border-l-2 border-accent-violet/30">
           <p class="text-[11px] text-text-secondary leading-snug line-clamp-3">{entry}</p>
@@ -158,7 +158,7 @@ function formatDate(dateStr: string): string {
           {hotCount > 0 && <span class="text-[11px] text-signal-hot">🔥 {hotCount}</span>}
           {risingCount > 0 && <span class="text-[11px] text-signal-rising">⚡ {risingCount}</span>}
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-1.5">
           {projects.map(p => (
             <ProjectMiniCard
               name={p.name}
