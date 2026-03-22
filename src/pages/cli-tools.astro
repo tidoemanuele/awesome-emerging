@@ -42,9 +42,9 @@ const projects = [
   {
     name: "Lightpanda",
     url: "https://github.com/lightpanda-io/browser",
-    description: "Zig-based headless browser purpose-built for AI agents — 11x faster and 9x less memory than Chrome headless. Sub-100ms startup. 21,935 stars (+9,442/week), sustained growth.",
+    description: "Zig-based headless browser purpose-built for AI agents — 11x faster and 9x less memory than Chrome headless. Sub-100ms startup. 23,622 stars (+6,596/week), sustained growth.",
     discovered: "2026-01-12",
-    signal: "⭐ 21,935 stars (+9,442/week)",
+    signal: "⭐ 23,622 stars (+6,596/week)",
     signalLevel: "hot" as const,
   },
   {
@@ -181,6 +181,33 @@ const projects = [
     signal: "76 HN points",
     signalLevel: "early" as const,
     tags: ["terminal", "rust", "cli", "open-source"],
+  },
+  {
+    name: "Ghostling",
+    url: "https://github.com/ghostty-org/ghostling",
+    description: "Minimum viable terminal emulator built on libghostty C API — single C file using Raylib for rendering. Demonstrates Ghostty's VT parser as a standalone library: SIMD-optimized parsing, leading Unicode support, fuzzed codebase. 326 HN pts, 67 comments.",
+    discovered: "2026-03-21",
+    signal: "326 HN points",
+    signalLevel: "rising" as const,
+    tags: ["terminal", "open-source"],
+  },
+  {
+    name: "Termcraft",
+    url: "https://github.com/pagel-s/termcraft",
+    description: "Terminal-first 2D sandbox survival game written in Rust — Show HN with strong engagement. Games-in-terminal as creative expression.",
+    discovered: "2026-03-21",
+    signal: "125 HN points (Show HN)",
+    signalLevel: "rising" as const,
+    tags: ["rust", "cli", "open-source"],
+  },
+  {
+    name: "fortransky",
+    url: "https://github.com/FormerLab/fortransky",
+    description: "Bluesky / AT Protocol client written entirely in Fortran — Show HN with 137 pts. Fortran resurgence meets decentralized social protocols.",
+    discovered: "2026-03-20",
+    signal: "137 HN points (Show HN)",
+    signalLevel: "rising" as const,
+    tags: ["fortran", "cli", "open-source"],
   },
 ].sort((a, b) => b.discovered.localeCompare(a.discovered));
 ---

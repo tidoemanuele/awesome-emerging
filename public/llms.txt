@@ -3,7 +3,7 @@
 > A curated list of emerging open source projects that actually matter.
 > Signal-filtered, momentum-tracked, community-curated.
 
-**Last updated**: 2026-03-19
+**Last updated**: 2026-03-22
 **Website**: https://tidoemanuele.github.io/awesome-emerging/
 **GitHub**: https://github.com/tidoemanuele/awesome-emerging
 
@@ -23,7 +23,7 @@
 
 Frameworks, tools, and infrastructure for building, deploying, and orchestrating AI agents.
 
-**85 projects**
+**89 projects**
 
 ### 🌱 [1Code](https://github.com/21st-dev/1code)
 
@@ -271,10 +271,10 @@ MCP server for email — let AI agents send and read emails programmatically.
 
 ### 🔥 [MiroFish](https://github.com/666ghj/MiroFish)
 
-Chinese-origin swarm intelligence engine — 'predict anything' using particle swarm and ant colony algorithms. Day 2 acceleration (+17.2%) is rare — most viral projects follow a spike→decay pattern. Crossed 30K stars.
+Chinese-origin swarm intelligence engine — 'predict anything' using particle swarm and ant colony algorithms. Sustained velocity pushing to 39,270 stars (+15,056/week). No deceleration after two weeks.
 
 - **Discovered**: 2026-03-10
-- **Signal**: 🔥 ⭐ 34,799 stars (+17,714/week)
+- **Signal**: 🔥 ⭐ 39,270 stars (+15,056/week)
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [memU](https://github.com/NevaMind-AI/memU)
@@ -337,12 +337,12 @@ Run large language models locally with a simple CLI — Llama, Mistral, and more
 - **Discovered**: 2026-01-16
 - **Signal**: 🌱 Early / untracked
 
-### 🌱 [OpenCode](https://opencode.ai)
+### 🔥 [OpenCode](https://opencode.ai)
 
-Open-source AI coding agent with a polished terminal interface.
+Open-source AI coding agent built for the terminal — provider-agnostic alternative to Claude Code. Surged to 1,228 HN points (605 comments) on Mar 20. 126,000+ GitHub stars, 5M monthly active users. The open-source coding agent category has a clear leader.
 
 - **Discovered**: 2026-01-13
-- **Signal**: 🌱 Early / untracked
+- **Signal**: 🔥 ⭐ 126,000+ stars · 1,228 HN points
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [page-agent](https://github.com/alibaba/page-agent)
@@ -481,10 +481,10 @@ Rapid application development framework with AI-assisted code generation.
 
 ### 🔥 [superpowers](https://github.com/obra/superpowers)
 
-Agentic skills framework and software development methodology — 99K stars at +3,476/day on Day 5 of trending. Only ~60 GitHub repos have ever crossed 100K. Shell-based.
+Agentic skills framework and software development methodology — crossed 100K stars on Mar 21, reaching 104,594 (+20,308/week). One of fewer than 70 GitHub repos to ever hit this threshold. Official Anthropic marketplace acceptance.
 
 - **Discovered**: 2026-03-12
-- **Signal**: 🔥 ⭐ 99,055 stars (+3,476/day)
+- **Signal**: 🔥 ⭐ 104,594 stars (+20,308/week)
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [Axe](https://github.com/jrswab/axe)
@@ -537,10 +537,10 @@ IM chatbot infrastructure platform — multi-platform bot framework for messagin
 
 ### 🔥 [OpenViking](https://github.com/volcengine/OpenViking)
 
-ByteDance's open-source context database for AI agents — replaces fragmented vector stores with a file-system paradigm unifying memory, resources, and skills under a viking:// protocol. Self-evolving memory with built-in iteration loops. 14,485 stars, sustaining at +2,012/day.
+ByteDance's open-source context database for AI agents — replaces fragmented vector stores with a file-system paradigm unifying memory, resources, and skills under a viking:// protocol. Self-evolving memory with built-in iteration loops. 17,815 stars (+7,647/week), sustained growth.
 
 - **Discovered**: 2026-03-14
-- **Signal**: 🔥 ⭐ 15,948 stars (+9,840/week)
+- **Signal**: 🔥 ⭐ 17,815 stars (+7,647/week)
 - **Tags**: `agent` `memory` `open-source`
 
 ### 🔥 [CLI-Anything](https://github.com/HKUDS/CLI-Anything)
@@ -617,10 +617,10 @@ Open-source agent for formal proof engineering using Lean 4 — highest-engageme
 
 ### 🔥 [deepagents](https://github.com/langchain-ai/deepagents)
 
-Official LangChain agent harness with planning, web browsing, and coding built on LangGraph — 15,264 stars (+4,380/week). In direct competition with superpowers (shell-native) and Claude Code Skills (IDE-native).
+Official LangChain agent harness with planning, web browsing, and coding built on LangGraph — 16,621 stars (+5,487/week), accelerating. In direct competition with superpowers (shell-native) and Claude Code Skills (IDE-native).
 
 - **Discovered**: 2026-03-17
-- **Signal**: 🔥 ⭐ 15,264 stars (+4,380/week)
+- **Signal**: 🔥 ⭐ 16,621 stars (+5,487/week)
 - **Tags**: `langchain` `langgraph` `agent-harness` `planning` `open-source`
 
 ### 🌱 [Agent Lifecycle Toolkit (ALTK)]()
@@ -649,10 +649,10 @@ YC W26 — maps and geospatial API designed specifically for AI agent consumptio
 
 ### 🔥 [context-hub](https://github.com/andrewyng/context-hub)
 
-Andrew Ng's curated, versioned API documentation for coding agents — agents search, fetch, and annotate docs with a self-improvement feedback loop. 10,348 stars.
+Andrew Ng's curated, versioned API documentation for coding agents — agents search, fetch, and annotate docs with a self-improvement feedback loop. 11,465 stars (+5,224/week), sustained growth.
 
 - **Discovered**: 2026-03-18
-- **Signal**: 🔥 ⭐ 10,348 stars (+5,629/week)
+- **Signal**: 🔥 ⭐ 11,465 stars (+5,224/week)
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [NemoClaw](https://github.com/nvidia/NemoClaw)
@@ -665,10 +665,10 @@ Nvidia's orchestration framework for secure sandboxed agent deployment — polic
 
 ### ⚡ [open-swe](https://github.com/langchain-ai/open-swe)
 
-LangChain's open-source framework for building internal coding agents — triggers from Slack/Linear/GitHub, runs in isolated cloud sandboxes, auto-creates PRs. 6,991 stars, accelerating to +955/day on Day 2.
+LangChain's open-source framework for building internal coding agents — triggers from Slack/Linear/GitHub, runs in isolated cloud sandboxes, auto-creates PRs. Sustained growth past initial spike.
 
 - **Discovered**: 2026-03-19
-- **Signal**: ⚡ ⭐ 6,991 stars (+955/day)
+- **Signal**: ⚡ ⭐ 6,991+ stars
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [Signet](https://signet.watch)
@@ -695,13 +695,45 @@ Autoresearch for SAT solvers — AI-driven research agent that autonomously impr
 - **Signal**: ⚡ 162 HN points
 - **Tags**: `agent` `research` `open-source`
 
+### 🔥 [everything-claude-code](https://github.com/affaan-m/everything-claude-code)
+
+Agent harness performance optimization system — 13 expert agents, 40+ skills, 32 commands. By Anthropic hackathon winner. 96,857 stars (+17,462/week), second-fastest growing Claude Code ecosystem project after superpowers.
+
+- **Discovered**: 2026-03-20
+- **Signal**: 🔥 ⭐ 96,857 stars (+17,462/week)
+- **Tags**: `agent` `open-source`
+
+### ⚡ [Attention-Residuals](https://github.com/MoonshotAI/Attention-Residuals)
+
+MoonshotAI/Kimi's drop-in replacement for standard residual connections in Transformers — depth-wise attention over previous layers. Achieves same performance with 1.25x less compute. 236 HN pts. Published at ICLR 2026.
+
+- **Discovered**: 2026-03-20
+- **Signal**: ⚡ 236 HN points
+- **Tags**: `open-source`
+
+### 🌱 [Sashiko](https://sashiko.dev)
+
+Agentic Linux kernel code review system — AI-powered review of kernel patches. First domain-specific agent for OS kernel development.
+
+- **Discovered**: 2026-03-22
+- **Signal**: 🌱 40 HN points
+- **Tags**: `agent`
+
+### ⚡ [Flash-MoE](https://github.com/danveloper/flash-moe)
+
+Pure C/Metal inference engine running Qwen3.5-397B (397 billion parameters) on a MacBook Pro with 48GB RAM at 4.4+ tokens/sec. No Python, no frameworks — just C and hand-tuned Metal shaders. The entire 209GB model streams from SSD.
+
+- **Discovered**: 2026-03-22
+- **Signal**: ⚡ 175 HN points
+- **Tags**: `open-source`
+
 ---
 
 ## CLI Tools
 
 Command-line utilities, headless browsers, sandboxed execution, and terminal tools.
 
-**20 projects**
+**23 projects**
 
 ### 🌱 [audiowmark](https://github.com/swesterfeld/audiowmark)
 
@@ -736,10 +768,10 @@ GPU-accelerated terminal emulator by Mitchell Hashimoto — 1.3.0 release streng
 
 ### 🔥 [Lightpanda](https://github.com/lightpanda-io/browser)
 
-Zig-based headless browser purpose-built for AI agents — 11x faster and 9x less memory than Chrome headless. Sub-100ms startup. 21,935 stars (+9,442/week), sustained growth.
+Zig-based headless browser purpose-built for AI agents — 11x faster and 9x less memory than Chrome headless. Sub-100ms startup. 23,622 stars (+6,596/week), sustained growth.
 
 - **Discovered**: 2026-01-12
-- **Signal**: 🔥 ⭐ 21,935 stars (+9,442/week)
+- **Signal**: 🔥 ⭐ 23,622 stars (+6,596/week)
 
 ### 🌱 [mcpc](https://github.com/apify/mcp-cli)
 
@@ -861,13 +893,37 @@ GPU-accelerated infinite-canvas terminal in Rust — spatial 2D canvas replaces 
 - **Signal**: 🌱 76 HN points
 - **Tags**: `terminal` `rust` `cli` `open-source`
 
+### ⚡ [Ghostling](https://github.com/ghostty-org/ghostling)
+
+Minimum viable terminal emulator built on libghostty C API — single C file using Raylib for rendering. Demonstrates Ghostty's VT parser as a standalone library: SIMD-optimized parsing, leading Unicode support, fuzzed codebase. 326 HN pts, 67 comments.
+
+- **Discovered**: 2026-03-21
+- **Signal**: ⚡ 326 HN points
+- **Tags**: `terminal` `open-source`
+
+### ⚡ [Termcraft](https://github.com/pagel-s/termcraft)
+
+Terminal-first 2D sandbox survival game written in Rust — Show HN with strong engagement. Games-in-terminal as creative expression.
+
+- **Discovered**: 2026-03-21
+- **Signal**: ⚡ 125 HN points (Show HN)
+- **Tags**: `rust` `cli` `open-source`
+
+### ⚡ [fortransky](https://github.com/FormerLab/fortransky)
+
+Bluesky / AT Protocol client written entirely in Fortran — Show HN with 137 pts. Fortran resurgence meets decentralized social protocols.
+
+- **Discovered**: 2026-03-20
+- **Signal**: ⚡ 137 HN points (Show HN)
+- **Tags**: `fortran` `cli` `open-source`
+
 ---
 
 ## Developer Tools
 
 Package managers, AI code assistants, build systems, runtime managers, and dev workflow tools.
 
-**45 projects**
+**49 projects**
 
 ### 🌱 [Aider](https://github.com/Aider-AI/aider)
 
@@ -1106,10 +1162,10 @@ Fully automatic censorship removal for LLMs — combines abliteration with TPE-b
 
 ### 🔥 [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)
 
-Lightweight Claude Code-like agent harness implementation — educational narrative showing 'Bash is all you need.' 33,551 stars (+1,458/day), sustained velocity confirms ongoing onboarding wave.
+Lightweight Claude Code-like agent harness implementation — educational narrative showing 'Bash is all you need.' 35,816 stars (+8,609/week), sustained velocity confirms ongoing onboarding wave.
 
 - **Discovered**: 2026-03-16
-- **Signal**: 🔥 ⭐ 33,551 stars (+1,458/day)
+- **Signal**: 🔥 ⭐ 35,816 stars (+8,609/week)
 - **Tags**: `open-source`
 
 ### 🔥 [GitNexus](https://github.com/nicepkg/gitnexus)
@@ -1120,12 +1176,12 @@ Client-side zero-server code intelligence engine — knowledge graph for code un
 - **Signal**: 🔥 ⭐ 16,680 stars (+1,117/day)
 - **Tags**: `open-source`
 
-### ⚡ [vite-plus](https://github.com/nicepkg/vite-plus)
+### ⚡ [vite-plus](https://github.com/voidzero-dev/vite-plus)
 
-Evan You's unified Rust web toolchain — the only non-AI-specific project on GitHub trending. Velocity doubled on Day 2 signaling Rust toolchain excitement.
+Evan You's unified Rust web toolchain — sustained interest as the rare non-AI project on GitHub trending. 3,240 stars (+1,981/week).
 
 - **Discovered**: 2026-03-16
-- **Signal**: ⚡ ⭐ 2,338 stars (+621/day)
+- **Signal**: ⚡ ⭐ 3,240 stars (+1,981/week)
 - **Tags**: `open-source`
 
 ### ⚡ [Glassworm](https://github.com/nicbarker/glassworm)
@@ -1176,12 +1232,12 @@ One note per day — E2E encrypted, local-first minimalist notes app. Intentiona
 - **Signal**: ⚡ 129 HN points
 - **Tags**: `notes` `e2e-encrypted` `local-first` `minimalist`
 
-### ⚡ [claude-hud](https://github.com/jarrodwatts/claude-hud)
+### 🔥 [claude-hud](https://github.com/jarrodwatts/claude-hud)
 
-Claude Code plugin displaying context usage, active tools, agents, and progress tracking — real-time observability for AI coding sessions. 8,456 stars (+1,851/day), accelerating further on Day 3.
+Claude Code plugin displaying context usage, active tools, agents, and progress tracking — real-time observability for AI coding sessions. 11,020 stars (+5,653/week), crossed 10K. Sustained momentum.
 
 - **Discovered**: 2026-03-17
-- **Signal**: ⚡ ⭐ 8,456 stars (+1,851/day)
+- **Signal**: 🔥 ⭐ 11,020 stars (+5,653/week)
 - **Tags**: `claude-code` `observability` `plugin` `open-source`
 
 ### ⚡ [Oxyde](https://github.com/mr-fatalyst/oxyde)
@@ -1194,10 +1250,10 @@ Pydantic-native async ORM with a Rust core — type-safe Python database layer w
 
 ### 🔥 [Unsloth](https://github.com/unslothai/unsloth)
 
-Unified web UI + core library for training and running open models locally — 2x faster training with 70% less VRAM. Supports Qwen, DeepSeek, Gemma, Llama, gpt-oss. 56,664 stars (+1,259/day).
+Unified web UI + core library for training and running open models locally — 2x faster training with 70% less VRAM. Supports Qwen, DeepSeek, Gemma, Llama, gpt-oss. 57,510 stars (+3,367/week).
 
 - **Discovered**: 2026-03-18
-- **Signal**: 🔥 ⭐ 56,664 stars · 379 HN points
+- **Signal**: 🔥 ⭐ 57,510 stars (+3,367/week)
 - **Tags**: `open-source`
 
 ### 🌱 [Tmux-IDE](https://thijsverreck.com)
@@ -1224,13 +1280,45 @@ Random-access JSON alternative — new data format addressing JSON's limitations
 - **Signal**: ⚡ 133 HN points
 - **Tags**: `open-source` `data-format`
 
+### 🔥 [gstack](https://github.com/garrytan/gstack)
+
+Garry Tan's exact Claude Code setup — 15 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA. ~20,000 stars in first 48 hours. Controversial but validated as onboarding accelerator for first-time Claude Code users.
+
+- **Discovered**: 2026-03-20
+- **Signal**: 🔥 ⭐ ~20,000 stars
+- **Tags**: `claude-code` `open-source`
+
+### ⚡ [Grafeo](https://github.com/GrafeoDB/grafeo)
+
+Pure-Rust high-performance graph database — embeddable or standalone. Supports LPG + RDF, all major query languages (GQL, Cypher, Gremlin, GraphQL, SPARQL). Zero external dependencies. Fastest on LDBC Social Network Benchmark. Multi-language bindings.
+
+- **Discovered**: 2026-03-21
+- **Signal**: ⚡ 238 HN points
+- **Tags**: `rust` `database` `open-source`
+
+### ⚡ [Tooscut](https://github.com/mohebifar/tooscut)
+
+Professional video editing in the browser — Rust/WebGPU/WASM with near-native performance. Multi-track timeline, keyframe animation, real-time effects. Local-first via File System Access API. Zero installation.
+
+- **Discovered**: 2026-03-22
+- **Signal**: ⚡ 322 HN points
+- **Tags**: `rust` `webgpu` `open-source`
+
+### ⚡ [filmkit](https://github.com/eggricesoy/filmkit)
+
+Open-source Fujifilm X RAW STUDIO webapp clone — apply Fujifilm film simulation recipes in-browser. 160 HN pts with enthusiastic photographer community engagement.
+
+- **Discovered**: 2026-03-21
+- **Signal**: ⚡ 160 HN points
+- **Tags**: `open-source`
+
 ---
 
 ## Open Source Infrastructure
 
 Networking, alternative platforms, and foundational open source software.
 
-**23 projects**
+**25 projects**
 
 ### 🔥 [Antirender](https://antirender.com/)
 
@@ -1348,26 +1436,26 @@ Offline survival computer — self-contained computing environment designed for 
 
 ### 🔥 [OpenViking](https://github.com/volcengine/OpenViking)
 
-ByteDance's context database for AI agents — file-system paradigm unifying memory, resources, and skills under a viking:// protocol. Self-evolving memory with built-in iteration loops. 15,948 stars (+9,840/week).
+ByteDance's context database for AI agents — file-system paradigm unifying memory, resources, and skills under a viking:// protocol. Self-evolving memory with built-in iteration loops. 17,815 stars (+7,647/week), sustained growth.
 
 - **Discovered**: 2026-03-17
-- **Signal**: 🔥 ⭐ 15,948 stars (+9,840/week)
+- **Signal**: 🔥 ⭐ 17,815 stars (+7,647/week)
 - **Tags**: `context-database` `agents` `bytedance` `memory` `open-source`
 
 ### 🔥 [lightpanda](https://github.com/lightpanda-io/browser)
 
-Zig headless browser purpose-built for AI automation — 11x faster and 9x less memory than Chrome headless. 21,935 stars (+9,442/week).
+Zig headless browser purpose-built for AI automation — 11x faster and 9x less memory than Chrome headless. 23,622 stars (+6,596/week), sustained growth.
 
 - **Discovered**: 2026-03-17
-- **Signal**: 🔥 ⭐ 21,935 stars (+9,442/week)
+- **Signal**: 🔥 ⭐ 23,622 stars (+6,596/week)
 - **Tags**: `zig` `headless-browser` `ai-automation` `web-scraping` `open-source`
 
-### ⚡ [vite-plus](https://github.com/nicepkg/vite-plus)
+### ⚡ [vite-plus](https://github.com/voidzero-dev/vite-plus)
 
-Evan You's unified Rust web toolchain — first non-AI-specific project on GitHub trending in days, breaking the 100% agent-related streak. 2,338 stars, +621/day.
+Evan You's unified Rust web toolchain — sustained growth as the rare non-AI project on GitHub trending. 3,240 stars (+1,981/week).
 
 - **Discovered**: 2026-03-17
-- **Signal**: ⚡ ⭐ 2,338 stars (+621/day)
+- **Signal**: ⚡ ⭐ 3,240 stars (+1,981/week)
 - **Tags**: `rust` `vite` `web-toolchain` `evan-you` `open-source`
 
 ### ⚡ [OpenViktor](https://matijacniacki.com/blog/openviktor)
@@ -1378,12 +1466,12 @@ Reverse-engineered open source music production software — originally propriet
 - **Signal**: ⚡ 151 HN points
 - **Tags**: `music` `reverse-engineering` `open-source`
 
-### ⚡ [heretic](https://github.com/p-e-w/heretic)
+### 🔥 [heretic](https://github.com/p-e-w/heretic)
 
-Fully automatic censorship removal for language models — combines abliteration with TPE-based optimization to produce uncensored models while preserving intelligence. 15,402 stars, +788/day.
+Fully automatic censorship removal for language models — combines abliteration with TPE-based optimization to produce uncensored models while preserving intelligence. 15,402+ stars, sustained.
 
 - **Discovered**: 2026-03-17
-- **Signal**: ⚡ ⭐ 15,402 stars (+788/day)
+- **Signal**: 🔥 ⭐ 15,402+ stars
 - **Tags**: `uncensored` `language-models` `censorship` `open-source`
 
 ### ⚡ [Machine Payments Protocol](https://stripe.com/blog/machine-payments-protocol)
@@ -1410,13 +1498,29 @@ Tiny decentralized tool to explore the small web — just 2 files. Cross-communi
 - **Signal**: ⚡ 254 HN points
 - **Tags**: `decentralized` `small-web` `open-source`
 
+### ⚡ [Floci](https://github.com/hectorvent/floci)
+
+Free, open-source local AWS emulator — emerged after LocalStack's community edition sunset (auth tokens, dropped CI support, frozen security updates). No account, no feature gates, no telemetry. Just `docker compose up`. 249 HN pts.
+
+- **Discovered**: 2026-03-22
+- **Signal**: ⚡ 249 HN points
+- **Tags**: `aws` `open-source`
+
+### ⚡ [Mamba-3](https://github.com/state-spaces/mamba)
+
+Together.ai's state space model — outperforms Transformers by 4% on language modeling, runs 7x faster. Half the state size of Mamba-2. Apache 2.0. Published at ICLR 2026. 292 HN pts. Inference efficiency as the primary design goal.
+
+- **Discovered**: 2026-03-21
+- **Signal**: ⚡ 292 HN points
+- **Tags**: `open-source`
+
 ---
 
 ## Summary
 
-**Total projects**: 173
+**Total projects**: 186
 **Categories**: 4
-**Updated**: 2026-03-19
+**Updated**: 2026-03-22
 
 ---
 
