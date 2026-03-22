@@ -1,155 +1,190 @@
 ---
 import Base from '../layouts/Base.astro';
-import CategoryCard from '../components/CategoryCard.astro';
+import ProjectMiniCard from '../components/ProjectMiniCard.astro';
 import { insights } from '../data/insights';
 
 const base = import.meta.env.BASE_URL;
 
-// Auto-compute: latest insights (first 3 entries from the most recent day)
-const latestDay = insights[0];
-const latestInsights = latestDay.entries.slice(0, 3);
-const latestDate = new Date(latestDay.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+// ── Parse projects from raw category page sources at build time ──
+const categoryFiles: Record<string, { glob: Record<string, string>; slug: string }> = {
+  'ai-agents': { glob: import.meta.glob('./ai-agents.astro', { eager: true, as: 'raw' }), slug: 'ai-agents' },
+  'cli-tools': { glob: import.meta.glob('./cli-tools.astro', { eager: true, as: 'raw' }), slug: 'cli-tools' },
+  'developer-tools': { glob: import.meta.glob('./developer-tools.astro', { eager: true, as: 'raw' }), slug: 'developer-tools' },
+  'open-source-infra': { glob: import.meta.glob('./open-source-infra.astro', { eager: true, as: 'raw' }), slug: 'open-source-infra' },
+};
 
-// Auto-compute: project counts by counting signalLevel occurrences via glob
-const allPages = import.meta.glob('./ai-agents.astro', { eager: true, as: 'raw' });
-const cliPages = import.meta.glob('./cli-tools.astro', { eager: true, as: 'raw' });
-const devPages = import.meta.glob('./developer-tools.astro', { eager: true, as: 'raw' });
-const infraPages = import.meta.glob('./open-source-infra.astro', { eager: true, as: 'raw' });
-
-function countProjects(pages: Record<string, string>) {
-  const raw = Object.values(pages)[0] || '';
-  return (raw.match(/signalLevel:/g) || []).length;
+interface Project {
+  name: string;
+  url: string;
+  description: string;
+  discovered: string;
+  signal: string;
+  signalLevel: 'hot' | 'rising' | 'early';
+  category: string;
+  tags: string[];
 }
 
-const aiCount = countProjects(allPages);
-const cliCount = countProjects(cliPages);
-const devCount = countProjects(devPages);
-const infraCount = countProjects(infraPages);
-const totalCount = aiCount + cliCount + devCount + infraCount;
+function parseProjects(raw: string, category: string): Project[] {
+  const projects: Project[] = [];
+  // Split on project object boundaries (indented opening braces)
+  const blocks = raw.split(/\n  \{/).slice(1);
+  for (const rawBlock of blocks) {
+    const block = '{' + rawBlock;
+    const name = block.match(/name:\s*"([^"]*)"/)?.[1] || '';
+    const url = block.match(/url:\s*"([^"]*)"/)?.[1] || '';
+    const description = block.match(/description:\s*"([^"]*)"/)?.[1] || '';
+    const discovered = block.match(/discovered:\s*"([^"]*)"/)?.[1] || '';
+    const signal = block.match(/signal:\s*"([^"]*)"/)?.[1] || '';
+    const signalLevelMatch = block.match(/signalLevel:\s*"([^"]*)"/)?.[1] || 'early';
+    const tagsMatch = block.match(/tags:\s*\[([^\]]*)\]/)?.[1] || '';
+    const tags = tagsMatch ? tagsMatch.match(/"([^"]*)"/g)?.map(t => t.replace(/"/g, '')) || [] : [];
+
+    if (name && discovered) {
+      projects.push({
+        name, url, description, discovered, signal,
+        signalLevel: signalLevelMatch as 'hot' | 'rising' | 'early',
+        category, tags,
+      });
+    }
+  }
+  return projects;
+}
+
+// Parse all projects from all categories
+const allProjects: Project[] = [];
+const categoryCounts: Record<string, number> = {};
+
+for (const [category, { glob, slug }] of Object.entries(categoryFiles)) {
+  const raw = Object.values(glob)[0] || '';
+  const projects = parseProjects(raw, slug);
+  categoryCounts[slug] = projects.length;
+  allProjects.push(...projects);
+}
+
+const totalCount = allProjects.length;
+
+// Sort by discovered date descending
+allProjects.sort((a, b) => b.discovered.localeCompare(a.discovered));
+
+// Group projects by date
+const projectsByDate = new Map<string, Project[]>();
+for (const p of allProjects) {
+  const list = projectsByDate.get(p.discovered) || [];
+  list.push(p);
+  projectsByDate.set(p.discovered, list);
+}
+
+// Get the most recent dates (show last 7 days of activity)
+const recentDates = [...projectsByDate.keys()].slice(0, 7);
+
+// Latest insights
+const latestDay = insights[0];
+const latestInsightEntries = latestDay.entries.slice(0, 5);
+const latestInsightDate = new Date(latestDay.date + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+
+// Category metadata
+const categoryMeta: Record<string, { label: string; icon: string; color: string }> = {
+  'ai-agents': { label: 'AI Agents', icon: '🤖', color: 'bg-accent-violet/15 text-accent-violet border-accent-violet/25' },
+  'cli-tools': { label: 'CLI Tools', icon: '💻', color: 'bg-accent-cyan/15 text-accent-cyan border-accent-cyan/25' },
+  'developer-tools': { label: 'Dev Tools', icon: '🛠️', color: 'bg-accent-blue/15 text-accent-blue border-accent-blue/25' },
+  'open-source-infra': { label: 'Infra', icon: '🌐', color: 'bg-signal-rising/15 text-signal-rising border-signal-rising/25' },
+};
+
+function formatDate(dateStr: string): string {
+  const d = new Date(dateStr + 'T00:00:00');
+  return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+}
 ---
 
 <Base title="Home" description="A curated list of emerging open source projects that actually matter — signal-filtered, momentum-tracked, community-curated.">
-  <!-- Hero -->
-  <section class="aurora-bg -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-20 rounded-b-3xl mb-12">
-    <div class="max-w-3xl mx-auto text-center">
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-[family-name:var(--font-display)] leading-tight">
+
+  <!-- Compact Header -->
+  <section class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-6">
+    <div>
+      <h1 class="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-display)]">
         <span class="text-gradient">Awesome Emerging</span>
       </h1>
-      <p class="mt-4 text-lg sm:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">
-        Open source projects that actually matter. Signal-filtered, momentum-tracked, community-curated.
-      </p>
-      <p class="mt-2 text-sm text-text-muted">Not another static list.</p>
-      <div class="mt-8 flex flex-wrap justify-center gap-3">
-        <a href={`${base}ai-agents/`} class="px-6 py-2.5 text-sm font-semibold rounded-[var(--radius-button)] bg-gradient-to-r from-accent-violet to-accent-cyan text-white hover:opacity-90 transition-all hover:scale-[1.02] active:scale-[0.98]">
-          Browse Projects
-        </a>
-        <a href={`${base}about/`} class="px-6 py-2.5 text-sm font-semibold rounded-[var(--radius-button)] glass text-text-primary hover:bg-white/10 transition-all">
-          About This Project
-        </a>
-      </div>
+      <p class="text-sm text-text-muted mt-0.5">{totalCount} projects tracked &middot; Updated {latestInsightDate}</p>
+    </div>
+    <div class="flex gap-2">
+      <a href={`${base}insights/`} class="px-3 py-1.5 text-xs font-semibold rounded-lg glass text-text-secondary hover:text-accent-violet transition-colors">Insights</a>
+      <a href={`${base}about/`} class="px-3 py-1.5 text-xs font-semibold rounded-lg glass text-text-secondary hover:text-accent-violet transition-colors">About</a>
     </div>
   </section>
 
-  <!-- Latest Insights -->
-  <section class="mb-12">
-    <div class="flex items-center justify-between mb-4">
-      <h2 class="text-2xl font-bold font-[family-name:var(--font-display)] text-text-primary">Latest Insights</h2>
-      <a href={`${base}insights/`} class="text-xs font-semibold text-accent-violet hover:text-accent-cyan transition-colors">View all &rarr;</a>
+  <!-- Category Nav Pills -->
+  <section class="flex flex-wrap gap-2 mb-6">
+    {Object.entries(categoryMeta).map(([slug, meta]) => (
+      <a href={`${base}${slug}/`} class={`inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border transition-all hover:scale-[1.02] ${meta.color}`}>
+        <span>{meta.icon}</span>
+        <span>{meta.label}</span>
+        <span class="opacity-60">{categoryCounts[slug]}</span>
+      </a>
+    ))}
+    <div class="flex items-center gap-3 ml-auto text-[11px] text-text-muted">
+      <span class="inline-flex items-center gap-1">🔥 &gt;500pts / &gt;10K★</span>
+      <span class="inline-flex items-center gap-1">⚡ &gt;100pts / &gt;1K★</span>
+      <span class="inline-flex items-center gap-1">🌱 Early</span>
     </div>
-    <div class="space-y-3">
-      {latestInsights.map(entry => (
-        <div class="glass rounded-[var(--radius-card)] p-4 border-l-2 border-accent-violet/40">
-          <span class="text-xs text-accent-violet font-semibold">{latestDate}</span>
-          <p class="mt-1 text-sm text-text-secondary leading-relaxed">{entry}</p>
+  </section>
+
+  <!-- Latest Insights Strip -->
+  <section class="mb-8">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="w-2 h-2 rounded-full bg-accent-violet"></span>
+      <h2 class="text-sm font-semibold text-accent-violet">Insights &middot; {latestInsightDate}</h2>
+      <a href={`${base}insights/`} class="ml-auto text-[11px] text-text-muted hover:text-accent-violet transition-colors">View all &rarr;</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+      {latestInsightEntries.map(entry => (
+        <div class="glass rounded-lg px-3 py-2 border-l-2 border-accent-violet/30">
+          <p class="text-xs text-text-secondary leading-snug line-clamp-3">{entry}</p>
         </div>
       ))}
     </div>
   </section>
 
-  <!-- Categories -->
-  <section>
-    <h2 class="text-2xl font-bold font-[family-name:var(--font-display)] text-text-primary mb-6">Categories</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <CategoryCard
-        title="AI Agents & Frameworks"
-        description="Multi-agent systems, MCP servers, LLM infrastructure, orchestration platforms"
-        count={aiCount}
-        href={`${base}ai-agents/`}
-        icon="🤖"
-      />
-      <CategoryCard
-        title="CLI Tools"
-        description="Headless browsers, sandboxed execution, debugging aids, terminal utilities"
-        count={cliCount}
-        href={`${base}cli-tools/`}
-        icon="💻"
-      />
-      <CategoryCard
-        title="Developer Tools"
-        description="Package managers, AI code assistants, build systems, runtime managers"
-        count={devCount}
-        href={`${base}developer-tools/`}
-        icon="🛠️"
-      />
-      <CategoryCard
-        title="Open Source Infrastructure"
-        description="Networking, alternative platforms, foundational software with real traction"
-        count={infraCount}
-        href={`${base}open-source-infra/`}
-        icon="🌐"
-      />
-    </div>
-  </section>
+  <!-- Recent Projects by Date -->
+  {recentDates.map(date => {
+    const projects = projectsByDate.get(date) || [];
+    const dateLabel = formatDate(date);
+    const hotCount = projects.filter(p => p.signalLevel === 'hot').length;
+    const risingCount = projects.filter(p => p.signalLevel === 'rising').length;
+    return (
+      <section class="mb-8">
+        <div class="flex items-center gap-3 mb-3 border-b border-border-subtle pb-2">
+          <h2 class="text-sm font-semibold text-text-primary">{dateLabel}</h2>
+          <span class="text-xs text-text-muted">{projects.length} projects</span>
+          {hotCount > 0 && <span class="text-[11px] text-signal-hot">🔥 {hotCount}</span>}
+          {risingCount > 0 && <span class="text-[11px] text-signal-rising">⚡ {risingCount}</span>}
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+          {projects.map(p => (
+            <ProjectMiniCard
+              name={p.name}
+              url={p.url}
+              description={p.description}
+              discovered={p.discovered}
+              signal={p.signal}
+              signalLevel={p.signalLevel}
+              category={p.category}
+              tags={p.tags}
+            />
+          ))}
+        </div>
+      </section>
+    );
+  })}
 
-  <!-- How it works -->
-  <section class="mt-16">
-    <h2 class="text-2xl font-bold font-[family-name:var(--font-display)] text-text-primary mb-6">What Makes This Different</h2>
-    <div class="glass rounded-[var(--radius-card)] p-6">
-      <p class="text-text-secondary leading-relaxed">
-        Most awesome lists are <strong class="text-text-primary">static catalogs</strong> — they list projects that exist. This one tracks projects that are <strong class="text-gradient">gaining real momentum</strong>.
-      </p>
-      <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div class="text-center">
-          <div class="text-2xl mb-2">📅</div>
-          <h3 class="text-sm font-semibold text-text-primary">Discovery Date</h3>
-          <p class="text-xs text-text-muted mt-1">When we first spotted it trending</p>
-        </div>
-        <div class="text-center">
-          <div class="text-2xl mb-2">📊</div>
-          <h3 class="text-sm font-semibold text-text-primary">Momentum Signal</h3>
-          <p class="text-xs text-text-muted mt-1">HN points, GitHub stars at discovery</p>
-        </div>
-        <div class="text-center">
-          <div class="text-2xl mb-2">🎯</div>
-          <h3 class="text-sm font-semibold text-text-primary">Signal Rating</h3>
-          <p class="text-xs text-text-muted mt-1">🔥 Hot / ⚡ Rising / 🌱 Early</p>
-        </div>
-      </div>
+  <!-- View More -->
+  <div class="text-center py-6 border-t border-border-subtle">
+    <p class="text-xs text-text-muted mb-3">Showing {recentDates.length} most recent days &middot; {totalCount} total projects across {Object.keys(categoryCounts).length} categories</p>
+    <div class="flex flex-wrap justify-center gap-2">
+      {Object.entries(categoryMeta).map(([slug, meta]) => (
+        <a href={`${base}${slug}/`} class="px-4 py-2 text-xs font-semibold rounded-lg glass text-text-secondary hover:text-accent-violet transition-colors">
+          Browse all {meta.label} &rarr;
+        </a>
+      ))}
     </div>
-  </section>
-
-  <!-- Signal Legend -->
-  <section class="mt-12 mb-8">
-    <div class="glass rounded-[var(--radius-card)] p-6">
-      <h3 class="text-lg font-bold font-[family-name:var(--font-display)] text-text-primary mb-4">Signal Legend</h3>
-      <div class="space-y-3">
-        <div class="flex items-center gap-3">
-          <span class="px-2.5 py-1 text-xs font-semibold rounded-full border border-signal-hot/30 bg-signal-hot/10 text-signal-hot">🔥 Hot</span>
-          <span class="text-sm text-text-secondary">&gt;500 HN points or &gt;10k GitHub stars</span>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="px-2.5 py-1 text-xs font-semibold rounded-full border border-signal-rising/30 bg-signal-rising/10 text-signal-rising">⚡ Rising</span>
-          <span class="text-sm text-text-secondary">&gt;100 HN points or &gt;1k GitHub stars</span>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="px-2.5 py-1 text-xs font-semibold rounded-full border border-border-default bg-surface-raised text-text-muted">🌱 Early</span>
-          <span class="text-sm text-text-secondary">Promising but nascent</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <p class="text-center text-xs text-text-muted">
-    Curated from daily open source research since December 2025. <strong class="text-text-secondary">{totalCount} projects</strong> and growing.
-  </p>
+  </div>
 </Base>

@@ -1,0 +1,50 @@
+---
+interface Props {
+  name: string;
+  url: string;
+  description: string;
+  discovered: string;
+  signal: string;
+  signalLevel: 'hot' | 'rising' | 'early';
+  category: string;
+  tags?: string[];
+}
+
+const { name, url, description, discovered, signal, signalLevel, category, tags = [] } = Astro.props;
+
+const signalEmoji = { hot: '🔥', rising: '⚡', early: '🌱' };
+
+const categoryColors: Record<string, string> = {
+  'ai-agents': 'bg-accent-violet/15 text-accent-violet border-accent-violet/25',
+  'cli-tools': 'bg-accent-cyan/15 text-accent-cyan border-accent-cyan/25',
+  'developer-tools': 'bg-accent-blue/15 text-accent-blue border-accent-blue/25',
+  'open-source-infra': 'bg-signal-rising/15 text-signal-rising border-signal-rising/25',
+};
+
+const categoryLabels: Record<string, string> = {
+  'ai-agents': 'AI',
+  'cli-tools': 'CLI',
+  'developer-tools': 'Dev',
+  'open-source-infra': 'Infra',
+};
+---
+
+<article class="glass rounded-xl p-3.5 transition-all duration-200 hover:border-accent-violet/30 hover:glow-accent group">
+  <div class="flex items-center gap-2 mb-1.5">
+    <span class={`shrink-0 text-[10px] font-bold px-1.5 py-0.5 rounded border ${categoryColors[category] || 'bg-surface-raised text-text-muted border-border-default'}`}>
+      {categoryLabels[category] || category}
+    </span>
+    <span class="text-xs" title={signalLevel}>{signalEmoji[signalLevel]}</span>
+    {url ? (
+      <a href={url} target="_blank" rel="noopener" class="text-sm font-semibold text-text-primary hover:text-gradient transition-colors truncate leading-tight">
+        {name}
+      </a>
+    ) : (
+      <span class="text-sm font-semibold text-text-primary truncate leading-tight">{name}</span>
+    )}
+  </div>
+  <p class="text-xs text-text-secondary leading-snug line-clamp-2">{description}</p>
+  <div class="mt-2 flex items-center gap-3 text-[11px] text-text-muted">
+    <span class={signalLevel === 'hot' ? 'text-signal-hot font-medium' : signalLevel === 'rising' ? 'text-signal-rising' : ''}>{signal}</span>
+  </div>
+</article>
