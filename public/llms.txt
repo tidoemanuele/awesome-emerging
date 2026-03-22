@@ -23,7 +23,7 @@
 
 Frameworks, tools, and infrastructure for building, deploying, and orchestrating AI agents.
 
-**89 projects**
+**94 projects**
 
 ### 🌱 [1Code](https://github.com/21st-dev/1code)
 
@@ -181,14 +181,6 @@ High-performance rendering library generated with AI assistance (1M+ lines of co
 
 - **Discovered**: 2026-01-16
 - **Signal**: 🌱 68 HN points
-- **Tags**: `open-source`
-
-### 🌱 [get-shit-done](https://github.com/gsd-build/get-shit-done)
-
-Simple task management overlay for Claude Code workflows.
-
-- **Discovered**: 2026-01-25
-- **Signal**: 🌱 Early / untracked
 - **Tags**: `open-source`
 
 ### ⚡ [hermes-agent](https://github.com/NousResearch/hermes-agent)
@@ -695,6 +687,54 @@ Autoresearch for SAT solvers — AI-driven research agent that autonomously impr
 - **Signal**: ⚡ 162 HN points
 - **Tags**: `agent` `research` `open-source`
 
+### 🔥 [get-shit-done](https://github.com/gsd-build/get-shit-done)
+
+Meta-prompting, context engineering, and spec-driven development system for Claude Code — competing with superpowers for the 'canonical agentic methodology' position. 36,556 stars at 1,491/day. JavaScript-based vs superpowers' Shell approach.
+
+- **Discovered**: 2026-03-20
+- **Signal**: 🔥 ⭐ 36,556 stars (+1,491/day)
+- **Tags**: `agent` `open-source`
+
+### ⚡ [ralph-claude-code](https://github.com/ralph-claude/ralph-claude-code)
+
+Autonomous development loop for Claude Code — self-referential execution with exit detection. 8,066 stars. Part of the Claude Code ecosystem expansion beyond plugins into workflow automation.
+
+- **Discovered**: 2026-03-22
+- **Signal**: ⚡ ⭐ 8,066 stars
+- **Tags**: `agent` `open-source`
+
+### 🔥 [TradingAgents](https://github.com/TauricResearch/TradingAgents)
+
+Multi-agent LLM financial trading framework — agents analyze market data, execute trades, manage risk. 34,862 stars. Proof point that domain-specific multi-agent systems outperform general-purpose frameworks.
+
+- **Discovered**: 2026-03-21
+- **Signal**: 🔥 ⭐ 34,862 stars
+- **Tags**: `agent` `open-source`
+
+### 🌱 [ClawMem]()
+
+Agent memory with SOTA local GPU retrieval — GPU-accelerated vector store for agent context. Part of the Mar 22 agent infrastructure gold rush (4 independent memory/context tools in one day).
+
+- **Discovered**: 2026-03-22
+- **Signal**: 🌱 Show HN launch
+- **Tags**: `agent` `memory` `open-source`
+
+### 🌱 [Entroly]()
+
+Compress codebase context for LLMs by 78% using Rust — reduces context window consumption without lossy compression. Complementary to memory tools: compress first, then store/retrieve.
+
+- **Discovered**: 2026-03-22
+- **Signal**: 🌱 Show HN launch
+- **Tags**: `agent` `rust` `open-source`
+
+### 🌱 [Helios]()
+
+Agent-vs-agent security testing — 3 Claude agents (Red vs Blue) hack and patch code autonomously. Novel paradigm: using AI agents to red-team code produced by other AI agents before deployment.
+
+- **Discovered**: 2026-03-22
+- **Signal**: 🌱 Show HN launch
+- **Tags**: `agent` `security`
+
 ### 🔥 [everything-claude-code](https://github.com/affaan-m/everything-claude-code)
 
 Agent harness performance optimization system — 13 expert agents, 40+ skills, 32 commands. By Anthropic hackathon winner. 96,857 stars (+17,462/week), second-fastest growing Claude Code ecosystem project after superpowers.
@@ -923,7 +963,7 @@ Bluesky / AT Protocol client written entirely in Fortran — Show HN with 137 pt
 
 Package managers, AI code assistants, build systems, runtime managers, and dev workflow tools.
 
-**49 projects**
+**52 projects**
 
 ### 🌱 [Aider](https://github.com/Aider-AI/aider)
 
@@ -1280,6 +1320,30 @@ Random-access JSON alternative — new data format addressing JSON's limitations
 - **Signal**: ⚡ 133 HN points
 - **Tags**: `open-source` `data-format`
 
+### 🌱 [TMA1]()
+
+Local-first observability for LLM agents — 'Datadog for agents.' Logging, tracing, metrics, and alerting for agent workloads. If agents are services, they need observability infrastructure.
+
+- **Discovered**: 2026-03-22
+- **Signal**: 🌱 Show HN launch
+- **Tags**: `agent` `observability` `open-source`
+
+### ⚡ [TaxHacker](https://github.com/vas3k/TaxHacker)
+
+Self-hosted AI accounting app — LLM-powered receipt and invoice analysis for solo developers and freelancers. 2,135 stars at 137/day. AI + self-hosted + financial requires high trust.
+
+- **Discovered**: 2026-03-21
+- **Signal**: ⚡ ⭐ 2,135 stars
+- **Tags**: `open-source`
+
+### 🔥 [arnis](https://github.com/louis-e/arnis)
+
+Generate any real-world location in Minecraft from OpenStreetMap data — Rust-based world generation. 11,843 stars at 1,045/day, accelerating on Day 2. Creative/gaming tool demonstrating Rust performance for data-intensive generation.
+
+- **Discovered**: 2026-03-20
+- **Signal**: 🔥 ⭐ 11,843 stars (+1,045/day)
+- **Tags**: `rust` `open-source`
+
 ### 🔥 [gstack](https://github.com/garrytan/gstack)
 
 Garry Tan's exact Claude Code setup — 15 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA. ~20,000 stars in first 48 hours. Controversial but validated as onboarding accelerator for first-time Claude Code users.
@@ -1518,7 +1582,7 @@ Together.ai's state space model — outperforms Transformers by 4% on language m
 
 ## Summary
 
-**Total projects**: 186
+**Total projects**: 194
 **Categories**: 4
 **Updated**: 2026-03-22
 
