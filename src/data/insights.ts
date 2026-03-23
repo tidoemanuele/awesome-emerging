@@ -1,5 +1,18 @@
 export const insights = [
   {
+    date: "2026-03-23",
+    entries: [
+      "Claude Code ecosystem occupies 10 of 25 top trending GitHub repos — 40% concentration is unprecedented. Docker at its 2016 peak never exceeded 20%. Platform status confirmed.",
+      "ByteDance deer-flow debuts at +1,690 stars/day (36.6K total) — highest first-day velocity for any multi-agent framework in 2026. Big tech now contests the agent framework market: Anthropic, OpenAI, GitHub, ByteDance, Nvidia.",
+      "'Reports of code's death are greatly exaggerated' (374 pts, Steve Krouse) arrives as the precision counter-narrative. Same day GitHub ships spec-kit (80.9K stars). Both can be true: specs drive development AND the resulting code demands precision.",
+      "Anthropic takes legal action against OpenCode (Tildes) — first legal confrontation between commercial and open-source agent harness. Same day Flash-MoE (344 pts) runs 397B params locally. Local AI is the escape valve from API legal disputes.",
+      "pentagi autonomous pentesting at +1,069/day (12.4K stars, Go) — security agents are the fastest-growing domain-specific category. Dual-use concerns escalate alongside adoption.",
+      "everything-claude-code at 99,500 stars — approaching 100K, which would make it the second Claude Code ecosystem project (after superpowers) to cross this threshold in the same month.",
+      "project-nomad sustains Day 2 at +2,300/day (11.1K stars) — offline AI hardware/knowledge is a real category, not a curiosity. 'They're Vibe-Coding Spam Now' (79 pts) runs simultaneously — the community debates AI's creative vs destructive uses.",
+      "Anti-AI discourse enters Day 6 across Lobsters (formalized 'vibecoding' tag), Tildes (193 combined votes on 3 anti-AI stories), and Dev.to (89 comments on AI tech debt). This is a structural counter-movement with its own vocabulary and platforms.",
+    ],
+  },
+  {
     date: "2026-03-22",
     entries: [
       "Browser-native professional tools cross a maturity threshold — Tooscut (322 pts) delivers video editing via WebGPU/WASM with near-native performance. The 'it has to be a desktop app' assumption is dying faster than expected.",

@@ -127,10 +127,10 @@ const projects = [
   {
     name: "project-nomad",
     url: "https://github.com/nicepkg/project-nomad",
-    description: "Offline survival computer — self-contained computing environment designed for zero-connectivity scenarios. 1,981 stars on GitHub trending.",
+    description: "Offline survival computer — self-contained computing environment with embedded AI for zero-connectivity scenarios. Exploded to 11,100 stars (+2,300/day on Day 2). 426 HN pts. The offline-first AI hardware category is validated.",
     discovered: "2026-03-16",
-    signal: "⭐ 1,981 stars (+775/day)",
-    signalLevel: "rising" as const,
+    signal: "⭐ 11,100 stars (+2,300/day)",
+    signalLevel: "hot" as const,
     tags: ["offline", "survival", "knowledge-base", "self-hosted", "open-source"],
   },
   {
@@ -222,6 +222,14 @@ const projects = [
     signal: "292 HN points",
     signalLevel: "rising" as const,
     tags: ["open-source"],
+  },
+  {
+    name: "Manyana",
+    url: "https://bramcohen.com",
+    description: "Bram Cohen's (BitTorrent creator) next-generation version control system — 500 HN pts, 279 comments. Most significant VCS discussion since Git's adoption. Proposes fundamental rethinking of version control.",
+    discovered: "2026-03-23",
+    signal: "500 HN points",
+    signalLevel: "hot" as const,
   },
 ].sort((a, b) => b.discovered.localeCompare(a.discovered));
 ---

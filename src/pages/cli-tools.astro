@@ -209,6 +209,15 @@ const projects = [
     signalLevel: "rising" as const,
     tags: ["fortran", "cli", "open-source"],
   },
+  {
+    name: "Sonar",
+    url: "https://github.com/nicepkg/sonar",
+    description: "Tiny CLI to see and kill whatever's running on localhost — utility tool embodying the 'small, focused CLI tool' philosophy. 194 HN pts on Show HN.",
+    discovered: "2026-03-23",
+    signal: "194 HN points (Show HN)",
+    signalLevel: "rising" as const,
+    tags: ["cli", "open-source"],
+  },
 ].sort((a, b) => b.discovered.localeCompare(a.discovered));
 ---
 

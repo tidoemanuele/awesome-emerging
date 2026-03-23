@@ -3,7 +3,7 @@
 > A curated list of emerging open source projects that actually matter.
 > Signal-filtered, momentum-tracked, community-curated.
 
-**Last updated**: 2026-03-22
+**Last updated**: 2026-03-23
 **Website**: https://tidoemanuele.github.io/awesome-emerging/
 **GitHub**: https://github.com/tidoemanuele/awesome-emerging
 
@@ -23,7 +23,7 @@
 
 Frameworks, tools, and infrastructure for building, deploying, and orchestrating AI agents.
 
-**94 projects**
+**98 projects**
 
 ### 🌱 [1Code](https://github.com/21st-dev/1code)
 
@@ -529,10 +529,10 @@ IM chatbot infrastructure platform — multi-platform bot framework for messagin
 
 ### 🔥 [OpenViking](https://github.com/volcengine/OpenViking)
 
-ByteDance's open-source context database for AI agents — replaces fragmented vector stores with a file-system paradigm unifying memory, resources, and skills under a viking:// protocol. Self-evolving memory with built-in iteration loops. 17,815 stars (+7,647/week), sustained growth.
+ByteDance's open-source context database for AI agents — replaces fragmented vector stores with a file-system paradigm unifying memory, resources, and skills under a viking:// protocol. Self-evolving memory with built-in iteration loops. 18,100 stars (+151/day), sustained.
 
 - **Discovered**: 2026-03-14
-- **Signal**: 🔥 ⭐ 17,815 stars (+7,647/week)
+- **Signal**: 🔥 ⭐ 18,100 stars
 - **Tags**: `agent` `memory` `open-source`
 
 ### 🔥 [CLI-Anything](https://github.com/HKUDS/CLI-Anything)
@@ -647,12 +647,12 @@ Andrew Ng's curated, versioned API documentation for coding agents — agents se
 - **Signal**: 🔥 ⭐ 11,465 stars (+5,224/week)
 - **Tags**: `agent` `open-source`
 
-### ⚡ [NemoClaw](https://github.com/nvidia/NemoClaw)
+### 🔥 [NemoClaw](https://github.com/nvidia/NemoClaw)
 
-Nvidia's orchestration framework for secure sandboxed agent deployment — policy-driven containment with hot-reloadable security policies and Nemotron inference integration. 9,600 stars.
+Nvidia's orchestration framework for secure sandboxed agent deployment — policy-driven containment with hot-reloadable security policies and Nemotron inference integration. 15,400 stars (+140/day), sustained.
 
 - **Discovered**: 2026-03-18
-- **Signal**: ⚡ ⭐ 9,600 stars · 289 HN points
+- **Signal**: 🔥 ⭐ 15,400 stars
 - **Tags**: `agent` `security` `open-source`
 
 ### ⚡ [open-swe](https://github.com/langchain-ai/open-swe)
@@ -671,12 +671,12 @@ Autonomous wildfire tracking from satellite and weather data — AI agents appli
 - **Signal**: ⚡ 123 HN points
 - **Tags**: `agent`
 
-### ⚡ [KittenTTS](https://github.com/KittenML/KittenTTS)
+### 🔥 [KittenTTS](https://github.com/KittenML/KittenTTS)
 
-Three new open-source text-to-speech models — smallest under 25MB. Lightweight TTS for agent voice interfaces and accessibility. 282 HN pts, 87 comments.
+Three open-source TTS models — smallest under 25MB, CPU-only, ONNX-based. Sustained to 554 HN pts (Day 3+). Sub-25MB footprint enables bundling with CLI agents for offline voice. Viable piper-tts alternative.
 
 - **Discovered**: 2026-03-19
-- **Signal**: ⚡ 282 HN points
+- **Signal**: 🔥 554 HN points (sustained)
 - **Tags**: `tts` `open-source`
 
 ### ⚡ [agent-sat](https://github.com/iliazintchenko/agent-sat)
@@ -689,10 +689,10 @@ Autoresearch for SAT solvers — AI-driven research agent that autonomously impr
 
 ### 🔥 [get-shit-done](https://github.com/gsd-build/get-shit-done)
 
-Meta-prompting, context engineering, and spec-driven development system for Claude Code — competing with superpowers for the 'canonical agentic methodology' position. 36,556 stars at 1,491/day. JavaScript-based vs superpowers' Shell approach.
+Meta-prompting, context engineering, and spec-driven development system for Claude Code — competing with superpowers for the 'canonical agentic methodology' position. 39,200 stars, sustained at +301/day.
 
 - **Discovered**: 2026-03-20
-- **Signal**: 🔥 ⭐ 36,556 stars (+1,491/day)
+- **Signal**: 🔥 ⭐ 39,200 stars
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [ralph-claude-code](https://github.com/ralph-claude/ralph-claude-code)
@@ -705,10 +705,10 @@ Autonomous development loop for Claude Code — self-referential execution with 
 
 ### 🔥 [TradingAgents](https://github.com/TauricResearch/TradingAgents)
 
-Multi-agent LLM financial trading framework — agents analyze market data, execute trades, manage risk. 34,862 stars. Proof point that domain-specific multi-agent systems outperform general-purpose frameworks.
+Multi-agent LLM financial trading framework — agents analyze market data, execute trades, manage risk. 38,000 stars (+1,051/day), with Chinese adaptation TradingAgents-CN at 20K. Domain-specific multi-agent validated.
 
 - **Discovered**: 2026-03-21
-- **Signal**: 🔥 ⭐ 34,862 stars
+- **Signal**: 🔥 ⭐ 38,000 stars (+1,051/day)
 - **Tags**: `agent` `open-source`
 
 ### 🌱 [ClawMem]()
@@ -735,12 +735,44 @@ Agent-vs-agent security testing — 3 Claude agents (Red vs Blue) hack and patch
 - **Signal**: 🌱 Show HN launch
 - **Tags**: `agent` `security`
 
+### 🔥 [deer-flow](https://github.com/bytedance/deer-flow)
+
+ByteDance's SuperAgent harness — researches, codes, and creates using sandboxes, memories, tools, skills, and subagents. Handles tasks from minutes to hours autonomously. 36,600 stars (+1,690/day debut) — highest first-day velocity for any multi-agent framework in 2026.
+
+- **Discovered**: 2026-03-23
+- **Signal**: 🔥 ⭐ 36,600 stars (+1,690/day)
+- **Tags**: `agent` `bytedance` `open-source`
+
+### 🔥 [pentagi](https://github.com/vxcontrol/pentagi)
+
+Fully autonomous AI pentesting system in Go — performs complex penetration testing tasks without human oversight. 12,400 stars (+1,069/day). Go implementation signals production readiness. Fastest-growing security-focused agent.
+
+- **Discovered**: 2026-03-23
+- **Signal**: 🔥 ⭐ 12,400 stars (+1,069/day)
+- **Tags**: `agent` `security` `go` `open-source`
+
+### ⚡ [Understand-Anything](https://github.com/nicepkg/understand-anything)
+
+Claude Code skills that turn codebases into interactive knowledge graphs — shift from 'AI writes code' to 'AI understands code.' Multi-platform (works with Codex). 4,700 stars (+489/day).
+
+- **Discovered**: 2026-03-23
+- **Signal**: ⚡ ⭐ 4,700 stars (+489/day)
+- **Tags**: `agent` `open-source`
+
+### ⚡ [Claude-Code-Game-Studios](https://github.com/nicepkg/claude-code-game-studios)
+
+48 AI agents mirroring real game studio hierarchy — 36 workflow skills with full coordination system. Most complex multi-agent coordination system documented on GitHub. 2,500 stars (+328/day).
+
+- **Discovered**: 2026-03-23
+- **Signal**: ⚡ ⭐ 2,500 stars (+328/day)
+- **Tags**: `agent` `game-dev` `open-source`
+
 ### 🔥 [everything-claude-code](https://github.com/affaan-m/everything-claude-code)
 
-Agent harness performance optimization system — 13 expert agents, 40+ skills, 32 commands. By Anthropic hackathon winner. 96,857 stars (+17,462/week), second-fastest growing Claude Code ecosystem project after superpowers.
+Agent harness performance optimization system — 13 expert agents, 40+ skills, 32 commands. By Anthropic hackathon winner. 99,500 stars (+3,724/day), approaching 100K milestone. Largest Claude Code ecosystem project.
 
 - **Discovered**: 2026-03-20
-- **Signal**: 🔥 ⭐ 96,857 stars (+17,462/week)
+- **Signal**: 🔥 ⭐ 99,500 stars (+3,724/day)
 - **Tags**: `agent` `open-source`
 
 ### ⚡ [Attention-Residuals](https://github.com/MoonshotAI/Attention-Residuals)
@@ -773,7 +805,7 @@ Pure C/Metal inference engine running Qwen3.5-397B (397 billion parameters) on a
 
 Command-line utilities, headless browsers, sandboxed execution, and terminal tools.
 
-**23 projects**
+**24 projects**
 
 ### 🌱 [audiowmark](https://github.com/swesterfeld/audiowmark)
 
@@ -957,13 +989,21 @@ Bluesky / AT Protocol client written entirely in Fortran — Show HN with 137 pt
 - **Signal**: ⚡ 137 HN points (Show HN)
 - **Tags**: `fortran` `cli` `open-source`
 
+### ⚡ [Sonar](https://github.com/nicepkg/sonar)
+
+Tiny CLI to see and kill whatever's running on localhost — utility tool embodying the 'small, focused CLI tool' philosophy. 194 HN pts on Show HN.
+
+- **Discovered**: 2026-03-23
+- **Signal**: ⚡ 194 HN points (Show HN)
+- **Tags**: `cli` `open-source`
+
 ---
 
 ## Developer Tools
 
 Package managers, AI code assistants, build systems, runtime managers, and dev workflow tools.
 
-**52 projects**
+**54 projects**
 
 ### 🌱 [Aider](https://github.com/Aider-AI/aider)
 
@@ -1202,10 +1242,10 @@ Fully automatic censorship removal for LLMs — combines abliteration with TPE-b
 
 ### 🔥 [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)
 
-Lightweight Claude Code-like agent harness implementation — educational narrative showing 'Bash is all you need.' 35,816 stars (+8,609/week), sustained velocity confirms ongoing onboarding wave.
+Lightweight Claude Code-like agent harness implementation — educational narrative showing 'Bash is all you need.' 36,300 stars (+238/day), sustained onboarding wave.
 
 - **Discovered**: 2026-03-16
-- **Signal**: 🔥 ⭐ 35,816 stars (+8,609/week)
+- **Signal**: 🔥 ⭐ 36,300 stars
 - **Tags**: `open-source`
 
 ### 🔥 [GitNexus](https://github.com/nicepkg/gitnexus)
@@ -1274,10 +1314,10 @@ One note per day — E2E encrypted, local-first minimalist notes app. Intentiona
 
 ### 🔥 [claude-hud](https://github.com/jarrodwatts/claude-hud)
 
-Claude Code plugin displaying context usage, active tools, agents, and progress tracking — real-time observability for AI coding sessions. 11,020 stars (+5,653/week), crossed 10K. Sustained momentum.
+Claude Code plugin displaying context usage, active tools, agents, and progress tracking — real-time observability for AI coding sessions. 11,500 stars (+267/day), sustained.
 
 - **Discovered**: 2026-03-17
-- **Signal**: 🔥 ⭐ 11,020 stars (+5,653/week)
+- **Signal**: 🔥 ⭐ 11,500 stars
 - **Tags**: `claude-code` `observability` `plugin` `open-source`
 
 ### ⚡ [Oxyde](https://github.com/mr-fatalyst/oxyde)
@@ -1338,18 +1378,34 @@ Self-hosted AI accounting app — LLM-powered receipt and invoice analysis for s
 
 ### 🔥 [arnis](https://github.com/louis-e/arnis)
 
-Generate any real-world location in Minecraft from OpenStreetMap data — Rust-based world generation. 11,843 stars at 1,045/day, accelerating on Day 2. Creative/gaming tool demonstrating Rust performance for data-intensive generation.
+Generate any real-world location in Minecraft from OpenStreetMap data — Rust-based world generation. 12,900 stars (+582/day), sustained multi-day trending. Creative/gaming tool demonstrating Rust for data-intensive generation.
 
 - **Discovered**: 2026-03-20
-- **Signal**: 🔥 ⭐ 11,843 stars (+1,045/day)
+- **Signal**: 🔥 ⭐ 12,900 stars (+582/day)
 - **Tags**: `rust` `open-source`
+
+### 🔥 [spec-kit](https://github.com/github/spec-kit)
+
+GitHub's official spec-driven development toolkit — when the platform owner releases tooling for a methodology, adoption becomes institutional. 80,900 stars (+340/day). Validates the 'sufficiently detailed spec is code' thesis.
+
+- **Discovered**: 2026-03-23
+- **Signal**: 🔥 ⭐ 80,900 stars (+340/day)
+- **Tags**: `open-source`
+
+### 🔥 [ui-ux-pro-max-skill](https://github.com/nicepkg/ui-ux-pro-max-skill)
+
+Design intelligence skill for Claude Code — AI-driven UI/UX design decisions and component generation. 48,300 stars (+213/day). Part of the Claude Code skills explosion.
+
+- **Discovered**: 2026-03-23
+- **Signal**: 🔥 ⭐ 48,300 stars (+213/day)
+- **Tags**: `claude-code` `open-source`
 
 ### 🔥 [gstack](https://github.com/garrytan/gstack)
 
-Garry Tan's exact Claude Code setup — 15 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA. ~20,000 stars in first 48 hours. Controversial but validated as onboarding accelerator for first-time Claude Code users.
+Y Combinator CEO's exact Claude Code setup — 15 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA. 39,300 stars (+967/day). Signals institutional-level Claude Code adoption.
 
 - **Discovered**: 2026-03-20
-- **Signal**: 🔥 ⭐ ~20,000 stars
+- **Signal**: 🔥 ⭐ 39,300 stars (+967/day)
 - **Tags**: `claude-code` `open-source`
 
 ### ⚡ [Grafeo](https://github.com/GrafeoDB/grafeo)
@@ -1382,7 +1438,7 @@ Open-source Fujifilm X RAW STUDIO webapp clone — apply Fujifilm film simulatio
 
 Networking, alternative platforms, and foundational open source software.
 
-**25 projects**
+**26 projects**
 
 ### 🔥 [Antirender](https://antirender.com/)
 
@@ -1490,12 +1546,12 @@ One note per day — E2E encrypted, local-first minimalist notes app. Intentiona
 - **Signal**: ⚡ 129 HN points
 - **Tags**: `open-source`
 
-### ⚡ [project-nomad](https://github.com/nicepkg/project-nomad)
+### 🔥 [project-nomad](https://github.com/nicepkg/project-nomad)
 
-Offline survival computer — self-contained computing environment designed for zero-connectivity scenarios. 1,981 stars on GitHub trending.
+Offline survival computer — self-contained computing environment with embedded AI for zero-connectivity scenarios. Exploded to 11,100 stars (+2,300/day on Day 2). 426 HN pts. The offline-first AI hardware category is validated.
 
 - **Discovered**: 2026-03-16
-- **Signal**: ⚡ ⭐ 1,981 stars (+775/day)
+- **Signal**: 🔥 ⭐ 11,100 stars (+2,300/day)
 - **Tags**: `offline` `survival` `knowledge-base` `self-hosted` `open-source`
 
 ### 🔥 [OpenViking](https://github.com/volcengine/OpenViking)
@@ -1578,13 +1634,20 @@ Together.ai's state space model — outperforms Transformers by 4% on language m
 - **Signal**: ⚡ 292 HN points
 - **Tags**: `open-source`
 
+### 🔥 [Manyana](https://bramcohen.com)
+
+Bram Cohen's (BitTorrent creator) next-generation version control system — 500 HN pts, 279 comments. Most significant VCS discussion since Git's adoption. Proposes fundamental rethinking of version control.
+
+- **Discovered**: 2026-03-23
+- **Signal**: 🔥 500 HN points
+
 ---
 
 ## Summary
 
-**Total projects**: 194
+**Total projects**: 202
 **Categories**: 4
-**Updated**: 2026-03-22
+**Updated**: 2026-03-23
 
 ---
 
