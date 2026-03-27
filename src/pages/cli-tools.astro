@@ -218,6 +218,42 @@ const projects = [
     signalLevel: "rising" as const,
     tags: ["cli", "open-source"],
   },
+  {
+    name: "Stripe Projects",
+    url: "https://projects.dev",
+    description: "Provision and manage production-ready dev stacks from the CLI — hosting, databases, identity, analytics, AI. Integrates Vercel, Railway, Supabase, Neon, PlanetScale, Turso. Credential sync across local/CI/team. 102 HN pts on launch day.",
+    discovered: "2026-03-27",
+    signal: "102 HN points",
+    signalLevel: "rising" as const,
+    tags: ["cli", "infrastructure"],
+  },
+  {
+    name: "Email.md",
+    url: "",
+    description: "Markdown-to-email publishing CLI — write emails in Markdown, send as formatted HTML. 283 HN pts. Classic friction-removal for solo devs and agent pipelines.",
+    discovered: "2026-03-25",
+    signal: "283 HN points",
+    signalLevel: "rising" as const,
+    tags: ["cli", "markdown"],
+  },
+  {
+    name: "Nanobrew",
+    url: "",
+    description: "Faster brew-compatible macOS package manager — addresses daily friction of Homebrew latency. 203 HN pts, 124 comments with deep technical engagement.",
+    discovered: "2026-03-25",
+    signal: "203 HN points",
+    signalLevel: "rising" as const,
+    tags: ["cli", "macos", "open-source"],
+  },
+  {
+    name: "Hypura",
+    url: "",
+    description: "Apple Silicon local inference runtime — native CLI for running LLMs on M-series chips. 201 HN pts. Part of the local inference convergence wave.",
+    discovered: "2026-03-25",
+    signal: "201 HN points",
+    signalLevel: "rising" as const,
+    tags: ["cli", "local-ai", "apple-silicon"],
+  },
 ].sort((a, b) => b.discovered.localeCompare(a.discovered));
 ---
 

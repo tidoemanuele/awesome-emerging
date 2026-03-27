@@ -1,5 +1,44 @@
 export const insights = [
   {
+    date: "2026-03-27",
+    entries: [
+      "LiteLLM supply chain attack (276 HN pts) — TeamPCP compromised the most popular LLM proxy (97M monthly downloads) via a cascading Trivy dependency attack. The AI supply chain is now a target-rich environment. Cisco released DefenseClaw the same day — security responses measured in hours.",
+      "last30days-skill is #1 on GitHub trending at +2,685 stars/day (10.2K total) — validates the 'single-purpose skill' pattern. Not a framework, not a harness, just one skill that does research. The Claude Code ecosystem now produces viral individual skills.",
+      "Meta's HyperAgents (121 HN pts) introduces recursive self-improvement — agents that rewrite not just their task code but their improvement procedure itself. Cross-domain transfer (robotics strategies improving math grading) is the unexpected result.",
+      "deer-flow accelerates to +2,394/day (48.3K stars) — ByteDance's SuperAgent is the fastest-growing multi-agent framework this week. Big tech agent race: Anthropic (Claude Code), ByteDance (deer-flow), Nvidia (NemoClaw), Meta (HyperAgents), Microsoft (AutoGen).",
+      "everything-claude-code crosses 100K stars (~108K) — two Claude Code ecosystem projects (superpowers + everything-claude-code) have crossed 100K in the same month. The plugin ecosystem grows faster than the underlying tool.",
+      "Stripe Projects launches (102 HN pts) — Stripe entering CLI-based infrastructure provisioning signals that developer platform tooling is the next contested territory. One CLI to provision hosting, databases, auth, analytics, and AI services.",
+      "Domain-specific agents break out: Dexter (financial research, 19K stars), pentagi (pentesting), Sashiko (kernel review). The shift from 'general agent framework' to 'agent that does one thing exceptionally' mirrors the vertical SaaS pattern.",
+      "RuView at 43K stars (+1K/day) — camera-free human sensing via WiFi CSI signals a privacy-preserving monitoring category. Rust + ESP32 ($1/node) makes it deployable at scale. Genuinely novel non-AI infrastructure.",
+    ],
+  },
+  {
+    date: "2026-03-26",
+    entries: [
+      "'Thoughts on slowing the fuck down' hits 784 HN pts — strongest single cultural signal of the day. Generation capacity has outpaced review capacity. The pacing problem is now mainstream.",
+      "last30days-skill jumps from +209/day to +1,341/day — the single strongest day-over-day acceleration across all tracked projects. Research/synthesis is now a 'first-class demand center,' not a secondary agent capability.",
+      "supermemory accelerates from +344/day to +810/day (18.9K stars) — the memory layer is gaining independent momentum, not just riding framework hype.",
+      "LiteLLM continues trending despite active security compromise — popularity and trust are formally decoupled. GitHub stars should be read as attention metrics, not endorsement.",
+      "claude-subconscious appears on GitHub trending — background context tools for agents are becoming a category. The agent surface area expands into ambient, always-on context management.",
+      "Terminal-first + browser-portable is an emerging pattern (Gridland, 78 HN pts) — tools that work in both terminal and browser are the next agent-friendly creative substrate.",
+      "Signal scarcity on CLI tools (no major launches) doesn't mean category decline — the creative CLI stack is in a consolidation phase after weeks of rapid expansion.",
+      "Mobile AI demand still concentrates into one incumbent (ChatGPT at #5) — no visible breakout cohort. External signal: Sora shutdown suggests consumer AI media apps remain strategically fragile.",
+    ],
+  },
+  {
+    date: "2026-03-25",
+    entries: [
+      "Seven repos above +1,000 stars/day simultaneously — the all-time-high daily count. AI agent market is diversifying into stable subcategories: orchestration, content automation, local/offline, finance, memory, verification.",
+      "MoneyPrinterV2 surges to +3,006/day (25.1K stars) — automated content creation becomes a distinct agent vertical. Not coding, not research — content as commodity pipeline.",
+      "pascalorg/editor at +1,449/day proves non-AI creative tooling can still capture attention — 3D architectural editing in the browser, no AI involved.",
+      "Trivy trending despite active security compromise — the most popular container vulnerability scanner was itself compromised. Popularity/trust decoupling is empirically demonstrated.",
+      "Email.md (283 HN pts) — Markdown-to-email publishing. The agent-friendly creative interface remains Markdown-first (79% confidence).",
+      "'I took a technician job to build vertical SaaS for pest control' (283 HN pts, 119 comments) — domain immersion becomes more valuable as AI cuts implementation cost. The binding constraint shifts from coding time to domain knowledge.",
+      "Video.js v10 rewrite (380 HN pts) — 88% smaller bundle. Anti-bloat simplification earns sustained attention alongside agent framework explosion. The community rewards restraint.",
+      "Hypura (201 HN pts) — Apple Silicon local inference runtime. Local AI inference convergence continues: every major chip architecture now has a dedicated inference runtime.",
+    ],
+  },
+  {
     date: "2026-03-23",
     entries: [
       "Claude Code ecosystem occupies 10 of 25 top trending GitHub repos — 40% concentration is unprecedented. Docker at its 2016 peak never exceeded 20%. Platform status confirmed.",

@@ -127,9 +127,9 @@ const projects = [
   {
     name: "project-nomad",
     url: "https://github.com/nicepkg/project-nomad",
-    description: "Offline survival computer — self-contained computing environment with embedded AI for zero-connectivity scenarios. Exploded to 11,100 stars (+2,300/day on Day 2). 426 HN pts. The offline-first AI hardware category is validated.",
+    description: "Offline survival computer — self-contained computing environment with embedded AI for zero-connectivity scenarios. Sustained growth to 15,754 stars (+2,513/day). 1,000+ forks. The offline-first AI hardware category is validated and growing.",
     discovered: "2026-03-16",
-    signal: "⭐ 11,100 stars (+2,300/day)",
+    signal: "⭐ 15,754 stars (+2,513/day)",
     signalLevel: "hot" as const,
     tags: ["offline", "survival", "knowledge-base", "self-hosted", "open-source"],
   },
@@ -230,6 +230,24 @@ const projects = [
     discovered: "2026-03-23",
     signal: "500 HN points",
     signalLevel: "hot" as const,
+  },
+  {
+    name: "RuView",
+    url: "https://github.com/ruvnet/RuView",
+    description: "WiFi DensePose — commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection without video. Rust core, ESP32 mesh ($1/node), Docker deployment. 43,136 stars (+1,002/day). Camera-free privacy-preserving sensing.",
+    discovered: "2026-03-27",
+    signal: "⭐ 43,136 stars (+1,002/day)",
+    signalLevel: "hot" as const,
+    tags: ["rust", "iot", "privacy", "open-source"],
+  },
+  {
+    name: "Colibri",
+    url: "https://colibri.social",
+    description: "Chat platform built on the AT Protocol for communities big and small. AT Protocol expanding beyond microblogging into chat. 98 HN pts.",
+    discovered: "2026-03-27",
+    signal: "98 HN points",
+    signalLevel: "rising" as const,
+    tags: ["at-protocol", "decentralized", "open-source"],
   },
 ].sort((a, b) => b.discovered.localeCompare(a.discovered));
 ---
