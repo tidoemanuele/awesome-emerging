@@ -1,5 +1,18 @@
 export const insights = [
   {
+    date: "2026-04-01",
+    entries: [
+      "Claude Code source leak dominates (1,110 HN pts, 435 comments, 41,500+ GitHub forks in under 24 hours) — Anthropic accidentally shipped 512,000 lines of TypeScript via npm source maps. KAIROS: an always-on autonomous daemon mode, fully built but never announced. Anti-distillation mechanisms: fake tool injections to defend against model replication. The product roadmap is now public. Competitors have eliminated surprise from Anthropic's shipping strategy.",
+      "OpenAI closes at an $852B valuation (418 HN pts, 365 comments) — largest private company valuation in history. The 0.87:1 comment-to-point ratio is unusually calm for a number this large; the community has normalized funding rounds that would have been front-page news in 2023. The race to $1T is a sprint, not a marathon.",
+      "'Slop is not necessarily the future' by Greptile's CEO (221 pts, 374 comments, 1.69:1 comment-to-point ratio) — published on the same day as the Claude Code source leak. The 1.69:1 ratio is one of the highest argument-density scores in March 2026 tracking. Builders are pushing hardest against the 'acceptable slop' position precisely when AI tooling is most exposed.",
+      "1-Bit Bonsai launches on Show HN (220 pts, 93 comments) as the first commercially viable 1-bit LLMs — PrismML claims production-ready quantization at 1-bit precision via a Bonsai architecture. BitNet exits the research phase. The inference efficiency story shifts from 'runs faster' to 'runs at enterprise scale on commodity hardware without GPU cluster budgets.'",
+      "MiniStack debuts at 201 HN pts as a drop-in LocalStack replacement — the open-source immune response to LocalStack's enterprise pivot takes under a week. The pattern completes again: community edition deprecation → community fork → HN front page. Floci (Localstack) in March, MiniStack for AWS mocking in April. Open source forks faster than licensing teams can close.",
+      "Axios npm supply chain attack surfaces on Lobsters (#1 story, 52 pts) as the fourth package in the TeamPCP campaign in 13 days — Trivy (Mar 19), KICS (Mar 23), LiteLLM (Mar 24), Telnyx (Mar 27), now Axios (Mar 30, 80-100M weekly downloads). A postinstall hook, a RAT staged 18 hours in advance, a 39-minute window. The campaign is escalating in both download-count targeting and cross-ecosystem reach (PyPI → npm).",
+      "TinyLoRA learns to reason in 13 parameters (152 HN pts) — architectural proof that emergent reasoning does not require scale. 13 parameters is not a model; it is a demonstration that reasoning is a structural property. If true, the current 'bigger model = better reasoning' framing is a category error, not an empirical law.",
+      "superpowers crosses 123K stars (GitHub trending, +1,847/day) on the same day Anthropic leaks its own source — the community-built tooling layer outpaces the official product in both velocity and openness. KAIROS (the leaked autonomous daemon) is what superpowers already does for builders who didn't wait for the official version.",
+    ],
+  },
+  {
     date: "2026-03-27",
     entries: [
       "LiteLLM supply chain attack (276 HN pts) — TeamPCP compromised the most popular LLM proxy (97M monthly downloads) via a cascading Trivy dependency attack. The AI supply chain is now a target-rich environment. Cisco released DefenseClaw the same day — security responses measured in hours.",
